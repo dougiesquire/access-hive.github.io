@@ -473,18 +473,31 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#direct-edit" class="md-nav__link">
-    Direct edit
+  <a href="#edit-directly-on-github" class="md-nav__link">
+    Edit directly on GitHub
   </a>
+  
+    <nav class="md-nav" aria-label="Edit directly on GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preview-of-the-documentation" class="md-nav__link">
+    Preview of the documentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-edit" class="md-nav__link">
-    Local edit
+  <a href="#edit-locally-on-your-computer" class="md-nav__link">
+    Edit locally on your computer
   </a>
   
-    <nav class="md-nav" aria-label="Local edit">
+    <nav class="md-nav" aria-label="Edit locally on your computer">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -502,8 +515,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#previewing-your-changes" class="md-nav__link">
-    Previewing your changes
+  <a href="#previewing-your-changes-locally" class="md-nav__link">
+    Previewing your changes locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit-your-changes" class="md-nav__link">
+    Submit your changes
   </a>
   
 </li>
@@ -576,18 +596,31 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#direct-edit" class="md-nav__link">
-    Direct edit
+  <a href="#edit-directly-on-github" class="md-nav__link">
+    Edit directly on GitHub
   </a>
+  
+    <nav class="md-nav" aria-label="Edit directly on GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preview-of-the-documentation" class="md-nav__link">
+    Preview of the documentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-edit" class="md-nav__link">
-    Local edit
+  <a href="#edit-locally-on-your-computer" class="md-nav__link">
+    Edit locally on your computer
   </a>
   
-    <nav class="md-nav" aria-label="Local edit">
+    <nav class="md-nav" aria-label="Edit locally on your computer">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -605,8 +638,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#previewing-your-changes" class="md-nav__link">
-    Previewing your changes
+  <a href="#previewing-your-changes-locally" class="md-nav__link">
+    Previewing your changes locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submit-your-changes" class="md-nav__link">
+    Submit your changes
   </a>
   
 </li>
@@ -635,12 +675,14 @@
 
 
 <h1 id="modify-the-documentation">Modify the documentation</h1>
-<p>There are two ways to modify the documentation:
- - direct edit on GitHub. This method is adequate for small modifications to a single file.
- - local edit on your local computer. This method is recommended for large modifications.</p>
+<p>There are two ways to modify the documentation:</p>
+<ul>
+<li>direct edit on GitHub. This method is adequate for small modifications to a single file.</li>
+<li>local edit on your local computer. This method is recommended for large modifications.</li>
+</ul>
 <h2 id="open-an-issue">Open an issue</h2>
 <p>For all additions or modifications to the ACCESSHub site, it is recommended to start by opening an <a href="https://github.com/ACCESS-NRI-Community/ACCESSHub/issues">Issue</a> in the ACCESSHub GitHub repository. After creation, please assign the Issue to yourself in the right-hand side panel if you intend on working on the issue.</p>
-<h2 id="direct-edit">Direct edit</h2>
+<h2 id="edit-directly-on-github">Edit directly on GitHub</h2>
 <p>For a very simple change, the easiest is to go to the ACCESSHub site and navigate to the page you want to modify.</p>
 <p>At the right of the title, you will see a pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span>. When you click on this icon, your browser will open the file in GitHub allowing you to edit the file. Enter your modification in the main pane. Then add a commit message in the Commit changes box.</p>
 <figure>
@@ -655,7 +697,14 @@
 </details>
 <p>When creating the pull request, make sure to add the text: <code>Closes #X</code> to the description, where X is the issue number related to this change. This will link the pull request and the issue together and the issue will be automatically closed once the pull request is accepted. Then ask for a review using the Reviewer menu on the right-hand side panel.</p>
 <p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESSHub site. </p>
-<h2 id="local-edit">Local edit</h2>
+<h3 id="preview-of-the-documentation">Preview of the documentation</h3>
+<p>When a pull request is opened or updated, GitHub will automatically build a preview of the documentation that includes the proposed changes. In the pull request, you will see the link to the preview appear in this fashion:</p>
+<p><img alt="PRpreview" src="../../assets/site-preview-PR.png" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>If you open the preview and it looks completely broken, it probably means the site hasn't finished building yet. If you wait a little bit and refresh the page, it should fix it.</p>
+</details>
+<h2 id="edit-locally-on-your-computer">Edit locally on your computer</h2>
 <p>If you prefer to work locally on your computer (e.g. to preview the result of your modification locally before submitting it to the documentation), you will need to follow a series of steps.</p>
 <details class="note" open="open">
 <summary>Note</summary>
@@ -675,7 +724,7 @@ Then, create a local branch that follows the remote branch and checkout the new 
 <summary>Tip</summary>
 <p>If you have problems finding the page you need to edit, the easiest way is to head to the ACCESSHub site. If you click on the pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span> at the top right of each page title, you will open a GitHub page showing you the path to the file you want to edit. </p>
 </details>
-<h3 id="previewing-your-changes">Previewing your changes</h3>
+<h3 id="previewing-your-changes-locally">Previewing your changes locally</h3>
 <details class="note" open="open">
 <summary>Note</summary>
 <p>If you have installed mkdocs-material via conda, make sure you activate the correct environment first</p>
@@ -685,6 +734,21 @@ Then, create a local branch that follows the remote branch and checkout the new 
 <div class="highlight"><pre><span></span><code>    mkdocs serve
 </code></pre></div>
 Your documentation will be built on  http://127.0.0.1:8000. Open this URL in your browser to see a preview of the documentation. The URL is given in the terminal when running the <code>mkdocs serve</code> command. Make sure you keep the command running so as to see live updates on saving your modifications.</p>
+<h3 id="submit-your-changes">Submit your changes</h3>
+<p>Once you are satisfy with your modifications, you will need to:</p>
+<ul>
+<li>commit your changes locally on your branch</li>
+<li>push your branch to GitHub</li>
+<li>on GitHub, open a pull request between the <code>main</code> branch and your branch.</li>
+</ul>
+<p>In the pull request description, make sure to add the text <code>Closes #X</code> where X is the Issue number associated with your modifications so that the Issue and the pull request are linked, cross-reference each other and are closed at the same time. Then ask for a review using the Reviewer menu on the right-hand side panel.</p>
+<p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESSHub site. </p>
+<p>Once you open you pull request, GitHub will automatically build a preview of the documentation with your changes. In the pull request, you will see the link to the preview appear in this fashion:</p>
+<p><img alt="PRpreview" src="../../assets/site-preview-PR.png" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>If you open the preview and it looks completely broken, it probably means the site hasn't finished building yet. If you wait a little bit and refresh the page, it should fix it.</p>
+</details>
 
 
 

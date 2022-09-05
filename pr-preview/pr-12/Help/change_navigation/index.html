@@ -455,9 +455,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Change the navigation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Change the navigation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-example" class="md-nav__link">
+    A simple example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-sections-to-a-tab" class="md-nav__link">
+    Add sections to a tab
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -490,6 +528,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-example" class="md-nav__link">
+    A simple example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-sections-to-a-tab" class="md-nav__link">
+    Add sections to a tab
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -508,6 +568,7 @@
 
 <h1 id="change-the-navigation">Change the navigation</h1>
 <p>The navigation for the site is defined in <code>mkdocs.yml</code>.</p>
+<h2 id="a-simple-example">A simple example</h2>
 <p>The easiest way to explain how it works is to look at an example. Let's say <code>mkdocs.yml</code> contains:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Welcome</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
@@ -525,6 +586,7 @@
 <p>The second level of categories indicate the name of each page under that section. So the "ACCESS NRI" tab has the text directly under the section "ACCESS NRI". The "Community" tab has a section called "Community" that contains one page: "Generate Bathymetry". Finally, the "How to contribute" tab has 1 section "How to contribute" with 4 pages.</p>
 <p>The filenames indicate the path to the file with the text for each page. It is recommended to use the title of each file (i.e. the Header 1) as the name of the page and the filename.</p>
 <p><img alt="PageExample" src="../../assets/pages_example.png" /></p>
+<h2 id="add-sections-to-a-tab">Add sections to a tab</h2>
 <p>It is possible to define several sections per tab. For example:</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Welcome</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
