@@ -480,6 +480,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#structure-of-the-repository" class="md-nav__link">
+    Structure of the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-simple-example" class="md-nav__link">
     A simple example
   </a>
@@ -535,6 +542,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#structure-of-the-repository" class="md-nav__link">
+    Structure of the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-simple-example" class="md-nav__link">
     A simple example
   </a>
@@ -567,9 +581,18 @@
 
 
 <h1 id="change-the-navigation">Change the navigation</h1>
-<p>The navigation for the site is defined in <code>mkdocs.yml</code>.</p>
+<h2 id="structure-of-the-repository">Structure of the repository</h2>
+<p>The important elements of the repository to know about before modifying the navigation are:</p>
+<ul>
+<li><code>docs/</code> folder: this folder contains all the documentation pages. There is an <code>index.md</code> file for the Welcome page, one folder per tab on the site and an <code>assets/</code> folder to store images used in the documentation.</li>
+<li><a href="../../mkdocs.yml"><code>mkdocs.yml</code></a>: it is a YAML formatted file, hence the <code>.yml</code> extension. The site navigation is defined in this file as well as options for the styling of the site. </li>
+</ul>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>YAML is a popular choice for configuration files, as it is a simple way of encoding data structures in a text file. See this <a href="https://kopi.dev/yaml-tutorial-beginner/">short tutorial</a>.</p>
+</details>
 <h2 id="a-simple-example">A simple example</h2>
-<p>The easiest way to explain how it works is to look at an example. Let's say <code>mkdocs.yml</code> contains:</p>
+<p>The easiest way to explain how the navigation is defined is to look at an example. Let's say <code>mkdocs.yml</code> contains:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Welcome</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ACCESS NRI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ACCESS-NRI/ACCESS-NRI.md</span><span class="w"></span>
@@ -584,10 +607,10 @@
 <p>The top level category names define the tabs in the header bar. So here we have the tabs: "Welcome", "ACCESS NRI", "Community" and "How to contribute". It also defines the name of the top section under each tab.</p>
 <p><img alt="TabExample" src="../../assets/tabs_example.png" /></p>
 <p>The second level of categories indicate the name of each page under that section. So the "ACCESS NRI" tab has the text directly under the section "ACCESS NRI". The "Community" tab has a section called "Community" that contains one page: "Generate Bathymetry". Finally, the "How to contribute" tab has 1 section "How to contribute" with 4 pages.</p>
-<p>The filenames indicate the path to the file with the text for each page. It is recommended to use the title of each file (i.e. the Header 1) as the name of the page and the filename.</p>
+<p>The filenames indicate the path to the file relative to the <code>docs/</code> folder containing the text for each page. It is recommended to use the title of each file (i.e. the Header 1) as the name of the page and the filename.</p>
 <p><img alt="PageExample" src="../../assets/pages_example.png" /></p>
 <h2 id="add-sections-to-a-tab">Add sections to a tab</h2>
-<p>It is possible to define several sections per tab. For example:</p>
+<p>It is possible to define several sections per tab by using more levels of indentation. For example, to add a "My example" section to the "How to contribute" tab:</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Welcome</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index.md</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ACCESS NRI</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ACCESS-NRI/ACCESS-NRI.md</span><span class="w"></span>
