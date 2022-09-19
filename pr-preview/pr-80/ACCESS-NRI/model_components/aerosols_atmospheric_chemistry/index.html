@@ -653,16 +653,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aerosol" class="md-nav__link">
-    Aerosol
+  <a href="#atmospheric-chemistry" class="md-nav__link">
+    Atmospheric chemistry
   </a>
+  
+    <nav class="md-nav" aria-label="Atmospheric chemistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-is-ukca-used" class="md-nav__link">
+    How is UKCA used?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chemistry" class="md-nav__link">
-    Chemistry
+  <a href="#aerosol" class="md-nav__link">
+    Aerosol
   </a>
+  
+    <nav class="md-nav" aria-label="Aerosol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-is-glomap-used" class="md-nav__link">
+    How is GLOMAP used?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -905,16 +931,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aerosol" class="md-nav__link">
-    Aerosol
+  <a href="#atmospheric-chemistry" class="md-nav__link">
+    Atmospheric chemistry
   </a>
+  
+    <nav class="md-nav" aria-label="Atmospheric chemistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-is-ukca-used" class="md-nav__link">
+    How is UKCA used?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chemistry" class="md-nav__link">
-    Chemistry
+  <a href="#aerosol" class="md-nav__link">
+    Aerosol
   </a>
+  
+    <nav class="md-nav" aria-label="Aerosol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-is-glomap-used" class="md-nav__link">
+    How is GLOMAP used?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -939,17 +991,16 @@
 
 
 <h1 id="aerosol-and-chemistry-components">Aerosol and Chemistry Components</h1>
-<p>The atmospheric composition capabilities in ACCESS are built on ACCESS-CM2. ACCESS-CM2 includes the sophisticated GLOMAP aerosol scheme, and an extended configuration that simulates atmospheric chemistry from the surface to the stratosphere (ACCESS-CM2-Chem). Many elements of the Earth system are connected via atmospheric composition.</p>
+<p><img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-AEROSOLS-300x300.png" width="300" /></p>
+<h2 id="atmospheric-chemistry">Atmospheric chemistry</h2>
+<p><a href="https://www.ukca.ac.uk/wiki/index.php/UKCA">The UK Chemistry-Aerosol model (UKCA)</a> is a community atmospheric chemistry-aerosol global model suitable for a range of topics in climate and environmental change research developed in the United Kingdom.</p>
+<h3 id="how-is-ukca-used">How is UKCA used?</h3>
+<p>UKCA chemistry model is turned on in ACCESS-CM2-Chem.</p>
+<p><img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-ATMOSPHERIC-CHEMISTRY-300x300.png" width="300" /></p>
 <h2 id="aerosol">Aerosol</h2>
-<p><img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-ATMOSPHERIC-CHEMISTRY-300x300.png" width="300" />
-An aerosol is a population of small particles suspended in the atmosphere. These particles influence clouds and precipitation, and play an important role in the Earth’s energy balance.</p>
-<p>The aerosol scheme in ACCESS-CM2 is called the GLObal Model of Aerosol Processes (GLOMAP), and simulates the life cycle of aerosol from source to deposition, including the impacts on clouds and energy budget. GLOMAP includes a highly detailed representation of aerosol characteristics, allowing simulation of aerosol number, size, and concentrations of individual components such as sulphate, different types of carbon, and sea salt.</p>
-<h2 id="chemistry">Chemistry</h2>
-<p><img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-AEROSOLS-300x300.png" width="300" />
-ACCESS-CM2-Chem is an extended version of ACCESS-CM2 containing a representation of atmospheric chemistry. The chemistry component includes reactions relevant in the troposphere (to simulate greenhouse gases such as ozone and methane) and the stratosphere (to simulate ozone depleting substances and the ozone hole).</p>
-<p>How are the atmospheric composition components used?
-Inclusion of the aerosol and (optionally) chemistry components enables ACCESS to simulate the impact of changing atmospheric composition on climate, and opens up the possibility of resolving feedbacks between other components of the earth system. Studies using the atmospheric composition components have been conducted into the tropospheric ozone budget, the stratospheric ozone hole, marine aerosol and clouds, and biomass burning.</p>
-<p>ACCESS-CM2(-Chem) can be configured to run with or without a coupled ocean, and can be ‘nudged’ to observed meteorology to reproduce the weather patterns during a particular time period. The nudging capability makes ACCESS-CM2(-Chem) a powerful tool to undertake aerosol and chemistry process studies around research voyages and field campaigns.</p>
+<p>UKCA contains an aerosol scheme that can be used independently, the GLObal Model of Aerosol Processes <a href="https://www.ukca.ac.uk/wiki/index.php/Aerosol_Subproject">(GLOMAP)</a>. The multi-component multi-modal GLOMAP model allows simulation of aerosol number, size, and concentrations of individual components such as sulphate, different types of carbon, and sea salt.</p>
+<h3 id="how-is-glomap-used">How is GLOMAP used?</h3>
+<p>GLOMAP is used in ACCESS-CM2 and ACCESS-CM2-Chem.</p>
 
   <hr>
 <div class="md-source-file">
