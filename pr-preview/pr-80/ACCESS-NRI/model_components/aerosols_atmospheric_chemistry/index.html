@@ -13,7 +13,7 @@
     
     
       
-        <title>Aerosols - ACCESS-NRI Hub</title>
+        <title>Aerosols and Atmospheric Chemistry - ACCESS-NRI Hub</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#aerosol-and-chemistry-components" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aerosols
+              Aerosols and Atmospheric Chemistry
             
           </span>
         </div>
@@ -502,8 +507,6 @@
         
           
         
-          
-        
       
       
         
@@ -589,7 +592,7 @@
   
     <li class="md-nav__item">
       <a href="../bcg_land/" class="md-nav__link">
-        Biogeochemical Land
+        Biogeochemistry Land
       </a>
     </li>
   
@@ -603,7 +606,7 @@
   
     <li class="md-nav__item">
       <a href="../bcg_ocean/" class="md-nav__link">
-        Biogeochemical Ocean
+        Biogeochemistry Ocean
       </a>
     </li>
   
@@ -622,25 +625,51 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Aerosols and Atmospheric Chemistry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Aerosols
+        Aerosols and Atmospheric Chemistry
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../atmospheric_chemistry/" class="md-nav__link">
-        Atmospheric Chemistry
-      </a>
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aerosol" class="md-nav__link">
+    Aerosol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chemistry" class="md-nav__link">
+    Chemistry
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -866,6 +895,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aerosol" class="md-nav__link">
+    Aerosol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chemistry" class="md-nav__link">
+    Chemistry
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -879,15 +932,24 @@
                 
                   
 
-  <a href="https://github.com/ACCESS-Hub/ACCESS-Hub/edit/main/access-nri/docs/model_components/aerosols.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/ACCESS-Hub/ACCESS-Hub/edit/main/access-nri/docs/model_components/aerosols_atmospheric_chemistry.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Aerosols</h1>
-
-<p>This is a placeholder page when the content is not yet ready</p>
+<h1 id="aerosol-and-chemistry-components">Aerosol and Chemistry Components</h1>
+<p><img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-ATMOSPHERIC-CHEMISTRY-300x300.png" width="300" />
+<img align="right" alt="Atmospheric Component Logo" src="../../assets/component-logos/ACCESS-icon-AEROSOLS-300x300.png" width="300" /></p>
+<p>The atmospheric composition capabilities in ACCESS are built on ACCESS-CM2. ACCESS-CM2 includes the sophisticated GLOMAP aerosol scheme, and an extended configuration that simulates atmospheric chemistry from the surface to the stratosphere (ACCESS-CM2-Chem). Many elements of the Earth system are connected via atmospheric composition.</p>
+<h2 id="aerosol">Aerosol</h2>
+<p>An aerosol is a population of small particles suspended in the atmosphere. These particles influence clouds and precipitation, and play an important role in the Earth’s energy balance.</p>
+<p>The aerosol scheme in ACCESS-CM2 is called the GLObal Model of Aerosol Processes (GLOMAP), and simulates the life cycle of aerosol from source to deposition, including the impacts on clouds and energy budget. GLOMAP includes a highly detailed representation of aerosol characteristics, allowing simulation of aerosol number, size, and concentrations of individual components such as sulphate, different types of carbon, and sea salt.</p>
+<h2 id="chemistry">Chemistry</h2>
+<p>ACCESS-CM2-Chem is an extended version of ACCESS-CM2 containing a representation of atmospheric chemistry. The chemistry component includes reactions relevant in the troposphere (to simulate greenhouse gases such as ozone and methane) and the stratosphere (to simulate ozone depleting substances and the ozone hole).</p>
+<p>How are the atmospheric composition components used?
+Inclusion of the aerosol and (optionally) chemistry components enables ACCESS to simulate the impact of changing atmospheric composition on climate, and opens up the possibility of resolving feedbacks between other components of the earth system. Studies using the atmospheric composition components have been conducted into the tropospheric ozone budget, the stratospheric ozone hole, marine aerosol and clouds, and biomass burning.</p>
+<p>ACCESS-CM2(-Chem) can be configured to run with or without a coupled ocean, and can be ‘nudged’ to observed meteorology to reproduce the weather patterns during a particular time period. The nudging capability makes ACCESS-CM2(-Chem) a powerful tool to undertake aerosol and chemistry process studies around research voyages and field campaigns.</p>
 
   <hr>
 <div class="md-source-file">

@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#land-model-components" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -502,8 +507,6 @@
         
           
         
-          
-        
       
       
         
@@ -580,10 +583,50 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Land
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Land
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cable" class="md-nav__link">
+    CABLE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jules-joint-uk-land-environment-simulator-jules" class="md-nav__link">
+    JULES – Joint UK Land Environment Simulator (JULES)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -597,7 +640,7 @@
   
     <li class="md-nav__item">
       <a href="../bcg_land/" class="md-nav__link">
-        Biogeochemical Land
+        Biogeochemistry Land
       </a>
     </li>
   
@@ -611,7 +654,7 @@
   
     <li class="md-nav__item">
       <a href="../bcg_ocean/" class="md-nav__link">
-        Biogeochemical Ocean
+        Biogeochemistry Ocean
       </a>
     </li>
   
@@ -624,22 +667,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../aerosols/" class="md-nav__link">
-        Aerosols
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../atmospheric_chemistry/" class="md-nav__link">
-        Atmospheric Chemistry
+      <a href="../aerosols_atmospheric_chemistry/" class="md-nav__link">
+        Aerosols and Atmospheric Chemistry
       </a>
     </li>
   
@@ -866,6 +895,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cable" class="md-nav__link">
+    CABLE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jules-joint-uk-land-environment-simulator-jules" class="md-nav__link">
+    JULES – Joint UK Land Environment Simulator (JULES)
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -885,9 +938,19 @@
   </a>
 
 
-  <h1>Land</h1>
-
-<p>This is a placeholder page when the content is not yet ready</p>
+<h1 id="land-model-components">Land Model Components</h1>
+<h2 id="cable">CABLE</h2>
+<p><img align="right" alt="Ocean Component Logo" src="../../assets/component-logos/ACCESS-icon-LAND-SURFACE-300x300.png" width="300" /></p>
+<p>CABLE (Community Atmosphere Biosphere Land Exchange) is a land-surface model that simulates energy, water and carbon flows between the land surface and the atmosphere. This component has been developed by Australian researchers across the national climate science community. CABLE is a canopy model and accounts for turbulent exchange within the canopy.</p>
+<p><strong>How is CABLE used?</strong> </p>
+<p>CABLE can be run as a standalone model, for a single location, a region or globally. The model is coupled to the Met Office Unified Model (UM) and provides the land surface component of the Earth System Models ACCESS-ESM1-5 and ACCESS-CM2.</p>
+<p>The CABLE code has a long history of use and development and has been available to the wider research community from 2006. The CABLE community includes around 100 researchers from more than 30 organizations.</p>
+<p>CABLE is an open source. Registration is required to access the CABLE code repository and is available <a href="https://trac.nci.org.au/trac/cable/wiki">here</a></p>
+<h2 id="jules-joint-uk-land-environment-simulator-jules">JULES – Joint UK Land Environment Simulator (JULES)</h2>
+<p>The <a href="https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/jules">Joint UK Land Environment System is a land surface</a> model that has evolved from the Met Office Surface Exchange Scheme (MOSES).</p>
+<p>JULES has been packaged into a community land surface model that can be used offline, but is also the new land surface model of the UK Met Office Unified Model. Some of the ACCESS models used for weather simulations use JULES instead of CABLE. It provides a tool to study land surface processes in a flexible way and to contribute to the development of a state-of-the-art model.  Because JULES can be easily operated within the Unified Model, the impact of land surface on weather prediction and climate can be readily assessed.</p>
+<p><strong>How is JULES used?</strong></p>
+<p>The Bureau of Meteorology (BoM) uses the JULES land surface scheme in its numerical weather prediction models such as ACCESS S (Seasonal) and C (City).</p>
 
   <hr>
 <div class="md-source-file">
