@@ -131,6 +131,39 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
       <div class="md-header__source">
         <a href="https://github.com/ACCESS-Hub/ACCESS-Hub" title="Go to repository" class="md-source" data-md-component="source">
@@ -177,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../modelling/ocean_seaice/" class="md-tabs__link">
+      <a href="../../modelling/" class="md-tabs__link">
         Modelling
       </a>
     </li>
@@ -266,7 +299,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../how_to_contribute/" class="md-tabs__link md-tabs__link--active">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         How to contribute
       </a>
     </li>
@@ -280,7 +313,7 @@
 
   <li class="md-tabs__item">
     <a href="../../ACCESS-NRI/index.html" class="md-tabs__link">
-      ACCESS-NRI
+      Go to ACCESS-NRI Hub
     </a>
   </li>
 
@@ -395,13 +428,7 @@
       
         
           
-        
-          
-        
-          
-        
-          
-        
+            
           
         
           
@@ -410,10 +437,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2">
-          Modelling
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../modelling/">Modelling</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Modelling" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -423,13 +456,47 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Coupled models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Coupled models" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Coupled models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
               
   
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/ocean_seaice/" class="md-nav__link">
-        Ocean/Sea-Ice
+      <a href="../../modelling/global_coupled/" class="md-nav__link">
+        Global models
       </a>
     </li>
   
@@ -442,9 +509,16 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/access_coupled/" class="md-nav__link">
-        ACCESS Coupled
+      <a href="../../modelling/regional_coupled/" class="md-nav__link">
+        Regional models
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -455,9 +529,45 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Model components
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Model components" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Model components
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../modelling/access_seasonal/" class="md-nav__link">
-        ACCESS Seasonal
+      <a href="../../modelling/atmosphere/" class="md-nav__link">
+        Atmosphere
       </a>
     </li>
   
@@ -484,22 +594,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/regional_atmosphere/" class="md-nav__link">
-        Regional Atmosphere
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelling/regional_ocean/" class="md-nav__link">
-        Regional Ocean
+      <a href="../../modelling/ocean_seaice/" class="md-nav__link">
+        Ocean/Sea-Ice
       </a>
     </li>
   
@@ -515,6 +611,13 @@
       <a href="../../modelling/biogeochemistry/" class="md-nav__link">
         Biogeochemistry
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1116,6 +1219,8 @@
       
         
           
+            
+          
         
           
         
@@ -1125,10 +1230,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7">
-          How to contribute
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">How to contribute</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="How to contribute" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
@@ -1137,18 +1248,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how_to_contribute/" class="md-nav__link">
-        How to contribute
-      </a>
-    </li>
-  
-
             
           
             
@@ -1283,7 +1382,7 @@
   
     <li class="md-nav__item">
       <a href="../../ACCESS-NRI/index.html" class="md-nav__link">
-        ACCESS-NRI
+        Go to ACCESS-NRI Hub
       </a>
     </li>
   
@@ -1385,8 +1484,13 @@
 <h2 id="open-an-issue">Open an issue</h2>
 <p>For all additions or modifications to the ACCESS-Hub site, it is recommended to start by opening an <a href="https://github.com/ACCESS-Hub/ACCESS-Hub/issues">Issue</a> in the ACCESS-Hub GitHub repository. After creation, please <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users">assign the Issue to yourself in the right-hand side panel</a> if you intend on working on the issue.</p>
 <h2 id="edit-directly-on-github">Edit directly on GitHub</h2>
-<p>For a very simple change, the easiest is to go to the ACCESS-Hub site and navigate to the page you want to modify.</p>
-<p>At the right of the title, you will see a pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span>. When you click on this icon, your browser will open the file in GitHub allowing you to edit the file. Enter your modification in the main pane. Then add a commit message in the Commit changes box.</p>
+<p>For a very simple change, the easiest is to go to the page you want to modify on the ACCESS-Hub documentation site. At the right of the title, you will see a pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span>. </p>
+<figure>
+<p><img alt="EditPen" src="../../assets/edit_pen.png" />
+  </p>
+<figcaption>Pen icon circled in red</figcaption>
+</figure>
+<p>When you click on this icon, your browser will open the file in GitHub allowing you to edit the file. Enter your modification in the main pane. Then add a commit message in the Commit changes box.</p>
 <figure>
 <p><img alt="CommitBox" src="../../assets/commit-box.png" />
   </p>
@@ -1400,6 +1504,10 @@
 <p>When creating the pull request, make sure to add the text: <code>Closes #X</code> to the description, where X is the issue number related to this change. This will link the pull request and the issue together and the issue will be automatically closed once the pull request is accepted. This will also automatically build <a href="#preview-of-the-documentation">a preview of the documentation with your proposed changes</a>.</p>
 <p>Then ask for a review using the Reviewer menu on the right-hand side panel.</p>
 <p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESS-Hub site. </p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>The level 1 headers are reserved for the title of the page and are ignored from the pages' table of contents. Only use level 2 headers and higher to organise pages.</p>
+</details>
 <h2 id="edit-locally-on-your-computer">Edit locally on your computer</h2>
 <p>If you prefer to work locally on your computer (e.g. to preview the result of your modification locally before submitting it to the documentation), you will need to follow the usual series of steps when contributing to Open Source developments:</p>
 <ul>
@@ -1410,24 +1518,29 @@
 <li>open a pull request between the <code>main</code> branch and your branch</li>
 <li>ask for reviews and reply to requests for changes</li>
 </ul>
-<p>If you don't know how to do these steps, please refer to the <a href="../submit_changes_to_github/">Collaborating on GitHub section</a>.</p>
+<p>If you don't know how to do these steps, please refer to our <a href="https://access-nri.github.io/Training/HowTos/GitAndGitHub">Git and GitHub training</a>.</p>
 <details class="tip" open="open">
 <summary>Tip</summary>
 <p>If you have problems finding the page you need to edit, the easiest way is to head to the ACCESS-Hub site. If you click on the pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span> at the top right of each page title, you will open a GitHub page showing you the path to the file you want to edit. </p>
 </details>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>The level 1 headers are reserved for the title of the page and are ignored from the pages' table of contents. Only use level 2 headers and higher to organise pages.</p>
+</details>
 <h3 id="previewing-your-changes-locally">Previewing your changes locally</h3>
 <details class="note" open="open">
 <summary>Note</summary>
-<p>You can only preview your local changes if you have <a href="contribution_setup.md/#install-material-for-mkdocs-not-required">installed mkdocs-material</a> on your computer.</p>
+<p>You can only preview your local changes if you have <a href="../contribution_setup/#install-material-for-mkdocs-not-required">installed mkdocs-material</a> on your computer.</p>
 <p>If you have installed mkdocs-material via conda, make sure you activate the correct environment first</p>
 </details>
 <p>MkDocs includes a live preview server, so you can preview your changes as you write your documentation. The server will automatically rebuild the site upon saving.</p>
 <p>To start the server, open a terminal and navigate to your ACCESS-Hub local repository. Now type:
-<div class="highlight"><pre><span></span><code>mkdocs serve
+<div class="highlight"><pre><span></span><code>mkdocs serve -f mkdocs-community.yml
 </code></pre></div>
 Your documentation will be built on  http://127.0.0.1:8000. Open this URL in your browser to see a preview of the documentation. The URL is given in the terminal when running the <code>mkdocs serve</code> command. Make sure you keep the command running so as to see live updates on saving your modifications.</p>
 <h2 id="preview-of-the-documentation">Preview of the documentation</h2>
-<p>When a pull request is opened or updated, GitHub will automatically build a preview of the documentation that includes the proposed changes. In the pull request, you will see the link to the preview appear in this fashion:</p>
+<p>When a pull request is opened or updated, GitHub will automatically build a preview of the documentation that includes the proposed changes. This can be used instead of local updates by setting your pull request as a draft for example.</p>
+<p>In the pull request, you will see the link to the preview appear in this fashion:</p>
 <p><img alt="PRpreview" src="../../assets/site-preview-PR.png" /></p>
 <details class="info" open="open">
 <summary>Info</summary>

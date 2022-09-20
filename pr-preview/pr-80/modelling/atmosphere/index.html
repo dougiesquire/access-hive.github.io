@@ -13,7 +13,7 @@
     
     
       
-        <title>Submit changes to GitHub - ACCESS Community Hub</title>
+        <title>Atmosphere - ACCESS Community Hub</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#submit-changes-to-github" class="md-skip">
+        <a href="#atmospheric-modelling" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Submit changes to GitHub
+              Atmosphere
             
           </span>
         </div>
@@ -130,6 +130,39 @@
       </form>
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
       <div class="md-header__source">
@@ -171,13 +204,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../modelling/ocean_seaice/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Modelling
       </a>
     </li>
@@ -264,7 +299,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../how_to_contribute/" class="md-tabs__link">
+      <a href="../../help/" class="md-tabs__link">
         How to contribute
       </a>
     </li>
@@ -278,7 +313,7 @@
 
   <li class="md-tabs__item">
     <a href="../../ACCESS-NRI/index.html" class="md-tabs__link">
-      ACCESS-NRI
+      Go to ACCESS-NRI Hub
     </a>
   </li>
 
@@ -382,24 +417,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
         
           
-        
-          
-        
-          
-        
-          
-        
+            
           
         
           
@@ -408,10 +439,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2">
-          Modelling
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Modelling</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Modelling" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -421,13 +458,47 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Coupled models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Coupled models" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Coupled models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
               
   
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/ocean_seaice/" class="md-nav__link">
-        Ocean/Sea-Ice
+      <a href="../global_coupled/" class="md-nav__link">
+        Global models
       </a>
     </li>
   
@@ -440,9 +511,136 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/access_coupled/" class="md-nav__link">
-        ACCESS Coupled
+      <a href="../regional_coupled/" class="md-nav__link">
+        Regional models
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Model components
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Model components" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Model components
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Atmosphere
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Atmosphere
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#um" class="md-nav__link">
+    UM
+  </a>
+  
+    <nav class="md-nav" aria-label="UM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-information" class="md-nav__link">
+    Getting started information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -454,21 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/access_seasonal/" class="md-nav__link">
-        ACCESS Seasonal
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelling/land/" class="md-nav__link">
+      <a href="../land/" class="md-nav__link">
         Land
       </a>
     </li>
@@ -482,8 +666,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/regional_atmosphere/" class="md-nav__link">
-        Regional Atmosphere
+      <a href="../ocean_seaice/" class="md-nav__link">
+        Ocean/Sea-Ice
       </a>
     </li>
   
@@ -496,23 +680,16 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modelling/regional_ocean/" class="md-nav__link">
-        Regional Ocean
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../modelling/biogeochemistry/" class="md-nav__link">
+      <a href="../biogeochemistry/" class="md-nav__link">
         Biogeochemistry
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1112,6 +1289,8 @@
       
         
           
+            
+          
         
           
         
@@ -1121,10 +1300,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7">
-          How to contribute
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../help/">How to contribute</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="How to contribute" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
@@ -1134,18 +1319,6 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how_to_contribute/" class="md-nav__link">
-        How to contribute
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -1153,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contribution_setup/" class="md-nav__link">
+      <a href="../../help/contribution_setup/" class="md-nav__link">
         Setup
       </a>
     </li>
@@ -1167,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modify_documentation/" class="md-nav__link">
+      <a href="../../help/modify_documentation/" class="md-nav__link">
         Modify the documentation
       </a>
     </li>
@@ -1181,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../change_navigation/" class="md-nav__link">
+      <a href="../../help/change_navigation/" class="md-nav__link">
         Change the navigation
       </a>
     </li>
@@ -1204,7 +1377,7 @@
   
     <li class="md-nav__item">
       <a href="../../ACCESS-NRI/index.html" class="md-nav__link">
-        ACCESS-NRI
+        Go to ACCESS-NRI Hub
       </a>
     </li>
   
@@ -1237,37 +1410,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-an-issue" class="md-nav__link">
-    Create an Issue
+  <a href="#um" class="md-nav__link">
+    UM
+  </a>
+  
+    <nav class="md-nav" aria-label="UM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-information" class="md-nav__link">
+    Getting started information
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-branch-from-your-issue" class="md-nav__link">
-    Create a branch from your issue
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#clone-the-repository-to-your-computer" class="md-nav__link">
-    Clone the repository to your computer
+        
+          <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-local-branch-to-follow-the-remote-branch" class="md-nav__link">
-    Create a local branch to follow the remote branch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#submit-your-changes" class="md-nav__link">
-    Submit your changes
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1285,44 +1457,23 @@
                 
                   
 
-  <a href="https://github.com/ACCESS-Hub/ACCESS-Hub/edit/main/docs/help/submit_changes_to_github.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/ACCESS-Hub/ACCESS-Hub/edit/main/docs/modelling/atmosphere.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="submit-changes-to-github">Submit changes to GitHub</h1>
-<p>This is a general explanation on how to contribute to a project hosted on GitHub. Remember, some projects may have set up some special rules which you will need to follow.</p>
-<details class="note" open="open">
-<summary>Note</summary>
-<p>Some editors can connect to GitHub and enable you to perform some of these steps directly from the editor. Feel free to do so instead of following the indications below.</p>
-</details>
-<h2 id="create-an-issue">Create an Issue</h2>
-<p>For all additions or modifications to a repository on GitHub, it is recommended to start by opening an Issue in the GitHub repository. After creation, please <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users">assign the Issue to yourself in the right-hand side panel</a> if you intend on working on the issue.</p>
-<h2 id="create-a-branch-from-your-issue">Create a branch from your issue</h2>
-<p>On GitHub navigate to your issue page. In the right-hand side panel, choose to create a branch for your issue. Make sure to follow the branch naming rules set by the repository. In general, you will be asked to reference the issue number in the branch name.</p>
-<h2 id="clone-the-repository-to-your-computer">Clone the repository to your computer</h2>
-<p>You need to create a local copy of the repository for you to work on. Generally, this is done with:</p>
-<div class="highlight"><pre><span></span><code>git clone &lt;repo_url&gt;
-</code></pre></div>
-<p>where <code>&lt;repo_url&gt;</code> is the path to the repository. It can be the HTTPS path or a SSH path depending on your setup. We recommend setting up SSH keys and use the SSH path for the repository.</p>
-<h2 id="create-a-local-branch-to-follow-the-remote-branch">Create a local branch to follow the remote branch</h2>
-<p>On your local computer, in the clone repository, make sure your local copy is up to date with GitHub:
-<div class="highlight"><pre><span></span><code>git pull
-</code></pre></div>
-Then, create a local branch that follows the remote branch and checkout the new branch:
-<div class="highlight"><pre><span></span><code>git checkout &lt;branch_name&gt;
-</code></pre></div></p>
-<p>You can then start modifying the documentation files. </p>
-<h2 id="submit-your-changes">Submit your changes</h2>
-<p>Once you are satisfied with your modifications, you will need to:</p>
+<h1 id="atmospheric-modelling">Atmospheric modelling</h1>
+<h2 id="um"><a href="https://code.metoffice.gov.uk/doc/um/latest/">UM</a></h2>
+<p><a href="https://code.metoffice.gov.uk/doc/um/latest/">The Unified Model (UM)</a> is the atmospheric component used in the ACCESS coupled models. This model is developed by the <a href="https://code.metoffice.gov.uk">UK Met Office</a> and other partner organisations around the world.</p>
+<h3 id="getting-started-information">Getting started information</h3>
+<p><a href="http://climate-cms.wikis.unsw.edu.au/Unified_Model">On this page</a>, you will find information on how to gain access to the UM model and start using the model. You will also find links to various configurations and experiments you can use as a basis to design your experiment.</p>
+<h3 id="configurations">Configurations</h3>
+<h3 id="experiments">Experiments</h3>
+<p>Some experiments already run with the UM are listed on:</p>
 <ul>
-<li>commit your changes locally on your branch</li>
-<li>push your branch to GitHub</li>
-<li>on GitHub, open a pull request between the <code>main</code> branch and your branch.</li>
+<li><a href="http://climate-cms.wikis.unsw.edu.au/UM_Experiments">CLEX CMS wiki</a></li>
 </ul>
-<p>In the pull request description, make sure to add the text <code>Closes #X</code> where X is the Issue number associated with your modifications. This creates cross-references between the Issue and pull request, and links them so that the Issue is automatically closed when the pull request is accepted. Then ask for <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users">a review using the Reviewer menu on the right-hand side panel</a>.</p>
-<p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESS-Hub site. </p>
 
   <hr>
 <div class="md-source-file">
