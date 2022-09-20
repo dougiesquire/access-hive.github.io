@@ -37,11 +37,25 @@
       
     
     
+      <link rel="stylesheet" href="../css/access-nri.css">
+    
       <link rel="stylesheet" href="../css/fontello.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-2T6SQEH2CX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-2T6SQEH2CX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-2T6SQEH2CX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -554,6 +568,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -574,20 +594,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="land/" class="md-nav__link">
-        Land
-      </a>
-    </li>
-  
-
             
           
             
@@ -626,6 +632,62 @@
     <li class="md-nav__item">
       <a href="atmosphere/" class="md-nav__link">
         Atmosphere
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="land/" class="md-nav__link">
+        Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bgc_land/" class="md-nav__link">
+        Biogeochemistry Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bgc_ocean/" class="md-nav__link">
+        Biogeochemistry Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aerosols_atmospheric_chemistry/" class="md-nav__link">
+        Aerosols and Atmospheric Chemistry
       </a>
     </li>
   
@@ -874,7 +936,50 @@
 
 
 <h1 id="model-components">Model Components</h1>
-<p>This is a placeholder page when the content is not yet ready</p>
+<p>ACCESS components represent different chemical, physical or biological parts of the Earth System.</p>
+<table class="center">
+  <tr>
+     <td class="logo_cell"><a href="ocean" title="Ocean"><img class="logo_component" src="../assets/component-logos/ACCESS-icon-OCEAN-300x300.png"  alt="Ocean"></a></td>
+     <td class="logo_cell"><a href="sea-ice" title="Sea Ice"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-SEA-ICE-300x300.png" alt="Sea Ice"></a></td>
+     <td class="logo_cell"><a href="atmosphere" title="Atmosphere"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-ATMOSPHERE-300x300.png" alt="Atmosphere"></a></td>
+   </tr> 
+  <tr>
+     <td class="logo_cell"><a href="ocean" title="Ocean">Ocean</a></td>
+     <td class="logo_cell"><a href="sea-ice" title="Sea Ice">Sea-Ice</a></td>
+     <td class="logo_cell"><a href="atmosphere" title="Atmosphere">Atmosphere</a></td>
+   </tr> 
+   <tr>
+      <td class="logo_cell"><a href="land" title="Land"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-LAND-SURFACE-300x300.png" alt="Land"
+      ></a></td>
+      <td class="logo_cell"><a href="bgc_land" title="Biogeochemistry-Land"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-BGC-LAND-300x300.png" alt="Biogeochemistry-Land" ></a></td>
+      <td class="logo_cell"><a href="bgc_ocean" title="Biogeochemistry-Ocean"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-BGC-OCEAN-300x300.png" alt="Biogeochemistry-Ocean" ></a></td>
+   </tr>
+   <tr>
+      <td class="logo_cell"><a href="land" title="Land">Land</a></td>
+      <td class="logo_cell"><a href="bgc_land" title="Biogeochemistry-Land">Biogeochemistry Land</a></td>
+      <td class="logo_cell"><a href="bgc_ocean" title="Biogeochemistry-Ocean">Biogeochemistry Ocean</a></td>
+   </tr>
+   <tr>
+      <td class="logo_cell"><a href="aerosols_atmospheric_chemistry" title="Aerosols"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-AEROSOLS-300x300.png" alt="Aerosols" ></a></td>
+      <td class="logo_cell"><a href="aerosols_atmospheric_chemistry" title="Atmospheric Chemistry"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-ATMOSPHERIC-CHEMISTRY-300x300.png" alt="Chemistry-Atmosphere" ></a></td>
+      <td class="logo_cell"><a href="coupler" title="Coupler"><img class="logo_component"src="../assets/component-logos/ACCESS-icon-COUPLER-300x300.png" alt="Coupler" ></a></td>
+    </tr>
+   <tr>
+      <td class="logo_cell"><a href="aerosols_atmospheric_chemistry" title="Aerosols">Aerosols</a></td>
+      <td class="logo_cell"><a href="aerosols_atmospheric_chemistry" title="Atmospheric Chemistry">Atmospheric Chemistry</a></td>
+      <td class="logo_cell"><a href="coupler" title="Coupler">Coupler</a></td>
+    </tr>
+</table>
+
+<p>Most model components have originated from collaborations with international research groups. These include:</p>
+<ul>
+<li><a href="https://www.metoffice.gov.uk/">UK Met Office</a> (UM atmospheric model)</li>
+<li><a href="https://www.gfdl.noaa.gov/">NOAA/ Geophysical Fluid Dynamics Laboratory (GFDL)</a> (for the modular ocean model component MOM)</li>
+<li><a href="https://www.lanl.gov/">Los Alamos National Laboratory (LANL)</a> (for the CICE sea ice model component)</li>
+<li><a href="https://cerfacs.fr/en/">Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique (CERFACS)</a> (for the atmosphere-ocean-ice OASIS3-MCT coupler)</li>
+<li><a href="https://www.ukca.ac.uk/">United Kingdom Chemistry and Aerosols (UKCA)</a> (for the atmospheric composition components)</li>
+<li><a href="https://www.csiro.au/">CSIRO</a> <a href="https://www.climateextremes.org.au/">CLEX</a>, <a href="http://www.cosima.org.au/">COSIMA</a> (for CABLE, CASA and WOMBAT models, which are developed in Australia)</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
@@ -891,6 +996,8 @@
   </small>
 </div>
 
+
+  
 
 
 

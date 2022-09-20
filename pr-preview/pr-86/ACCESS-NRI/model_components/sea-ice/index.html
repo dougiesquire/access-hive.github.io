@@ -37,11 +37,25 @@
       
     
     
+      <link rel="stylesheet" href="../../css/access-nri.css">
+    
       <link rel="stylesheet" href="../../css/fontello.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-2T6SQEH2CX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-2T6SQEH2CX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-2T6SQEH2CX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -66,6 +80,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#sea-ice-model-component" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -549,6 +568,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -577,20 +602,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../land/" class="md-nav__link">
-        Land
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../ocean/" class="md-nav__link">
         Ocean
       </a>
@@ -611,10 +622,43 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sea Ice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Sea Ice
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cice" class="md-nav__link">
+    CICE
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -629,6 +673,62 @@
     <li class="md-nav__item">
       <a href="../atmosphere/" class="md-nav__link">
         Atmosphere
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../land/" class="md-nav__link">
+        Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bgc_land/" class="md-nav__link">
+        Biogeochemistry Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bgc_ocean/" class="md-nav__link">
+        Biogeochemistry Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aerosols_atmospheric_chemistry/" class="md-nav__link">
+        Aerosols and Atmospheric Chemistry
       </a>
     </li>
   
@@ -855,6 +955,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cice" class="md-nav__link">
+    CICE
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -874,9 +991,13 @@
   </a>
 
 
-  <h1>Sea Ice</h1>
-
-<p>This is a placeholder page when the content is not yet ready</p>
+<h1 id="sea-ice-model-component">Sea-Ice Model Component</h1>
+<p><img align="right" alt="Sea-Ice Component Logo" src="../../assets/component-logos/ACCESS-icon-SEA-ICE-300x300.png" width="300" /></p>
+<h2 id="cice">CICE</h2>
+<p>CICE is a software package developed by researchers at <a href="https://www.lanl.gov/">Los Alamos National Laboratory team</a> with funding from the US Department of Energy. CICE models the dynamics and thermodynamics of ice. </p>
+<p>The software program is managed by the <a href="https://github.com/CICE-Consortium/About-Us/wiki">CICE Consortium</a>, an international group of institutions formed to maintain and develop CICE in the public domain.</p>
+<p><a href="https://github.com/CICE-Consortium/CICE-svn-trunk/wiki">CICE5</a> is the version currently used in ACCESS.</p>
+<p><a href="https://github.com/CICE-Consortium/CICE/wiki">CICE6</a> is under development.</p>
 
   <hr>
 <div class="md-source-file">
@@ -893,6 +1014,8 @@
   </small>
 </div>
 
+
+  
 
 
 
