@@ -37,6 +37,8 @@
       
     
     
+      <link rel="stylesheet" href="../../css/access-nri.css">
+    
       <link rel="stylesheet" href="../../css/fontello.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -66,6 +68,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#ocean-model-component" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -549,6 +556,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -575,20 +588,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../land/" class="md-nav__link">
-        Land
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -597,10 +596,63 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ocean
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Ocean
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-modular-ocean-model-mom" class="md-nav__link">
+    The Modular Ocean Model (MOM)
+  </a>
+  
+    <nav class="md-nav" aria-label="The Modular Ocean Model (MOM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mom5" class="md-nav__link">
+    MOM5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mom6" class="md-nav__link">
+    MOM6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -629,6 +681,62 @@
     <li class="md-nav__item">
       <a href="../atmosphere/" class="md-nav__link">
         Atmosphere
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../land/" class="md-nav__link">
+        Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bgc_land/" class="md-nav__link">
+        Biogeochemistry Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bgc_ocean/" class="md-nav__link">
+        Biogeochemistry Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aerosols_atmospheric_chemistry/" class="md-nav__link">
+        Aerosols and Atmospheric Chemistry
       </a>
     </li>
   
@@ -855,6 +963,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-modular-ocean-model-mom" class="md-nav__link">
+    The Modular Ocean Model (MOM)
+  </a>
+  
+    <nav class="md-nav" aria-label="The Modular Ocean Model (MOM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mom5" class="md-nav__link">
+    MOM5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mom6" class="md-nav__link">
+    MOM6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -874,9 +1019,14 @@
   </a>
 
 
-  <h1>Ocean</h1>
-
-<p>This is a placeholder page when the content is not yet ready</p>
+<h1 id="ocean-model-component">Ocean Model Component</h1>
+<p><img align="right" alt="Ocean Component Logo" src="../../assets/component-logos/ACCESS-icon-OCEAN-300x300.png" width="300" /></p>
+<h2 id="the-modular-ocean-model-mom"><a href="https://mom-ocean.github.io/">The Modular Ocean Model (MOM)</a></h2>
+<p>The Modular Ocean Model (MOM) is one of the ocean components of the ACCESS climate model system. MOM is a tool for studying the global ocean climate system, as well as capabilities for regional and coastal applications. </p>
+<h3 id="mom5">MOM5</h3>
+<p>The current version of MOM used within ACCESS is MOM5. See code on <a href="https://github.com/mom-ocean/MOM5">GitHub</a></p>
+<h3 id="mom6">MOM6</h3>
+<p>The next version, MOM6, is an open source component developed <a href="https://www.gfdl.noaa.gov/mom-ocean-model/">by a consortium of scientists</a> across several government agencies and academic institutions with critical contributions provided by researchers worldwide.</p>
 
   <hr>
 <div class="md-source-file">
