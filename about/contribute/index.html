@@ -1617,8 +1617,8 @@
 <p>The <code>main</code> branch of the repository is protected and nobody can write to it directly. You will need to choose either to create a new branch and open a pull request if you are a member of ACCESS-Hive organisation, or to create a fork on your personal account and open a pull request if you are not a member of ACCESS-Hive organisation.
 <img alt="BranchAndPR" src="../../assets/branch-and-pr.png" /></p>
 </details>
-<p>When creating the pull request, make sure to add the text: <code>Closes #X</code> to the description, where X is the issue number related to this change. This will link the pull request and the issue together and the issue will be automatically closed once the pull request is accepted. The pull request will also automatically build <a href="#preview-of-the-documentation">a preview of the documentation with your proposed changes</a>.</p>
-<p>Then ask for a review by tagging the <code>@ACCESS-Hive/reviewers</code> team in a comment.</p>
+<p>When creating the pull request, make sure to add the text: <code>Closes #X</code> to the description, where X is the issue number related to this change. This will link the pull request and the issue together and the issue will be automatically closed once the pull request is accepted. </p>
+<p>Then ask for a review by tagging the <code>@ACCESS-Hive/reviewers</code> team in a comment. Once the pull request is being reviewed, the reviewer will trigger <a href="#preview-of-the-documentation">a preview of the documentation with your proposed changes</a>.</p>
 <p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESS-Hive site. </p>
 <details class="note" open="open">
 <summary>Headers and table of content</summary>
@@ -1658,7 +1658,7 @@
 </code></pre></div>
 Your documentation will be built on http://127.0.0.1:8000. Open this URL in your browser to see a preview of the documentation. The URL is given in the terminal when running the <code>mkdocs serve</code> command. Make sure you keep the command running so as to see live updates on saving your modifications.</p>
 <h3 id="preview-of-the-documentation">Preview of the documentation</h3>
-<p>When a pull request is opened or updated, GitHub will automatically build a preview of the documentation that includes the proposed changes. This can be used instead of local updates by setting your pull request as a draft for example.</p>
+<p>When a pull request is labeled during the review process, GitHub will automatically build a preview of the documentation that includes the proposed changes. The preview will not build until a reviewer has labeled the pull request as safe to test.</p>
 <p>In the pull request, you will see the link to the preview appear in this fashion:</p>
 <p><img alt="PRpreview" src="../../assets/site-preview-PR.png" /></p>
 <details class="info" open="open">
@@ -1718,11 +1718,11 @@ will create this navigation:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 5, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 5, 2022</span>
       
     
   </small>
