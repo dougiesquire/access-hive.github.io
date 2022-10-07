@@ -1,0 +1,1877 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/ACCESSLogoJustPlanet.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>FCM - ACCESS Hive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/access-nri.css">
+    
+      <link rel="stylesheet" href="../../css/fontello.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-2T6SQEH2CX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-2T6SQEH2CX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-2T6SQEH2CX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="light" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fcm" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ACCESS Hive" class="md-header__button md-logo" aria-label="ACCESS Hive" data-md-component="logo">
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ACCESS Hive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FCM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ACCESS-Hive/ACCESS-Hive" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ACCESS-Hive
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        ACCESS Hive
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../configurations/" class="md-tabs__link">
+        Configurations
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../model_components/" class="md-tabs__link">
+        Model Components
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../model_evaluation/" class="md-tabs__link">
+        Model Evaluation & Data
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Documentation & Training
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../working_groups/" class="md-tabs__link">
+        Working Groups
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../events/" class="md-tabs__link">
+        Events
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine class according to configuration -->
+
+
+  
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="../.."
+      title="ACCESS Hive"
+      class="md-nav__button md-logo"
+      aria-label="ACCESS Hive"
+      data-md-component="logo"
+    >
+      
+  <img src="../../assets/ACCESSLogoJustPlanet.png" alt="logo">
+
+    </a>
+    ACCESS Hive
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ACCESS-Hive/ACCESS-Hive" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ACCESS-Hive
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">ACCESS Hive</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="ACCESS Hive" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          ACCESS Hive
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../License/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../configurations/">Configurations</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Configurations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Configurations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/access-esm/" class="md-nav__link">
+        ACCESS-ESM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/access-cm/" class="md-nav__link">
+        ACCESS-CM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/access-am/" class="md-nav__link">
+        ACCESS-AM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/access-om/" class="md-nav__link">
+        ACCESS-OM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/access-s/" class="md-nav__link">
+        ACCESS-S
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../model_components/">Model Components</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Model Components" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Model Components
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/atmosphere/" class="md-nav__link">
+        Atmosphere
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/land/" class="md-nav__link">
+        Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/ocean/" class="md-nav__link">
+        Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/sea-ice/" class="md-nav__link">
+        Sea Ice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/aerosols_atmospheric_chemistry/" class="md-nav__link">
+        Aerosols and Atmospheric Chemistry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/bgc_land/" class="md-nav__link">
+        Biogeochemistry Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/bgc_ocean/" class="md-nav__link">
+        Biogeochemistry Ocean
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_components/coupler/" class="md-nav__link">
+        Coupler
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../model_evaluation/">Model Evaluation & Data</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Model Evaluation & Data" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Model Evaluation & Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation/atmosphere/" class="md-nav__link">
+        Atmosphere
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation/land/" class="md-nav__link">
+        Land
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation/ocean_seaice/" class="md-nav__link">
+        Ocean Sea-ice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation/data_processing/" class="md-nav__link">
+        Data processing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation/data_catalogs/" class="md-nav__link">
+        Data catalogs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Documentation & Training</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Documentation & Training" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation & Training
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../policies/" class="md-nav__link">
+        Policies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical/" class="md-nav__link">
+        Technical
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          Unified Model
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unified Model" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unified Model
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FCM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FCM
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-fcm" class="md-nav__link">
+    Using FCM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-subversion" class="md-nav__link">
+    FCM and Subversion
+  </a>
+  
+    <nav class="md-nav" aria-label="FCM and Subversion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repository-keywords" class="md-nav__link">
+    Repository Keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-keywords" class="md-nav__link">
+    Version Keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-practices-for-branching" class="md-nav__link">
+    Working Practices for Branching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-branches" class="md-nav__link">
+    Merging Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-make" class="md-nav__link">
+    FCM Make
+  </a>
+  
+    <nav class="md-nav" aria-label="FCM Make">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    Extract
+  </a>
+  
+    <nav class="md-nav" aria-label="Extract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merging-branches_1" class="md-nav__link">
+    Merging Branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-copy-branches" class="md-nav__link">
+    Working Copy Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror" class="md-nav__link">
+    Mirror
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocess" class="md-nav__link">
+    Preprocess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-rose" class="md-nav__link">
+    FCM and Rose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-the-um" class="md-nav__link">
+    FCM and the UM
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../working_groups/">Working Groups</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Working Groups" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Working Groups
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../events/">Events</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Events" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Events
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/conferences/" class="md-nav__link">
+        Conferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/workshops/" class="md-nav__link">
+        Workshops
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../about/">About</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/contribute/" class="md-nav__link">
+        How to Contribute
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+
+  <div style="margin-left:10px; margin-top:20px; margin-right:5px">
+    <i class="icon-supported" title="Supported by ACCESS-NRI"></i>
+    <a>Supported</a>
+  </div>
+  <div style="margin-left:10px; margin-right:5px; margin-top:5px">
+    <i class="icon-recommended" title="Recommended by ACCESS-NRI"></i>
+    <a>Recommended</a>
+  </div>
+  <div style="margin-left:10px; margin-right:5px; margin-top:5px; margin-bottom:5px"> 
+    <i class="icon-community" title="Community contribution"></i> 
+    <a>Community</a>
+  </div>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-fcm" class="md-nav__link">
+    Using FCM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-subversion" class="md-nav__link">
+    FCM and Subversion
+  </a>
+  
+    <nav class="md-nav" aria-label="FCM and Subversion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repository-keywords" class="md-nav__link">
+    Repository Keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-keywords" class="md-nav__link">
+    Version Keywords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-practices-for-branching" class="md-nav__link">
+    Working Practices for Branching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-branches" class="md-nav__link">
+    Merging Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-make" class="md-nav__link">
+    FCM Make
+  </a>
+  
+    <nav class="md-nav" aria-label="FCM Make">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    Extract
+  </a>
+  
+    <nav class="md-nav" aria-label="Extract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merging-branches_1" class="md-nav__link">
+    Merging Branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-copy-branches" class="md-nav__link">
+    Working Copy Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror" class="md-nav__link">
+    Mirror
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preprocess" class="md-nav__link">
+    Preprocess
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-rose" class="md-nav__link">
+    FCM and Rose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fcm-and-the-um" class="md-nav__link">
+    FCM and the UM
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/ACCESS-Hive/ACCESS-Hive/edit/main/docs/docs_and_training/FCM.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="fcm">FCM</h1>
+<p><a href="https://github.com/metomi/fcm">FCM</a> is the build system used at the UK Met Office for interacting with source code repositories and building weather and climate models.</p>
+<p>FCM is tightly integrated with Subversion and Fortran, and is built specifically for Met Office working practices. It can combine several branches together at build time and automatically find dependencies between Fortran modules.</p>
+<p>A new build system called <a href="https://github.com/metomi/fab">FAB</a> is currently in development at the Met Office, with the intention of it eventually replacing FCM.</p>
+<h2 id="using-fcm">Using FCM</h2>
+<p>FCM can be used on OOD or Gadi by loading its module:
+<div class="highlight"><pre><span></span><code>module use /g/data/access/modules
+module load fcm
+</code></pre></div></p>
+<p><code>fcm --help</code> will show the available commands. Several mirror standard Subversion commands but add special shortcuts to Met Office repositories, the <code>branch-</code> commands are helpful for following UM development working practices, and <code>fcm make</code> is used when running builds.</p>
+<p><a href="http://metomi.github.io/fcm/doc/">FCM Documentation</a></p>
+<h2 id="fcm-and-subversion">FCM and Subversion</h2>
+<p>Subversion is a version control system used for source code, much like Git. The most commonly used commands are:</p>
+<ul>
+<li><code>fcm checkout URL</code> - download source from URL</li>
+<li><code>fcm update</code> - download any new changes from the server</li>
+<li><code>fcm commit</code> - upload any changes back to the server</li>
+<li><code>fcm revert</code> - undo any local uncommitted changes</li>
+<li><code>fcm add</code>, <code>fcm remove</code> - add or remove files from version control</li>
+</ul>
+<p>See <code>svn --help</code> for the full list of subversion commands. It's best to call the commands using <code>fcm</code> rather than <code>svn</code> when working with Met Office repositories because that enables keywords as well as some Met Office specific defaults.</p>
+<p><a href="https://svnbook.red-bean.com/en/1.7/svn.intro.quickstart.html">Subversion Quickstart Tutorial</a><br />
+<a href="http://metomi.github.io/fcm/doc/user_guide/code_management.html">FCM Code Management</a></p>
+<h3 id="repository-keywords">Repository Keywords</h3>
+<p>Plain Subversion refers to repositories using URLs, e.g. <code>https://code.metoffice.gov.uk/svn/um/main/trunk@107106</code> is the URL for the UM trunk at version 12.2. FCM provides keywords to simplify these URLS somewhat, the equivalent FCM keyword for the same version is <code>fcm:um.x_tr@vn12.2</code>.</p>
+<p>You can see the full list of available keywords with <code>fcm keyword-print</code>, use the name in square brackets with a <code>fcm:</code> prefix:
+<div class="highlight"><pre><span></span><code>$ fcm keyword-print
+location{primary}[admin] = file:///g/data/access/access-svn/UM_Admin
+location{primary}[ancil.x] = https://code.metoffice.gov.uk/svn/ancil/main
+location{primary}[ancil.xm] = https://metoffice-mirror/svn/ancil/main
+location{primary}[um] = file:///g/data/access/access-svn/um
+location{primary}[um.x] = https://code.metoffice.gov.uk/svn/um/main
+location{primary}[um.xm] = https://metoffice-mirror/svn/um/main
+# ...
+</code></pre></div></p>
+<p>Some of the keywords have extensions like <code>.x</code> and <code>.xm</code>:</p>
+<ul>
+<li>No extension <code>fcm:um</code> - Pre-MOSRS repository, for versions before UM 10</li>
+<li><code>.x</code> extension <code>fcm:um.x</code> - MOSRS, to download from here you will need to enter a password</li>
+<li><code>.xm</code> extension <code>fcm:um.xm</code> - Local MOSRS mirror. Read only, but you don't need a password so can be used from suites.</li>
+</ul>
+<p>Normally the <code>.xm</code> keyword gets used inside a suite, while you would manually check out the <code>.x</code> keyword in order to edit a branch.</p>
+<p>The <code>.xm</code> mirrors get updated every 5 minutes or so from the main MOSRS repositories. If you're actively developing changes it may take a moment for the source checked out by your suite to get updated, you may wish to use a <a href="#working-copy-branches">working copy branch</a>.</p>
+<p>A further suffix of <code>_tr</code> or <code>_br</code> refers to the <code>/trunk</code> and <code>/branches</code> directories of the repository, so <code>fcm:um.x_tr</code> is the MOSRS UM repository's trunk.</p>
+<p>If you wish to use your own keywords you can add them to the file <code>~/.metomi/fcm/keyword.cfg</code>.</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/annex_cfg.html#keyword">FCM Keyword Docs</a></p>
+<h3 id="version-keywords">Version Keywords</h3>
+<p>As well as keywords for repositories FCM supports keywords for specific releases, e.g. version 12.2 of the UM. You can see the available releases for a repository with <code>fcm keyword-print REPO</code>, e.g.
+<div class="highlight"><pre><span></span><code>$ fcm keyword-print fcm:um.xm
+location{primary}[um.xm] = https://metoffice-mirror/svn/um/main
+revision[um.xm:vn10.0] = 233
+revision[um.xm:vn10.1] = 2765
+revision[um.xm:vn10.2] = 7660
+# ...
+</code></pre></div>
+If you don't see any results make sure you've used <code>mosrs-auth</code> to save your MOSRS password in gpg-agent.</p>
+<p>Version keywords can be set either in the repository itself or in a keywords.cfg file.</p>
+<h3 id="working-practices-for-branching">Working Practices for Branching</h3>
+<p>FCM includes special commands for working with branches that you should use when working with Met Office repositories. Make a new branch from a specific release with (remember to use <code>.x</code> here, not <code>.xm</code>)
+<div class="highlight"><pre><span></span><code>fcm branch-create mybranch fcm:um.x_tr@vn12.2
+</code></pre></div>
+This branch will then be available for checkout as <code>fcm:um.x/branches/dev/USER/vn12.2_mybranch</code>. If your branch affects a MOSRS ticket you should use the <code>--ticket</code> flag when creating the branch as well.</p>
+<p>The general process for creating a branch in the UM is:</p>
+<ol>
+<li>Inform the <a href="https://code.metoffice.gov.uk/trac/um/browser/main/trunk/CodeOwners.txt">code owners</a> for the section you intend to modify (contact info available in the <a href="https://code.metoffice.gov.uk/trac/home/wiki/UserList">MOSRS user list</a>) and get their agreement for the work</li>
+<li>Open a new ticket in MOSRS, assigning it to yourself and setting the description and metadata fields. <code>collab:ORG</code> should be added to the keywords to indicate which partner is adding the change, e.g. <code>collab:bom</code>.</li>
+<li>Create a branch from the most recent model release and your ticket number, e.g. <code>fcm branch-create --ticket 1234 new_cloud_scheme fcm:um.x_tr@vn12.2</code>. Try to use a descriptive name for the branch.</li>
+<li>Add a link to your branch in the ticket description</li>
+<li>Check out your branch and make any changes, following the <a href="https://code.metoffice.gov.uk/doc/um/latest/umdp.html#003">UMDP3 style guide</a></li>
+<li>Commit your changes back to the repository with <code>fcm commit</code></li>
+<li>Run <code>rose stem --group=developer</code> from within the working copy to test your changes locally</li>
+<li>Complete the <a href="https://code.metoffice.gov.uk/trac/um/wiki/working_practices#Checkpoint:Whatdocumentationandapprovalsareneeded">required documentation</a> for the change and request a scientific and technical review</li>
+</ol>
+<p>Other systems may have slightly different working practices, check before you start developing a change.</p>
+<p><a href="https://code.metoffice.gov.uk/trac/um/wiki/working_practices">UM Development Working Practices</a><br />
+<a href="http://metomi.github.io/fcm/doc/user_guide/working_practices.html">FCM Recommended Practices</a></p>
+<h3 id="merging-branches">Merging Branches</h3>
+<p>FCM provides its own implementation of <code>svn merge</code> for combining branches together.</p>
+<p>To merge a branch into a working copy run <code>fcm merge SOURCE</code>, e.g. 
+<div class="highlight"><pre><span></span><code>fcm merge branches/dev/scottwales/vn12.2_new_cloud_scheme
+</code></pre></div></p>
+<p>The merge works by finding a common ancestor to both the working copy and the source branch, then applying any changes made to the source branch since that common ancestor to the working copy. If both the source branch and the working copy have changed the same section of a file the merge command will print a message with options of how to resolve the conflict. You can choose to use the working copy version, the source version, or manually edit the file.</p>
+<p>After the merge has completed use <code>fcm commit</code> to commit the merged code back to the repository.</p>
+<p><a href="https://metomi.github.io/fcm/doc/user_guide/command_ref.html#fcm-merge">FCM Merge Docs</a><br />
+<a href="https://svnbook.red-bean.com/en/1.7/svn.tour.cycle.html#svn.tour.cycle.resolve">SVN Merge Conflicts</a></p>
+<h2 id="fcm-make">FCM Make</h2>
+<p><code>fcm make</code> is FCM's build system. It uses the configuration file <code>fcm-make.cfg</code>. FCM make will</p>
+<ol>
+<li>Download source code (potentially from multiple repositories)</li>
+<li>Merge together multiple branches</li>
+<li>Optionally mirror source code to a HPC node</li>
+<li>Preprocess source files</li>
+<li>Identify dependencies between Fortran modules</li>
+<li>Compile target programs</li>
+</ol>
+<p>The mirror step is optional, it used to be required at NCI so some suites will still use it. In a Rose suite a <code>fcm_make2</code> task indicates a mirror step is being used, see <a href="#fcm-and-rose">FCM and Rose</a>.</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/make.html">FCM Make Docs</a><br />
+<a href="http://metomi.github.io/fcm/doc/user_guide/annex_cfg.html#make">fcm-make.cfg Docs</a></p>
+<h3 id="extract">Extract</h3>
+<div class="highlight"><pre><span></span><code>steps = extract
+
+extract.ns = um
+extract.location[um] = fcm:um_tr@vn12.2
+extract.location{diff}[um] = $um_sources
+</code></pre></div>
+<p>Download model source code. Multiple repositories can be downloaded from by giving a list of 'name-spaces' to <code>extract.ns</code> and a <code>extract.location</code> for each - in the UM this is used for sub-models such as JULES and SOCRATES.</p>
+<p>The extracted code will be put under the <code>extract/</code> directory of the FCM workspace (for a Rose job this will be e.g. <code>~/cylc-run/RUNID/share/fcm_make_um/extract/</code>)</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/make.html#extract">FCM Extract Docs</a></p>
+<h4 id="merging-branches_1">Merging Branches</h4>
+<p>Multiple branches can be added using the <code>extract.location{diff}</code> setting. Branches can either be relative paths in the same repository as <code>extract.location</code>, e.g. <code>branches/dev/scottwales/vn12.2_mybranch</code> or absolute paths either in the repository or on the local file system.</p>
+<p>Branches are merged by comparing the branch against <code>extract.location</code> and applying any differences to the extracted code. If multiple branches change the same file FCM will report an error. This process is different to the <code>svn merge</code> command that might be used within a repository to merge branches.</p>
+<h4 id="working-copy-branches">Working Copy Branches</h4>
+<p>Using an absolute file-system path as a branch lets you build code from a working copy, without needing to commit changes to a repository. This can be helpful when developing changes, as it lets you test the change without committing back to the repository. Take care to regularly <code>fcm commit</code> your changes even so to make sure that changes don't get lost.</p>
+<h3 id="mirror">Mirror</h3>
+<p>The mirror step copies source code from one computer to another. It is useful in cases like at NCI where the compute nodes where you'd like to build the model don't have access to the wider internet to be able to download the source code. This is no longer needed with the on-disk MOSRS mirror in project ki32, however some suites may still use two-stage builds.</p>
+<p>Mirrored files will be put in the <code>extract/</code> directory of the FCM workspace on the target computer.</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/make.html#mirror">FCM Mirror Docs</a></p>
+<h3 id="preprocess">Preprocess</h3>
+<p>The preprocess step runs any <code>*.F90</code> files in the model source code through CPP to resolve any <code>#include</code> or <code>#ifdef</code> lines. It's important for this to be done before scanning dependencies as such dependencies may be affected by pre-processor statements.</p>
+<p>Use of the pre-processor is less common in UM source than it once was, but this will still affect a large number of files. The modern CPP program needs to be run in <code>-traditional</code> mode in order to pre-process Fortran programs, this is included in the default flags used by FCM.</p>
+<p>Preprocessed files will be put in the <code>preprocess/</code> directory of the FCM workspace.</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/make.html#preprocess">FCM Preprocess Docs</a></p>
+<h3 id="build">Build</h3>
+<p>The build step is where the model actually gets built. FCM will first scan the code for <code>MODULE</code> and <code>USE</code> statements to work out any dependencies (a file defining a <code>MODULE</code> must be compiled before any files that <code>USE</code> that module) and then compile all the files needed by the given <code>PROGRAM</code>s. FCM can do this step in parallel if you give it a <code>-j</code> flag, compiling multiple files at the same time.</p>
+<p>Compiler flags are set as <a href="http://metomi.github.io/fcm/doc/user_guide/annex_cfg.html#make.build.prop">properties</a>, e.g.
+<div class="highlight"><pre><span></span><code>build.prop{fc.flags} = -g -O2
+</code></pre></div>
+will set those flags on any Fortran file. Flags may also be set on a specific file or on all files within a directory by putting the file path in square brackets:
+<div class="highlight"><pre><span></span><code># Disable optimisation
+build.prop{fc.flags}[src/control/top_level] = -g -O0
+</code></pre></div>
+This is sometimes used as a work-around for compiler bugs.</p>
+<p>At NCI you don't need to add paths with <code>-I</code> or <code>-L</code> flags provided you have the necessary modules loaded, these will get read from the <code>CPATH</code> and <code>LIBRARY_PATH</code> environment variables defined in the module.</p>
+<p><a href="http://metomi.github.io/fcm/doc/user_guide/make.html#build">FCM Build Docs</a></p>
+<h2 id="fcm-and-rose">FCM and Rose</h2>
+<p>If a Rose task name starts with <code>fcm_make</code> or <code>fcm_make2</code> it will automatically use the <code>fcm_make</code> built-in app. If there are matching <code>fcm_make</code> and <code>fcm_make2</code> tasks in the Cylc configuration the first will be run as an extract &amp; mirror, while the second will be a preprocess &amp; build.</p>
+<p>E.g. the Rose directory has <code>app/fcm_make_um</code> containing a <code>rose-app.conf</code> and <code>file/fcm-make.conf</code> file. If the <code>suite.rc</code> file has <code>fcm_make_um</code> and <code>fcm_make2_um</code> tasks the first will be used to download the source code on the suite host and mirror it to Gadi, while the second will run the build on Gadi's compute node. Both tasks will use the settings from <code>app/fcm_make_um</code>.</p>
+<p><a href="http://metomi.github.io/rose/doc/html/api/built-in/fcm_make.html">Rose fcm_make app</a></p>
+<h2 id="fcm-and-the-um">FCM and the UM</h2>
+<p>The fcm-make.cfg file used in a suite to build the UM will depend on the exact suite but might look like
+<div class="highlight"><pre><span></span><code>use = $prebuild
+
+include = $config_root_path/fcm-make/$platform_config_dir/um-$config_type-$optimisation_level.cfg$config_revision
+
+extract.location{diff}[um] = $um_sources
+extract.location{diff}[shumlib] = $shumlib_sources
+extract.location{diff}[casim] = $casim_sources
+extract.location{diff}[jules] = $jules_sources
+extract.location{diff}[socrates] = $socrates_sources
+</code></pre></div></p>
+<p>The variables used here will be set in rose-app.conf (and potentially the <code>site/nci-gadi.rc</code> file for <code>$platform_config_dir</code>). <code>$config_root_path</code> will normally be the model trunk for the version being compiled.</p>
+<p>The include will end up resolving to something like <a href="https://code.metoffice.gov.uk/trac/um/browser/main/trunk/fcm-make/nci-x86-ifort/um-atmos-safe.cfg"><code>fcm:um_tr/fcm-make/nci-x86-ifort/um-atmos-safe.cfg</code></a>. This file sets site-specific compiler options, then includes <a href="https://code.metoffice.gov.uk/trac/um/browser/main/trunk/fcm-make/inc/um-atmos-common.cfg"><code>fcm:um_tr/fcm-make/inc/um-atmos-common.cfg</code></a> which holds the majority of the build configuration.</p>
+<p>The build job's <code>job.out</code> file can be inspected to see the exact config files being used, e.g.
+<div class="highlight"><pre><span></span><code>[info] config-file=/scratch/hc46/saw562/cylc-run/u-co497/work/19880901T0000Z/fcm_make_um/fcm-make.cfg
+[info] config-file= - file:///g/data/ki32/mosrs/um/main/trunk/fcm-make/nci-x86-ifort/um-atmos-safe.cfg@104450
+[info] config-file= -  - file:///g/data/ki32/mosrs/um/main/trunk/fcm-make/inc/um-atmos-common.cfg@104450
+[info] config-file= -  -  - file:///g/data/ki32/mosrs/um/main/trunk/fcm-make/nci-x86-ifort/inc/parallel.cfg@104450
+[info] config-file= -  -  -  - file:///g/data/ki32/mosrs/um/main/trunk/fcm-make/inc/options/common.cfg@104450
+[info] config-file= -  -  -  -  - file:///g/data/ki32/mosrs/um/main/trunk/fcm-make/inc/options/coupler/none.cfg@104450
+</code></pre></div></p>
+<p>The full configuration that FCM uses to build the model can be inspected under <code>share/fcm_make_um/fcm-make-as-parsed.cfg</code>. This will have all of the include files and variables resolved.</p>
+<p><a href="https://code.metoffice.gov.uk/trac/um/browser/main/trunk?order=name#fcm-make">UM fcm-make directory</a></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 7, 2022</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 7, 2022</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <div>
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International license">
+          <i class="icon-cc"></i>
+          <i class="icon-cc-by"></i>
+        </a>
+          Copyright &copy; 2022 ACCESS-NRI
+      </div>
+    </div>
+    
+    
+</div>
+      <div class="partners-logo">
+        <div style="align-items:center">
+          <a href="https://www.education.gov.au/ncris" target="_blank" rel="noopener" title="NCRIS">
+          <img src="../../assets/ncris_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.anu.edu.au" target="_blank" rel="noopener" title="The Australian National University">
+          <img src="../../assets/anu_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="http://www.bom.gov.au/" target="_blank" rel="noopener" title="Australian Bureau of Meteorology">
+          <img src="../../assets/bom_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.csiro.au/" target="_blank" rel="noopener" title="CSIRO">
+          <img src="../../assets/csiro_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.monash.edu" target="_blank" rel="noopener" title="Monash University">
+          <img src="../../assets/monash-university_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.unimelb.edu.au" target="_blank" rel="noopener" title="The University of Melbourne">
+          <img src="../../assets/university-of-melbourne_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.unsw.edu.au" target="_blank" rel="noopener" title="The University of New South Wales">
+          <img src="../../assets/university-of-nsw_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+          <a href="https://www.utas.edu.au" target="_blank" rel="noopener" title="The University of Tasmania">
+          <img src="../../assets/university-of-tasmania_logo.svg" alt="logos" style="width: auto; height: 2.1rem; padding: 0.3rem;">
+          </a>
+        </div>
+      </div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://twitter.com/ACCESS_NRI" target="_blank" rel="noopener" title="ACCESS-NRI on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://www.linkedin.com/in/access-nri" target="_blank" rel="noopener" title="ACCESS-NRI on Linkedin" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://access-nri.slack.com/" target="_blank" rel="noopener" title="Join ACCESS-NRI Slack Channel" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+    </a>
+  
+</div>
+          
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
