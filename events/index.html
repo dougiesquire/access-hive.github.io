@@ -13,7 +13,7 @@
     
     
       
-        <title>Events - ACCESS Hive</title>
+        <title>Workshops and Conferences - ACCESS Hive</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#events" class="md-skip">
+        <a href="#workshops-and-conferences" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Events
+              Workshops and Conferences
             
           </span>
         </div>
@@ -310,6 +310,22 @@
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
         Events
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/index.md" class="md-tabs__link">
+        About
       </a>
     </li>
   
@@ -1126,8 +1142,6 @@
         
           
         
-          
-        
       
       
         
@@ -1156,8 +1170,62 @@
   
   
     <li class="md-nav__item">
-      <a href="conferences/" class="md-nav__link">
-        Conferences
+      <a href="add_event/" class="md-nav__link">
+        Add Event
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/index.md" class="md-nav__link">
+        None
       </a>
     </li>
   
@@ -1170,8 +1238,8 @@
   
   
     <li class="md-nav__item">
-      <a href="workshops/" class="md-nav__link">
-        Workshops
+      <a href="../about/contribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -1235,22 +1303,414 @@
   </a>
 
 
-<h1 id="events">Events</h1>
-<details class="warning" open="open">
-<summary>We need you to contribute!</summary>
-<p>The ACCESS Hive is a community resource that is a work in progress. Can you help to add content to this page? We’d love to receive your contribution. See our <a href="https://access-hive.github.io/ACCESS-Hive/about/contribute">contributing guidelines</a> for details of how to provide content. You can also <a href="https://github.com/ACCESS-Hive/ACCESS-Hive/issues">open an issue</a> highlighting any content you’d like us to provide but aren’t able to contribute yourself.</p>
-</details>
-<p>We encourage members of the community to list any workshops, tutorials, conferences that might be of interest to the community.</p>
-<p>Please make sure to include:</p>
-<ul>
-<li>The name of the event</li>
-<li>The date and location of the event</li>
-<li>Whether this is an online, hybrid or in-person event</li>
-<li>A registration link if applicable</li>
-<li>A link to the organisers website.</li>
-</ul>
-<p>Past events will need to be archived. 
-Feel free to submit a pull request.</p>
+<h1 id="workshops-and-conferences">Workshops and Conferences</h1>
+<p>
+
+
+
+
+<style>
+
+    .md-typeset .events-post-title {
+        margin-bottom: 0;
+    }
+
+    .md-typeset .events-post-extra {
+        color: var(--md-default-fg-color--light);
+    }
+
+    .events-override-post {
+        padding: 10px 60px 10px 0;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+
+    .events-override-post .events-post-title {
+        color: var(--md-typeset-a-color);
+        margin-top: 0;
+    }
+
+    .events-post-description {
+        color: var(--md-typeset-color);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: medium;
+        line-height: 1.1;
+    }
+
+    .events-post-date {
+        color: grey;
+        font-size: small;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .events-post-location {
+        color: grey;
+        font-size: small;
+        margin-top: 0;
+    }
+
+    .events-override-post:hover {
+        border: 1px solid #e8e8e877;
+        box-shadow: 3px 4px 10px #e8e8e8;
+    }
+
+    .events-override-post,
+    .events-override-post>* {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .events-override-post:hover>* {
+        transform: translateX(40px);
+    }
+
+    .events-post-description,
+    .events-post-extra {
+        opacity: 0.8;
+    }
+
+    .events-override-post:hover .events-post-description,
+    .events-override-post:hover .events-post-extra {
+        opacity: 1;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .events-override-post,
+        .events-override-post>* {
+            transition: none;
+        }
+
+        .events-override-post:hover>* {
+            transform: none;
+        }
+
+        .events-override-post {
+            padding: 30px 0 30px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .events-override-post:hover {
+            border: none;
+            box-shadow: none;
+        }
+
+        .events-post-description,
+        .events-post-extra,
+        .events-override-post:hover .events-post-description,
+        .events-override-post:hover .events-post-extra {
+            opacity: 1;
+        }
+    }
+</style>
+
+
+
+
+
+
+<div class="pages">
+    
+        
+        <div class="page" id="page1">
+
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            <a href="https://conference.eresearch.edu.au">
+    <div class="events-override-post">
+        <h3 class="events-post-title">e-research Australasia 2022 Conference</h3>
+        <p class="events-post-date"> 17/10/2022 - 21/10/2022 </p>
+        <p class="events-post-location"> Brisbane Convention and Exhibition Centre and Online, QLD </p>
+        <p class="events-post-description"></p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page2">
+
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            <a href="http://cosima.org.au/index.php/meetings/cosima2022">
+    <div class="events-override-post">
+        <h3 class="events-post-title">COSIMA Workshop</h3>
+        <p class="events-post-date"> 03/11/2022 - 03/11/2022 </p>
+        <p class="events-post-location"> Hobart, Australia </p>
+        <p class="events-post-description"></p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page3">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://soos.aq/soos-symposium-2023">
+    <div class="events-override-post">
+        <h3 class="events-post-title">GC5 Assessment Workshop</h3>
+        <p class="events-post-date"> 08/11/2022 - 10/11/2022 </p>
+        <p class="events-post-location"> Hobart, Australia </p>
+        <p class="events-post-description">The UM Partnership Team and GC Programme Team are running a GC5 assessment workshop, to assess the latest configuration of the Global Coupled model.</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page4">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://www.amos2022.org.au/">
+    <div class="events-override-post">
+        <h3 class="events-post-title">Australian Community Climate and Earth System Simulator (ACCESS) modelling</h3>
+        <p class="events-post-date"> 27/11/2022 - 27/11/2022 </p>
+        <p class="events-post-location"> Adelaide, SA </p>
+        <p class="events-post-description">This half-day workshop introduces running the ACCESS model for new or less experienced users. We focus on the ACCESSESM1.5. The workshop will use a few simple cases to demonstrate how to set up and run the model on NCI&#39;s Gadi and focus on what...</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page5">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://www.amos2022.org.au/">
+    <div class="events-override-post">
+        <h3 class="events-post-title">Regional climate downscaling for Australia within the CORDEX framework</h3>
+        <p class="events-post-date"> 27/11/2022 - 27/11/2022 </p>
+        <p class="events-post-location"> Adelaide, SA </p>
+        <p class="events-post-description">This workshop is relevant for those performing regional climate simulations or downscaling with empirical/statistical downscaling approaches including machine learning, as well as those using regional climate projection data in their work. The focus...</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page6">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://www.amos2022.org.au/">
+    <div class="events-override-post">
+        <h3 class="events-post-title">Ground truthing future climate change</h3>
+        <p class="events-post-date"> 27/11/2022 - 27/11/2022 </p>
+        <p class="events-post-location"> Adelaide, SA </p>
+        <p class="events-post-description">Scientific ocean drilling provides the robust baseline data on global climate evolution over extended geologic time periods that are critical for improving climate model performance. By targeting how the climate system operates across a wide array of...</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page7">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://www.amos2022.org.au/">
+    <div class="events-override-post">
+        <h3 class="events-post-title">The Surface Water and Ocean Topography (SWOT) satellite: A primer</h3>
+        <p class="events-post-date"> 27/11/2022 - 27/11/2022 </p>
+        <p class="events-post-location"> Adelaide, SA </p>
+        <p class="events-post-description">The Surface Water and Ocean Topography (SWOT) satellite, which will launch in November 2022, is a ground-breaking wide-swath altimetry mission that will observe fine details of the ocean dynamics at a resolution 10 times finer than current satellites....</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page8">
+
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            <a href="https://www.amos2022.org.au">
+    <div class="events-override-post">
+        <h3 class="events-post-title">AMOS Annual Conference 2022</h3>
+        <p class="events-post-date"> 28/11/2022 - 02/12/2022 </p>
+        <p class="events-post-location"> Adelaide Convention Centre, SA </p>
+        <p class="events-post-description"></p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page9">
+
+            
+            
+            
+        
+            
+            
+                
+            
+
+            
+            
+            
+            <a href="https://conference.eresearch.edu.au">
+    <div class="events-override-post">
+        <h3 class="events-post-title">2023 Unified Model Users Tutorial (expression of interest)</h3>
+        <p class="events-post-date"> 06/02/2023 - 13/02/2023 </p>
+        <p class="events-post-location"> Brisbane Convention and Exhibition Centre and Online, QLD </p>
+        <p class="events-post-description">The Met Office UM Partnership team are starting to plan the Unified Model training course to be held at the Bureau of Meteorology in 2023. The provisional dates for this course are either the week of 6th or 13th February 2023 at the Bureau of...</p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page10">
+
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            <a href="https://ardc.edu.au/events/ardc-digital-research-skills-summit-2022">
+    <div class="events-override-post">
+        <h3 class="events-post-title">ARDC Digital Research Skills Summit 2023</h3>
+        <p class="events-post-date"> 09/02/2023 - 10/02/2023 </p>
+        <p class="events-post-location"> Rydges World Square Hotel, Sydney </p>
+        <p class="events-post-description"></p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+        
+        <div class="page" id="page11">
+
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+            <a href="https://soos.aq/soos-symposium-2023">
+    <div class="events-override-post">
+        <h3 class="events-post-title">SOOS Symposium2023 “Southern Ocean in a Changing World&#34;</h3>
+        <p class="events-post-date"> 14/08/2023 - 18/08/2023 </p>
+        <p class="events-post-location"> Hobart, Australia </p>
+        <p class="events-post-description"></p>
+    </div>
+</a>
+
+            
+                
+        </div>
+    
+</div></p>
 
   <hr>
 <div class="md-source-file">
