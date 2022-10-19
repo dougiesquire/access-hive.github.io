@@ -196,6 +196,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.github.io/website/model_evaluation/datasets/</loc>
+         <lastmod>2022-10-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.github.io/website/model_evaluation/land/</loc>
          <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
