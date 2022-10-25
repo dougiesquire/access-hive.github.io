@@ -31,6 +31,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.github.io/access-hive.github.io/about/contribute/</loc>
+         <lastmod>2022-10-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.github.io/access-hive.github.io/about/contribute/direct_edit/</loc>
+         <lastmod>2022-10-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.github.io/access-hive.github.io/about/contribute/local_edit/</loc>
+         <lastmod>2022-10-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.github.io/access-hive.github.io/about/contribute/navigation_changes/</loc>
+         <lastmod>2022-10-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.github.io/access-hive.github.io/about/contribute/standalone_doc/</loc>
+         <lastmod>2022-10-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.github.io/access-hive.github.io/configurations/</loc>
          <lastmod>2022-10-25</lastmod>
          <changefreq>daily</changefreq>
