@@ -21,11 +21,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/about/contribute/</loc>
-         <lastmod>2022-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/about/support/</loc>
          <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
@@ -47,6 +42,11 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/about/contribute/navigation_changes/</loc>
+         <lastmod>2022-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/about/contribute/reviewers_guidelines/</loc>
          <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
