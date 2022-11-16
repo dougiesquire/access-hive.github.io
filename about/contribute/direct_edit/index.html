@@ -1680,45 +1680,69 @@
 
 <h1 id="edit-directly-on-github">Edit directly on GitHub</h1>
 <p>This way to edit the site allows people with no knowledge of Git to contribute to ACCESS-Hive but is only suitable for light modifications of existing pages.</p>
-<p>Go to the page you want to modify on the ACCESS-Hive documentation site. At the right of the title, you will see a pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span>. </p>
+<ul>
+<li>Go to the page you want to modify on the ACCESS-Hive documentation site. At the right of the title, you will see a pen icon <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg></span>. When you click on this icon, your browser will open the file in GitHub allowing you to edit the file.</li>
+</ul>
 <figure>
 <p><img alt="EditPen" src="../../../assets/edit_pen.png" />
   </p>
 <figcaption>Pen icon circled in red</figcaption>
 </figure>
-<p>When you click on this icon, your browser will open the file in GitHub allowing you to edit the file. Enter your modification in the main pane. </p>
+<ul>
+<li>Enter your modification in the main pane. All the files are written in <a href="https://www.markdownguide.org/cheat-sheet/">Markdown</a>.</li>
+</ul>
 <details class="note" open="open">
 <summary>Headers and table of content</summary>
 <p>The level 1 headers are reserved for the title of the page and are ignored from the pages' table of contents. Only use level 2 headers and higher to organise pages.</p>
 </details>
-<p>Then add a commit message in the Commit changes box.</p>
+<ul>
+<li>Then add a commit message in the Commit changes box.</li>
+</ul>
 <figure>
-<p><img alt="CommitBox" src="../../../assets/commit-box.png" />
-  </p>
-<figcaption>Where to write your commit message</figcaption>
+<p><img alt="CommitBox" src="../../../assets/commit-box.png" /></p>
 </figure>
+<ul>
+<li>Commit and open a pull request</li>
+</ul>
 <details class="important" open="open">
-<summary>Important</summary>
+<summary>Pull request is required</summary>
 <p>The <code>main</code> branch of the repository is protected and nobody can write to it directly. You will need to choose either to create a new branch (for ACCESS-Hive organisation members only) or to create a fork on your GitHub personal account (for non-members of ACCESS-Hive organisation) and then open a pull request in all cases.
 <img alt="BranchAndPR" src="../../../assets/branch-and-pr.png" /></p>
 </details>
-<p>When creating the pull request, make sure to follow the instructions given to you in the pull request template. The pull request will automatically build <a href="../local_edit/#preview-from-a-pull-request">a preview of the documentation with your proposed changes</a>.</p>
-<p>Then ask for a review by tagging the <code>@ACCESS-Hive/reviewers</code> team in a comment. </p>
-<p>You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESS-Hive site. </p>
+<p>When creating the pull request, make sure to follow the instructions given to you in the pull request template. The description can be edited at any time. You can fill in the check list after creating the pull request. The pull request will automatically build <a href="../local_edit/#preview-from-a-pull-request">a preview of the documentation with your proposed changes</a>.</p>
+<ul>
+<li>
+<p>Ask for a review by tagging the <code>@ACCESS-Hive/reviewers</code> team in a comment.</p>
+</li>
+<li>
+<p>Reply to the review. You will be notified by email of any subsequent comment, request or action from the reviewer on this pull request. Please make sure you take any action required by the reviewer or your modification will not be accepted into the ACCESS-Hive site.</p>
+</li>
+</ul>
 <h2 id="further-edits">Further edits</h2>
-<p>During the review process, you might be requested to edit your proposed changes. For this, you will need to navigate to the branch created by GitHub. At the top of the Pull request window on GitHub, you should see a link to your branch:</p>
+<p>During the review process, you might be requested to edit your proposed changes. For this, you will need to navigate to the branch created by GitHub. </p>
+<ul>
+<li>At the top of the Pull request window on GitHub, you should see a link to your branch, circled in red on the image:</li>
+</ul>
 <figure>
-<p><img alt="PRheader" src="../../../assets/PR_header.png" />
-  </p>
-<figcaption>Link to your branch circled in red</figcaption>
+<p><img alt="PRheader" src="../../../assets/PR_header.png" /></p>
 </figure>
-<p>Once you click on this link, navigate to and open the file you need to modify, then click on the pen icon in the toolbar on the right:</p>
+<ul>
+<li>Once you click on this link, navigate to and open the file you need to modify, then click on the pen icon in the toolbar on the right, circled in red on the image:</li>
+</ul>
 <figure>
-<p><img alt="GitHubedit" src="../../../assets/GitHub-edit.png" />
-  </p>
-<figcaption>Location of the edit "pen"</figcaption>
+<p><img alt="GitHubedit" src="../../../assets/GitHub-edit.png" /></p>
 </figure>
+<ul>
+<li>
 <p>Then commit your changes once again to the same branch. This will update the pull request and the preview of the site.</p>
+</li>
+<li>
+<p>You need to let the reviewer know once you are confident you have responded to all their concerns, so they can review again. For this, locate the "Reviewers" pane in the right-hand side menu list on GitHub and click the icon circled in red in the image:</p>
+</li>
+</ul>
+<figure>
+<p><img alt="GitHubnewrev" src="../../../assets/GitHub-2nd-review.png" /></p>
+</figure>
 
   <hr>
 <div class="md-source-file">

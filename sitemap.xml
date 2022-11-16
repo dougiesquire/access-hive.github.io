@@ -161,6 +161,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.org.au/events/events/2023/WCRP_Conference/</loc>
+         <lastmod>2022-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.org.au/model_components/</loc>
          <lastmod>2022-11-16</lastmod>
          <changefreq>daily</changefreq>
