@@ -1711,7 +1711,7 @@
 <p>The important elements of the repository to know about before modifying the navigation are:</p>
 <ul>
 <li><code>docs/</code> folder: this folder contains all the documentation pages. There is an <code>index.md</code> file for the About page, one folder per tab on the site, an <code>assets/</code> folder to store images used in the documentation and some customisation folders such as <code>css/</code> or <code>font/</code>.</li>
-<li><a href="https://github.com/ACCESS-Hive/website/blob/main/mkdocs.yml"><code>mkdocs.yml</code></a>: it is a YAML formatted file, hence the <code>.yml</code> extension. The site navigation is defined in this file as well as options for the styling of the site. </li>
+<li><a href="https://github.com/ACCESS-Hive/website/blob/main/mkdocs.yml"><code>mkdocs.yml</code></a>: it is a YAML formatted file, hence the <code>.yml</code> extension. The site navigation is defined in this file as well as options for the styling of the site.</li>
 </ul>
 <details class="info" open="open">
 <summary>YAML</summary>
@@ -1733,7 +1733,7 @@
 <p>The top level category names define the tabs in the header bar. So here we have the tabs: "Welcome", "ACCESS-NRI", "Community" and "How to contribute". It is also the name of the top section under each tab.</p>
 <p><img alt="TabExample" src="../../../assets/tabs_example.png" /></p>
 <p>The second level of categories indicate the name of each page under that section. So the "ACCESS-NRI" tab has the text directly under the section "ACCESS-NRI". The "Community" tab has a section called "Community" that contains one page: "Generate Bathymetry". Finally, the "How to contribute" tab has 1 section "How to contribute" with 4 pages.</p>
-<p>The filenames indicate the path to the file relative to the <code>docs/</code> folder containing the text for each page. It is recommended to use the title of each file (i.e. the Header 1) or an abbreviation of it as the name of the page and the filename.</p>
+<p>The filenames indicate the path to the file relative to the <code>docs/</code> folder containing the text for each page. It is recommended to use the title of each file (i.e. <a href="https://www.markdownguide.org/basic-syntax/#headings">the heading level 1</a>) or an abbreviation of it as the name of the page and the filename.</p>
 <p><img alt="PageExample" src="../../../assets/pages_example.png" /></p>
 <h2 id="add-sections-to-a-tab">Add sections to a tab</h2>
 <p>It is possible to define several sections per tab by using more levels of indentation. For example, to add a "My example" section to the "How to contribute" tab:</p>
