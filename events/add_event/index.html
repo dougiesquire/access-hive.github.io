@@ -1545,9 +1545,60 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Add Event
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Add Event
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-your-event" class="md-nav__link">
+    How to add your event
+  </a>
+  
+    <nav class="md-nav" aria-label="How to add your event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-an-issue" class="md-nav__link">
+    Add an issue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request-to-add-your-event" class="md-nav__link">
+    Create a pull-request to add your event
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1612,6 +1663,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-add-your-event" class="md-nav__link">
+    How to add your event
+  </a>
+  
+    <nav class="md-nav" aria-label="How to add your event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-an-issue" class="md-nav__link">
+    Add an issue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-pull-request-to-add-your-event" class="md-nav__link">
+    Create a pull-request to add your event
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1636,7 +1722,12 @@
 <p>The ACCESS-Hive is a community resource that is a work in progress. Can you help to add content to this page? We’d love to receive your contribution. See our <a href="https://access-hive.org.au/about/contribute">contributing guidelines</a> for details of how to provide content. You can also <a href="https://github.com/ACCESS-Hive/access-hive.github.io/issues">open an issue</a> highlighting any content you’d like us to provide but aren’t able to contribute yourself.</p>
 </details>
 <p>We encourage members of the community to list any workshops, tutorials, conferences that might be of interest to the community.</p>
-<p>To add your event to the list, please add a Markdown text file, identified with the <code>.md</code> extension, to the <code>events</code> folder of the <a href="https://github.com/ACCESS-Hive/access-hive.github.io/tree/main/docs/events/events">ACCESS-Hive repository</a>.</p>
+<h2 id="how-to-add-your-event">How to add your event</h2>
+<h3 id="add-an-issue">Add an issue</h3>
+<p>The easiest way for you to add your event is to <a href="https://github.com/ACCESS-Hive/access-hive.github.io/issues/new?assignees=&amp;labels=New+Event&amp;template=new-event.yml&amp;title=%5BNew+Event%5D%3A+">make an issue with the template provided</a>. This provides a form which guides you through the process of providing the required information.</p>
+<h3 id="create-a-pull-request-to-add-your-event">Create a pull-request to add your event</h3>
+<p>This process requires some knowledge of git, GitHub and Markdown. If you do not feel comfortable doing this then it is sufficient to just add an issue as above. The issue will be assigned to someone else to finish.</p>
+<p>If you do feel confident adding your event to the list, then create a Markdown text file, identified with the <code>.md</code> extension, to the correct subdirectory in the <code>events</code> folder of the <a href="https://github.com/ACCESS-Hive/access-hive.github.io/tree/main/docs/events/events">ACCESS-Hive repository</a>. The subdirectories are named by year, put your new file in the year in which the event will take place. Avoid spaces in your filename: use an underscore <code>_</code> where you would normally have a space. e.g. <code>regional_dowscaling_cordex.md</code></p>
 <p>The file must contain a header with the metadata as in the example below:</p>
 <div class="highlight"><pre><span></span><code>---
 title: Regional climate downscaling for Australia within the CORDEX framework
@@ -1645,8 +1736,6 @@ end_date: 27/11/2022
 location: Adelaide, SA
 link: https://www.amos2022.org.au/
 description: This workshop is relevant for those performing regional climate simulations or downscaling with empirical/statistical downscaling approaches including machine learning, as well as those using regional climate projection data in their work. The focus will be on CORDEX related data and modelling. The workshop will have some presentations with extended discussion.
-organisator: Jason Evans, Marcus Thatcher
-comments: AMOS 2022, Workshop
 ---
 </code></pre></div>
 <p>Make sure to follow <a href="../../about/contribute/local_edit/#edit-to-access-hive">all the steps</a> described in the contribution guidelines to submit this addition for approval for publication.</p>
@@ -1656,11 +1745,11 @@ comments: AMOS 2022, Workshop
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 21, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 21, 2022</span>
       
     
   </small>
