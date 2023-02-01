@@ -237,11 +237,19 @@
 
 <!-- Main navigation item with nested items -->
 
+  
+  
+
+  <!-- Recurse, if the first item has further nested items -->
+  
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+<!-- Main navigation item -->
 
       
         <!--
@@ -785,10 +793,40 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        Home
-      </a>
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../..">Home</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
