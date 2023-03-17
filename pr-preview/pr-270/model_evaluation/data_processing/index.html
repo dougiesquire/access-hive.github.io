@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://access-hive.org.au/model_evaluation/data_processing/">
       
       
-        <link rel="prev" href="../bgc_ocean/">
+        <link rel="prev" href="../diagnostics/">
       
       
         <link rel="next" href="../data_catalogs/">
@@ -1096,6 +1096,8 @@
         
           
         
+          
+        
       
       
         
@@ -1178,6 +1180,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../diagnostics/" class="md-nav__link">
+        Diagnostics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1229,8 +1245,43 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cmor3" class="md-nav__link">
+    CMOR3  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmip" class="md-nav__link">
+    xMIP  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app4-the-access-post-processor" class="md-nav__link">
+    APP4 (The ACCESS Post Processor)  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-archiver" class="md-nav__link">
+    ACCESS-Archiver 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#synda" class="md-nav__link">
     Synda  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxnetlsm" class="md-nav__link">
+    FluxnetLSM  
   </a>
   
 </li>
@@ -1848,8 +1899,43 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cmor3" class="md-nav__link">
+    CMOR3  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmip" class="md-nav__link">
+    xMIP  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app4-the-access-post-processor" class="md-nav__link">
+    APP4 (The ACCESS Post Processor)  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-archiver" class="md-nav__link">
+    ACCESS-Archiver 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#synda" class="md-nav__link">
     Synda  
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxnetlsm" class="md-nav__link">
+    FluxnetLSM  
   </a>
   
 </li>
@@ -1901,25 +1987,56 @@
 <p><a href="https://fsspec.github.io/kerchunk/"><strong>Documentation</strong></a> | 
 <a href="https://github.com/fsspec/kerchunk"><strong>Sources</strong></a></p>
 <p>Kerchunk is a library that provides a unified way to represent a variety of chunked, compressed data formats (e.g. NetCDF/HDF5, GRIB2, TIFF, …), allowing efficient access to the data from traditional file systems or cloud object storage. It also provides a flexible way to create virtual datasets from multiple files.</p>
+<h3 id="cmor3">CMOR3  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
+<p><em>Climate Model Output Rewriter Version 3</em></p>
+<p><a href="https://cmor.llnl.gov/"><strong>Documentation</strong></a> | 
+<a href="https://github.com/PCMDI/cmor"><strong>Sources</strong></a></p>
+<p>CMOR is used to produce CF-compliant netCDF files. The structure of the files created by CMOR and the metadata they contain fulfill the requirements of many of the climate community’s standard model experiments (which are referred to here as “MIPs” and include, for example, AMIP, PMIP, APE, and IPCC scenario runs).</p>
+<h3 id="xmip">xMIP  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
+<p><a href="https://cmip6-preprocessing.readthedocs.io/en/latest/?badge=latest"><strong>Documentation</strong></a> |
+<a href="https://github.com/coecms/xmip_nci"><strong>Tutorial on NCI</strong></a> |
+<a href="https://github.com/jbusecke/xMIP"><strong>Sources</strong></a></p>
+<p>This package facilitates the cleaning, organization and interactive analysis of Model Intercomparison Projects (MIPs) within the Pangeo software stack.</p>
+<h3 id="app4-the-access-post-processor">APP4 (The ACCESS Post Processor)  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
+<p><a href="https://github.com/ACCESS-Hive/APP4"><strong>Documentation</strong></a> | 
+<a href="https://github.com/ACCESS-Hive/APP4"><strong>Sources</strong></a></p>
+<p>The APP4 is a CMORisation tool designed to convert ACCESS model output to ESGF-compliant formats, primarily for publication to CMIP6. The code was originally built for CMIP5, and was further developed for CMIP6-era activities.
+Uses CMOR3 and files created with the CMIP6 data request to generate CF-compliant files according to the CMIP6 data standards.</p>
+<h3 id="access-archiver">ACCESS-Archiver <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
+<p><a href="https://github.com/ACCESS-Hive/ACCESS-Archiver"><strong>Documentation</strong></a> | 
+<a href="https://github.com/ACCESS-Hive/ACCESS-Archiver"><strong>Sources</strong></a></p>
+<p>The ACCESS Archiver is designed to archive model output from ACCESS simulations. It's focus is to copy ACCESS model output from its initial location to a secondary location (typically from <code>/scratch</code> to <code>/g/data</code>), while converting UM files to netCDF, compressing MOM/CICE files, and culling restart files to 10-yearly. Saves 50-80% of storage space due to conversion and compression.</p>
 <h3 id="synda">Synda  <a href="https://access-hive.org.au/about/support"><i class="icon-recommended" title="Recommended by ACCESS-NRI"></i></a></h3>
 <p>synda is a command line tool to search and download files from the Earth System Grid Federation (ESGF) archive.</p>
+<h3 id="fluxnetlsm">FluxnetLSM  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
+<p><a href="https://gmd.copernicus.org/articles/10/3379/2017/"><strong>Citation</strong> <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></a> |
+<a href="https://github.com/aukkola/FluxnetLSM"><strong>Sources</strong></a></p>
+<p>R package for post-processing FLUXNET datasets for use in land surface modelling. Performs quality control and data conversion of FLUXNET data and collated site metadata. Supports FLUXNET2015, La Thuile, OzFlux and ICOS data releases.</p>
 <h3 id="xskillscore">xskillscore  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h3>
 <p><a href="https://xskillscore.readthedocs.io/en/stable/"><strong>Documentation</strong></a> |
 <a href="https://github.com/xarray-contrib/xskillscore"><strong>Sources</strong></a></p>
 <p>xskillscore is a Python library for computing a wide variety of skill metrics. Its typical application is to verify deterministic and probabilistic forecasts relative to observations.</p>
 <h2 id="analysis-blogposts-and-tutorials">Analysis blogposts and tutorials  <a href="https://access-hive.org.au/about/support"><i class="icon-community" title="Community Contributed"></i></a></h2>
 <p><a href="https://medium.com/pangeo/accessing-netcdf-and-grib-file-collections-as-cloud-native-virtual-datasets-using-kerchunk-625a2d0a9191">Accessing NetCDF and GRIB file collections as cloud-native virtual datasets using Kerchunk, Peter March, Sep 2022</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>A. M. Ukkola, N. Haughton, M. G. De Kauwe, G. Abramowitz, and A. J. Pitman. Fluxnetlsm r package (v1.0): a community tool for processing fluxnet data for use in land surface modelling. <em>Geoscientific Model Development</em>, 10(9):3379–3390, 2017. URL: <a href="https://gmd.copernicus.org/articles/10/3379/2017/">https://gmd.copernicus.org/articles/10/3379/2017/</a>, <a href="https://doi.org/10.5194/gmd-10-3379-2017">doi:10.5194/gmd-10-3379-2017</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2023</span>
       
     
   </small>
