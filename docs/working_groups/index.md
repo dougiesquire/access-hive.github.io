@@ -1,6 +1,7 @@
 # Community Working Groups
 
 The ACCESS Community and the ACCESS-NRI has recently established [community Working Groups](https://www.access-nri.org.au/working-groups/) to assess and prioritise the needs of the modelling community as well as encourage collaboration within. These Working Groups, which are open to the public and welcoming new members, include:
+
 - [Atmosphere](https://forum.access-hive.org.au/c/atmosphere/7)
 - [Land Surface](https://forum.access-hive.org.au/c/land/8)
 - [COSIMA: Ocean and Sea-Ice](https://forum.access-hive.org.au/c/cosima/29) 
