@@ -246,17 +246,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_observational_catalogs/</loc>
          <lastmod>2023-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_recipe_gallery/</loc>
+         <lastmod>2023-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/</loc>
+         <lastmod>2023-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/access_to_gadi_at_nci/</loc>
+         <lastmod>2023-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/model_evaluation_getting_started/</loc>
          <lastmod>2023-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -371,41 +381,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/atmosphere/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/bgc_ocean/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/data_catalogs/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/data_processing/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/diagnostics/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/land/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/model_evaluation/ocean_seaice/</loc>
-         <lastmod>2023-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/models/running-a-model/</loc>
          <lastmod>2023-06-07</lastmod>
          <changefreq>daily</changefreq>
@@ -436,12 +411,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/models/running-a-model/running-getting_started/</loc>
+         <loc>https://access-hive.org.au/models/running-a-model/getting_started/</loc>
          <lastmod>2023-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/resources/policies/</loc>
+         <loc>https://access-hive.org.au/models/running-a-model/getting_started/access_to_gadi_at_nci/</loc>
          <lastmod>2023-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
