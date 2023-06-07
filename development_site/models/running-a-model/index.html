@@ -14,14 +14,14 @@
         <link rel="prev" href="../configurations/access-s/">
       
       
-        <link rel="next" href="running-access-esm/">
+        <link rel="next" href="running-getting_started/">
       
       <link rel="icon" href="../../assets/ACCESS_icon_HIVE.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.8">
     
     
       
-        <title>Getting Started - ACCESS-Hive</title>
+        <title>Running a Model - ACCESS-Hive</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#running-a-model" class="md-skip">
           Skip to content
         </a>
       
@@ -129,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              <div class="highlight-bg"> Running a Model </div>
             
           </span>
         </div>
@@ -1090,6 +1090,10 @@
       
         
           
+            
+          
+        
+          
         
           
         
@@ -1103,10 +1107,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Run a Model
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Run a Model</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
@@ -1116,24 +1126,16 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="running-getting_started/" class="md-nav__link">
         Getting Started
       </a>
-      
     </li>
   
 
@@ -1996,7 +1998,7 @@
                   
 
   
-    <a href="https://github.com/ACCESS-Hive/access-hive.github.io/edit/main/docs/models/running-a-model.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ACCESS-Hive/access-hive.github.io/edit/main/docs/models/running-a-model/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -2005,39 +2007,34 @@
     
       
     
-    <a href="https://github.com/ACCESS-Hive/access-hive.github.io/raw/main/docs/models/running-a-model.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/ACCESS-Hive/access-hive.github.io/raw/main/docs/models/running-a-model/index.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
     </a>
   
 
 
-<h1 id="getting-started"><div class="highlight-bg"> Getting Started </div></h1>
-<!-- TODO remove jasmeen. For testing purposes only -->
-<div class="termy">
-
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>spacy<span class="w"> </span>
-
-<span class="go">DUMMY:</span>
-<span class="go">&lt;span style=&quot;color: green;&quot;&gt;INFO&lt;/span&gt;:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)</span>
-<span class="go">&lt;span style=&quot;color: green;&quot;&gt;INFO&lt;/span&gt;:     Started reloader process [28720]</span>
-<span class="go">&lt;span style=&quot;color: green;&quot;&gt;INFO&lt;/span&gt;:     Started server process [28722]</span>
-<span class="go">&lt;span style=&quot;color: green;&quot;&gt;INFO&lt;/span&gt;:     Waiting for application startup.</span>
-<span class="go">&lt;span style=&quot;color: green;&quot;&gt;INFO&lt;/span&gt;:     Application startup complete.</span>
-</code></pre></div>
-
-</div>
+<h1 id="running-a-model"><div class="highlight-bg"> Running a Model </div></h1>
+<p>Here, we are providing the information to run different ACCESS models.</p>
+<p>If <em>Model</em>, <em>Model Component</em> or <em>Model Configuration</em> are not familiar terms for you, please check out our <a href="../">Model overview</a>.</p>
+<p>If you have not run a model before, our <a href="running-getting_started/">Getting Started Guide</a> will give you the basics to access the Model infrastructure on the high-performance-computing facility Gadi@NCI.</p>
+<p>Detailed guides for the different Model configurations can then be found on the following pages:<br />
+-  <a href="running-access-esm/">Run ACCESS-ESM</a> for the ACCESS Earth System Model configurations<br />
+-  <a href="running-access-cm/">Run ACCESS-CM</a> for the ACCESS Coupled Model configurations<br />
+-  <a href="running-access-am/">Run ACCESS-AM</a> for the ACCESS Atmosphere Model configurations<br />
+-  <a href="running-access-om/">Run ACCESS-OM</a> for the ACCESS Ocean Model configurations<br />
+-  <a href="running-access-s/">Run ACCESS-S</a> for the ACCESS Seasonal configuration  </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 6, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 6, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2023</span>
       
     
   </small>
