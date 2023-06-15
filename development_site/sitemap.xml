@@ -26,11 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/about/glossary/</loc>
-         <lastmod>2023-06-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/about/policies/</loc>
          <lastmod>2023-06-15</lastmod>
          <changefreq>daily</changefreq>
@@ -57,6 +52,11 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/community_resources/community_model_catalogs/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_observational_catalogs/</loc>
          <lastmod>2023-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -172,6 +172,41 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/community_resources/events/events/2023/WCRP_Conference/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_access_nri/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_cmip/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_cssr/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_era/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_ipcc/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_um/</loc>
          <lastmod>2023-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
