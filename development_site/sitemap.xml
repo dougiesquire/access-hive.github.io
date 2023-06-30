@@ -286,6 +286,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_live_diagnostics/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_observational_catalogs/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
@@ -337,6 +342,11 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_ilamb/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
