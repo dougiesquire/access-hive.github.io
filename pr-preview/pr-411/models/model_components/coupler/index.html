@@ -1097,7 +1097,7 @@
         
           <li class="md-nav__item">
   <a href="#nuopc-interoperability-layer-recommended" class="md-nav__link">
-     NUOPC interoperability layer {{ recommended }} 
+     NUOPC Interoperability Layer {{ recommended }} 
   </a>
   
 </li>
@@ -2353,7 +2353,7 @@
         
           <li class="md-nav__item">
   <a href="#nuopc-interoperability-layer-recommended" class="md-nav__link">
-     NUOPC interoperability layer {{ recommended }} 
+     NUOPC Interoperability Layer {{ recommended }} 
   </a>
   
 </li>
@@ -2394,17 +2394,18 @@
 <!-- ![Coupler Component Logo](../../assets/component-logos/components-without-titles/ACCESS icon COUPLER.png){align=right width=40%} -->
 
 <p><img src = "../../../assets/component-logos/component-maps/coupler-component-map.png" class="white-img-bg"></img></p>
-<p>A coupler is a software used to perform simulations with different model components at the same time. The coupler enables the different model components to exchange information during the simulation.</p>
+<p>A coupler is a software package that allows synchronised exchanges of coupling information between numerical codes representing different components of the climate system.</p>
 <h2 id="oasis3-mct-supported"><div class="center-icons"> <a href="https://oasis.cerfacs.fr/en/">OASIS3-MCT</a> {{ supported }} </div></h2>
-<p>OASIS3-MCT consists of the OASIS coupler interfaced with the Model Coupling Toolkit (MCT) from the Argonne National Laboratory. OASIS3-MCT is the coupler used for:</p>
+<p><a href="https://oasis.cerfacs.fr/en/">OASIS3-MCT</a> is the version of the Ocean Atmosphere Sea Ice Soil (OASIS) coupler interfaced with the Model Coupling Toolkit (MCT) from the Argonne National Laboratory. OASIS3-MCT is the coupler used in the configurations:</p>
 <ul>
 <li>ACCESS-ESM1.5</li>
-<li>ACCESS-CM2</li>
+<li>ACCESS-CM2 </li>
 <li>ACCESS-OM2</li>
-<li>ACCESS-S1</li>
+<li>ACCESS-S</li>
 </ul>
-<h2 id="nuopc-interoperability-layer-recommended"><div class="center-icons"> <a href="https://earthsystemmodeling.org/nuopc/">NUOPC interoperability layer</a> {{ recommended }} </div></h2>
-<p>The NUOPC interoperability layer is distributed via the Earth System Modelling Framework (ESMF). It is a coupler developed by the National Unified Operational Prediction Capability (NUOPC), a consortium of Navy (USA), NOAA and Air Force (USA) modelers. </p>
+<h2 id="nuopc-interoperability-layer-recommended"><div class="center-icons"> <a href="https://earthsystemmodeling.org/nuopc/">NUOPC Interoperability Layer</a> {{ recommended }} </div></h2>
+<p><a href="https://earthsystemmodeling.org/nuopc/">NUOPC</a> (National Unified Operational Prediction Capability) Interoperability Layer defines conventions and a set of generic components for building coupled models using the Earth System Modeling Framework (ESMF).</p>
+<p>ACCESS-OM3, a configuration currently under development, uses <a href="https://github.com/COSIMA/access-om3/discussions/7">NUOPC to couple its MOM6 and CICE6 model components</a> as there are no respective OASIS coupling interfaces for these components.</p>
 
   <hr>
 <div class="md-source-file">
