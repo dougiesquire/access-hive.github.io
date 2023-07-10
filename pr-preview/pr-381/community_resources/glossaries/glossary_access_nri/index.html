@@ -40,10 +40,6 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/termynal.css">
-    
-      <link rel="stylesheet" href="../../../css/access-nri.css">
-    
       <link rel="stylesheet" href="../../../css/fontello.css">
     
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -51,6 +47,8 @@
       <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/fontawesome.css">
     
       <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/solid.css">
+    
+      <link rel="stylesheet" href="../../../css/access-nri.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -81,7 +79,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+    <body dir="ltr" data-md-color-scheme="custom-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -140,7 +138,21 @@
             
             
             
-            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="custom-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07 19.07 3.5m-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13.51 1.67m-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87.4 1.31M19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35-2.53-2.2m4.33-2.7 1.15-2.77 2.2 2.54-3.35.23m1.15-4.96-1.14-2.78 3.34.24-2.2 2.54M9.63 18.93l2.77 1.15-2.53 2.19-.24-3.34Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="custom-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07 19.07 3.5m-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13.51 1.67m-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87.4 1.31M19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35-2.53-2.2m4.33-2.7 1.15-2.77 2.2 2.54-3.35.23m1.15-4.96-1.14-2.78 3.34.24-2.2 2.54M9.63 18.93l2.77 1.15-2.53 2.19-.24-3.34Z"/></svg>
+              </label>
             
           
         </form>
@@ -337,7 +349,7 @@
   <!-- Recurse, if the first item has further nested items -->
   
   <li class="md-tabs__item">
-      <a href="../../../models/running-a-model/" class="md-tabs__link">
+      <a href="../../../models/run-a-model/" class="md-tabs__link">
         Run a Model
       </a>
     </li>
@@ -1199,7 +1211,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../models/running-a-model/">Run a Model</a>
+          <a href="../../../models/run-a-model/">Run a Model</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1222,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/running-a-model/getting_started/access_to_gadi_at_nci/" class="md-nav__link">
+      <a href="../../../models/run-a-model/getting_started/access_to_gadi_at_nci/" class="md-nav__link">
         Computing Access (Gadi@NCI)
       </a>
     </li>
@@ -1236,7 +1248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/running-a-model/running-access-esm/" class="md-nav__link">
+      <a href="../../../models/run-a-model/run-access-esm/" class="md-nav__link">
         Run ACCESS-ESM
       </a>
     </li>
@@ -1250,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/running-a-model/running-access-cm/" class="md-nav__link">
+      <a href="../../../models/run-a-model/run-access-cm/" class="md-nav__link">
         Run ACCESS-CM
       </a>
     </li>
@@ -1264,7 +1276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/running-a-model/running-access-am/" class="md-nav__link">
+      <a href="../../../models/run-a-model/run-access-am/" class="md-nav__link">
         Run ACCESS-AM
       </a>
     </li>
@@ -1278,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/running-a-model/running-access-om/" class="md-nav__link">
+      <a href="../../../models/run-a-model/run-access-om/" class="md-nav__link">
         Run ACCESS-OM
       </a>
     </li>
@@ -2254,15 +2266,18 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
   
     
   
+  <nav class="md-nav md-nav--secondary" aria-label="On this page">
+    
+    
+    
+      
+    
+    
+  </nav>
   
-</nav>
                   </div>
                 </div>
               </div>
@@ -2293,20 +2308,20 @@
 
 <h1 id="glossary-and-useful-terms"><div class="highlight-bg"> Glossary and Useful Terms </div></h1>
 <p>Here you can find a compilation of common terms and acronyms used by the Australian Community Climate and Earth System Simulator (ACCESS)  community:</p>
-<p><a href="https://access-hive.org.au/about/support"><span class="icon-supported center-icons"><i class="fa fa-check" title="Supported by ACCESS-NRI"></i></span></a> <a href="https://www.access-nri.org.au/community/access-glossary/">ACCESS-NRI Glossary</a>: This includes common terms and acronyms used by the ACCESS community in research and modelling of past, present and future climate, weather and Earth-Systems.</p>
-<p><a href="https://access-hive.org.au/about/support"><span class="heart center-icons"><i class="heart fa-regular fa-heart" title="Community Contributed"></i></span></a> <a href="https://www.ipcc.ch/site/assets/uploads/sites/2/2022/06/SR15_AnnexI.pdf">IPCC Acronyms</a>: Contains a comprehensive list of acronyms published in the scientific report SR15 of the Intergovernmental Panel on Climate Change (IPCC). The IPCC is the United Nations body for assessing the science related to climate change.</p>
-<p><a href="https://access-hive.org.au/about/support"><span class="heart center-icons"><i class="heart fa-regular fa-heart" title="Community Contributed"></i></span></a> <a href="https://science2017.globalchange.gov/chapter/appendix-d/">CSSR Acronyms and Units</a>: The Climate Science Special Report (CSSR) is an assessment of the science of climate change with particular focus on the United States.</p>
+<p>{{ supported }} <a href="https://www.access-nri.org.au/community/access-glossary/">ACCESS-NRI Glossary</a>: This includes common terms and acronyms used by the ACCESS community in research and modelling of past, present and future climate, weather and Earth-Systems.</p>
+<p>{{ community }} <a href="https://www.ipcc.ch/site/assets/uploads/sites/2/2022/06/SR15_AnnexI.pdf">IPCC Acronyms</a>: Contains a comprehensive list of acronyms published in the scientific report SR15 of the Intergovernmental Panel on Climate Change (IPCC). The IPCC is the United Nations body for assessing the science related to climate change.</p>
+<p>{{ community }} <a href="https://science2017.globalchange.gov/chapter/appendix-d/">CSSR Acronyms and Units</a>: The Climate Science Special Report (CSSR) is an assessment of the science of climate change with particular focus on the United States.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
       
     
   </small>
@@ -2356,32 +2371,30 @@
   
 </div>
       <div class="partners-logo">
-        <div style="align-items:center">
-          <a href="https://www.education.gov.au/ncris" target="_blank" rel="noopener" title="NCRIS">
-          <img src="../../../assets/ncris_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.anu.edu.au" target="_blank" rel="noopener" title="The Australian National University">
-          <img src="../../../assets/anu_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="http://www.bom.gov.au/" target="_blank" rel="noopener" title="Australian Bureau of Meteorology">
-          <img src="../../../assets/bom_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.csiro.au/" target="_blank" rel="noopener" title="CSIRO">
-          <img src="../../../assets/csiro_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.monash.edu" target="_blank" rel="noopener" title="Monash University">
-          <img src="../../../assets/monash-university_logo.svg" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.unimelb.edu.au" target="_blank" rel="noopener" title="The University of Melbourne">
-          <img src="../../../assets/university-of-melbourne_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.unsw.edu.au" target="_blank" rel="noopener" title="The University of New South Wales">
-          <img src="../../../assets/university-of-nsw_logo.png" alt="logo" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-          <a href="https://www.utas.edu.au" target="_blank" rel="noopener" title="The University of Tasmania">
-          <img src="../../../assets/university-of-tasmania_logo.svg" alt="logos" style="width: auto; height: 2.1rem; padding: 0.3rem;">
-          </a>
-        </div>
+        <a href="https://www.education.gov.au/ncris" target="_blank" rel="noopener" title="NCRIS">
+        <img src="../../../assets/ncris_logo.png" alt="logo">
+        </a>
+        <a href="https://www.anu.edu.au" target="_blank" rel="noopener" title="The Australian National University">
+        <img src="../../../assets/anu_logo.svg" alt="logo">
+        </a>
+        <a href="http://www.bom.gov.au/" target="_blank" rel="noopener" title="Australian Bureau of Meteorology">
+        <img src="../../../assets/bom_logo.svg" alt="logo">
+        </a>
+        <a href="https://www.csiro.au/" target="_blank" rel="noopener" title="CSIRO">
+        <img src="../../../assets/csiro_logo.svg" alt="logo">
+        </a>
+        <a href="https://www.monash.edu" target="_blank" rel="noopener" title="Monash University">
+        <img src="../../../assets/monash-university_logo.svg" alt="logo">
+        </a>
+        <a href="https://www.unimelb.edu.au" target="_blank" rel="noopener" title="The University of Melbourne">
+        <img src="../../../assets/university-of-melbourne_logo.png" alt="logo">
+        </a>
+        <a href="https://www.unsw.edu.au" target="_blank" rel="noopener" title="The University of New South Wales">
+        <img src="../../../assets/university-of-nsw_logo.png" alt="logo">
+        </a>
+        <a href="https://www.utas.edu.au" target="_blank" rel="noopener" title="The University of Tasmania">
+        <img src="../../../assets/university-of-tasmania_logo.svg" alt="logos">
+        </a>
       </div>
       
         <div class="md-social">
@@ -2420,11 +2433,11 @@
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../../js/termynal.js"></script>
-      
         <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
       
-        <script src="../../../js/tablesort.js"></script>
+        <script src="../../../js/terminal_animation.js"></script>
+      
+        <script src="../../../js/miscellaneous.js"></script>
       
     
   </body>
