@@ -186,36 +186,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_access_nri/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_cmip/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_cssr/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_era/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_ipcc/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/glossaries/glossary_um/</loc>
-         <lastmod>2023-07-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/community_resources/training/</loc>
          <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
@@ -312,6 +282,11 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/model_evaluation_getting_started/</loc>
+         <lastmod>2023-07-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/model_variables/</loc>
          <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
