@@ -1715,12 +1715,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#about-esmvaltool" class="md-nav__link">
+    About ESMValTool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#running-esmvaltool-on-gadi" class="md-nav__link">
     Running esmvaltool on Gadi
   </a>
   
     <nav class="md-nav" aria-label="Running esmvaltool on Gadi">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-the-access-med-conda-environment" class="md-nav__link">
+    Load the access-med conda environment
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#what-recipes-are-available" class="md-nav__link">
@@ -1749,8 +1770,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-esmvaltool-recipes-on-gadi" class="md-nav__link">
-    Working esmvaltool recipes on Gadi
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
+  
+    <nav class="md-nav" aria-label="Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recipes-and-diagnostics" class="md-nav__link">
+    Recipes and diagnostics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esmvaltool-recipes-examples" class="md-nav__link">
+    ESMValTool recipes examples
   </a>
   
 </li>
@@ -2233,12 +2281,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#about-esmvaltool" class="md-nav__link">
+    About ESMValTool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#running-esmvaltool-on-gadi" class="md-nav__link">
     Running esmvaltool on Gadi
   </a>
   
     <nav class="md-nav" aria-label="Running esmvaltool on Gadi">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-the-access-med-conda-environment" class="md-nav__link">
+    Load the access-med conda environment
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#what-recipes-are-available" class="md-nav__link">
@@ -2267,8 +2336,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-esmvaltool-recipes-on-gadi" class="md-nav__link">
-    Working esmvaltool recipes on Gadi
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
+  
+    <nav class="md-nav" aria-label="Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recipes-and-diagnostics" class="md-nav__link">
+    Recipes and diagnostics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esmvaltool-recipes-examples" class="md-nav__link">
+    ESMValTool recipes examples
   </a>
   
 </li>
@@ -2305,13 +2401,27 @@
 
 
 <h1 id="tutorial-for-using-esmvaltool-on-gadinci">Tutorial for using <code>esmvaltool</code> on Gadi@NCI</h1>
+<p><img alt="ESMValTool-logo" src="https://docs.esmvaltool.org/en/latest/_static/ESMValTool-logo-2.png" /></p>
 <details class="warning" open="open">
 <summary>The documentation on Hive is work in progress!</summary>
 <p>The ACCESS-Hive is a community resource that is a work in progress. We’d love to receive your contribution. Please see the <a href="/contribute/index.md">contributing guidelines</a> below for how to make contributions to the <strong>Hive</strong> page content. You can also <a href="https://github.com/ACCESS-Hive/access-hive.github.io/issues">open an issue</a> highlighting any content you’d like us to provide but aren’t able to contribute yourself.</p>
 </details>
-<p>ACCESS-NRI is currating the latest version of <a href="">ESMValTool</a>.</p>
-<p>Below, we give a quick overview on how to run and configure <code>esmvaltool</code> on Gadi.</p>
+<p><a href="https://github.com/ACCESS-NRI/ESMValTool-workflow.git">ACCESS ESMValTool Worflow recipe status</a></p>
+<h2 id="about-esmvaltool">About ESMValTool</h2>
+<p>The Earth System Model Evaluation Tool (ESMValTool) is a community-development that aims at improving diagnosing and understanding of the causes and effects of model biases and inter-model spread. The ESMValTool mainly focus on evaluating results from the Coupled Model Intercomparison Project (CMIP) ensemble. The goal is to build a common framework for the evaluation of Earth System Models (ESMs) against observations available through the Earth System Grid Federation (ESGF) in standard formats (obs4MIPs) or made available at ESGF nodes.</p>
+<p>More information on ESMValTool scope is available in the extensive <a href="https://docs.esmvaltool.org/en/latest">ESMValTool documentation</a>.</p>
+<p>ACCESS-NRI provides access to the latest version of ESMValTool via the xp65 access-med conda environment deployed on NCI-Gadi.
+Our plan is to routinely run benchmarks and comparisons of the ACCESS models CMIP submissions. We will also provide support for running recipes on NCI-Gadi.</p>
 <h2 id="running-esmvaltool-on-gadi">Running <code>esmvaltool</code> on Gadi</h2>
+<h4 id="pre-requisites">Pre-requisites</h4>
+<p>NCI Projects requires to run the set of ESMValTool recipes:</p>
+<ul>
+<li>xp65, kj13, fs38, oi10, rr3, al33, rt52, zz93, qv56</li>
+</ul>
+<h4 id="load-the-access-med-conda-environment">Load the <code>access-med</code> conda environment</h4>
+<div class="highlight"><pre><span></span><code>    module use /g/data/xp65/public/modules
+    module load conda/access-med
+</code></pre></div>
 <h4 id="what-recipes-are-available">What recipes are available?</h4>
 <div class="highlight"><pre><span></span><code>    esmvaltool recipes list
 </code></pre></div>
@@ -2321,7 +2431,19 @@
 <h4 id="running-an-recipe-yourself">Running an recipe yourself</h4>
 <div class="highlight"><pre><span></span><code>esmvaltool run examples/recipe_python.yml --search_esgf=when_missing
 </code></pre></div>
-<h2 id="working-esmvaltool-recipes-on-gadi">Working <code>esmvaltool</code> recipes on Gadi</h2>
+<h2 id="support">Support</h2>
+<p>ACCESS and NCI-Gadi users can get help from ACCESS-NRI for running their recipe on Gadi via Github Issue on the <a href="https://github.com/ACCESS-NRI/ESMValTool-workflow.git">ESMValTool-Workflow</a> github repository or by opening a thread on the <a href="https://access-hive.org.au">ACCESS-Hive Forum</a>.</p>
+<p>General support for ESMValTool (non-specific to NCI-Gadi) can be found in <a href="https://github.com/ESMValGroup/ESMValTool/discussions">ESMValTool Discussions page</a> where users can open an issue and a member of the User Engagement Team of ESMValTool will reply as soon as possible. This is open for all general and technical questions on the ESMValTool: installation, application, development, or any other question or comment you may have.</p>
+<h3 id="recipes-and-diagnostics">Recipes and diagnostics</h3>
+<p>Contacts for specific diagnostic sets are the respective authors, as listed in the corresponding <a href="https://docs.esmvaltool.org/en/latest/recipes/index.html#recipes">recipe and diagnostic documentation</a> and in the source code.</p>
+<p>The current status of ESMValTool recipes for the xp64 conda environment is available <a href="https://github.com/ACCESS-NRI/ESMValTool-workflow.git">here</a></p>
+<h2 id="license">License</h2>
+<p>The ESMValTool is released under the Apache License, version 2.0. Citation of the ESMValTool paper (“Software Documentation Paper”) is kindly requested upon use, alongside with the software DOI for ESMValTool (doi:10.5281/zenodo.3401363) and ESMValCore (doi:10.5281/zenodo.3387139) and version number:</p>
+<blockquote>
+<p>Righi, M., Andela, B., Eyring, V., Lauer, A., Predoi, V., Schlund, M., Vegas-Regidor, J., Bock, L., Brötz, B., de Mora, L., Diblen, F., Dreyer, L., Drost, N., Earnshaw, P., Hassler, B., Koldunov, N., Little, B., Loosveldt Tomas, S., and Zimmermann, K.: Earth System Model Evaluation Tool (ESMValTool) v2.0 – technical overview, Geosci. Model Dev., 13, 1179–1199, https://doi.org/10.5194/gmd-13-1179-2020, 2020.</p>
+</blockquote>
+<p>Besides the above citation, users are kindly asked to register any journal articles (or other scientific documents) that use the software at the ESMValTool webpage (http://www.esmvaltool.org/). Citing the Software Documentation Paper and registering your paper(s) will serve to document the scientific impact of the Software, which is of vital importance for securing future funding. You should consider this an obligation if you have taken advantage of the ESMValTool, which represents the end product of considerable effort by the development team.</p>
+<h2 id="esmvaltool-recipes-examples">ESMValTool recipes examples</h2>
 <!-- Explain what the Tiers mean: Tier3 not to be distributed / license issue, Tier2: some restrictions, but can be redistributed while citing papers etc., Tier1: open for everyone -->
 
 <p>Below you can find the recipes from <code>esmvaltool</code> that we are providing to run on Gadi. The original recipes are </p>
