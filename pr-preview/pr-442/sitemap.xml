@@ -356,11 +356,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/models/configurations/access-s/</loc>
-         <lastmod>2023-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/models/model_components/</loc>
          <lastmod>2023-07-17</lastmod>
          <changefreq>daily</changefreq>
