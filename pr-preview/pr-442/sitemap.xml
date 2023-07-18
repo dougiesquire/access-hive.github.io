@@ -246,6 +246,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.org.au/get_started/</loc>
+         <lastmod>2023-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.org.au/model_evaluation/</loc>
          <lastmod>2023-07-17</lastmod>
          <changefreq>daily</changefreq>
