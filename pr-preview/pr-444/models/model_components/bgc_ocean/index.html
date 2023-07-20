@@ -44,13 +44,19 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/fontello.css">
-    
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-      <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/fontawesome.css">
+      <link rel="stylesheet" href="../../../fontawesome-free-6.4.0-web/css/fontawesome.css">
     
-      <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/solid.css">
+      <link rel="stylesheet" href="../../../fontawesome-free-6.4.0-web/css/solid.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-codes.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-ie7-codes.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-ie7.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello.css">
     
       <link rel="stylesheet" href="../../../css/access-nri.css">
     
@@ -777,8 +783,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configurations/access-esm/" class="md-nav__link">
-        ACCESS-ESM
+      <a href="../../configurations/access-am/" class="md-nav__link">
+        ACCESS-AM
       </a>
     </li>
   
@@ -805,8 +811,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configurations/access-am/" class="md-nav__link">
-        ACCESS-AM
+      <a href="../../configurations/access-esm/" class="md-nav__link">
+        ACCESS-ESM
       </a>
     </li>
   
@@ -1147,8 +1153,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../run-a-model/run-access-esm/" class="md-nav__link">
-        Run ACCESS-ESM
+      <a href="../../run-a-model/run-access-am/" class="md-nav__link">
+        Run ACCESS-AM
       </a>
     </li>
   
@@ -1175,8 +1181,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../run-a-model/run-access-am/" class="md-nav__link">
-        Run ACCESS-AM
+      <a href="../../run-a-model/run-access-esm/" class="md-nav__link">
+        Run ACCESS-ESM
       </a>
     </li>
   
@@ -1941,21 +1947,20 @@
 
 <p><img src = "../../../assets/component-logos/component-maps/bgc-ocean-component-map.png" class="image-background"></img></p>
 <h2 id="wombat"><div class="center-icons"> WOMBAT  </div></h2>
-<p>WOMBAT is the ocean carbon model (World Ocean Model of Biogeochemistry And Trophic-dynamics), developed in Australia. It calculates the carbon fluxes of the ocean, by simulating the evolution of phosphate, oxygen, dissolved inorganic carbon, alkalinity and iron with one class of phytoplankton and zooplankton.</p>
-<p>WOMBAT is a Nutrient, Phytoplankton, Zooplankton and Detritus (NPZD) model, with one zooplankton and one phytoplankton class.</p>
+<p>The World Ocean Model of Biogeochemistry And Trophic-dynamics (WOMBAT) is the ocean biogeochemistry module added to ACCESS models. The core of WOMBAT is a Nutrient, Phytoplankton, Zooplankton and Detritus (NPZD) cycle. WOMBAT simulates the evolution of open-ocean phosphate, oxygen, dissolved inorganic carbon, alkalinity, iron and carbon fluxes with one zooplankton and one phytoplankton class.</p>
 <h3 id="how-is-wombat-used">How is WOMBAT used?</h3>
-<p>WOMBAT is <a href="https://github.com/COSIMA/ACCESS-ESM1.5-MOM5">coupled to the MOM5 ocean model</a> in the ACCESS-ESM1.5 and ACCESS-OM2 models.</p>
+<p>WOMBAT is applied as a tracer package in the ACCESS ocean model <a href="https://github.com/mom-ocean/MOM5">MOM5</a>. In the ACCESS-OM2 configuration, WOMBAT is used in MOM5 and coupled with sea ice biogeochemistry. WOMBAT is also applied in <a href="https://github.com/COSIMA/ACCESS-ESM1.5-MOM5">MOM5 of the ACCESS-ESM1.5 configuration</a>  used for CMIP6.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 17, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 20, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 17, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 20, 2023</span>
       
     
   </small>
