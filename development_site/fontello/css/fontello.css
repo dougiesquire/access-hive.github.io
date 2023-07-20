@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?90157532');
-  src: url('../font/fontello.eot?90157532#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?90157532') format('woff2'),
-       url('../font/fontello.woff?90157532') format('woff'),
-       url('../font/fontello.ttf?90157532') format('truetype'),
-       url('../font/fontello.svg?90157532#fontello') format('svg');
+  src: url('../font/fontello.eot?17104538');
+  src: url('../font/fontello.eot?17104538#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?17104538') format('woff2'),
+       url('../font/fontello.woff?17104538') format('woff'),
+       url('../font/fontello.ttf?17104538') format('truetype'),
+       url('../font/fontello.svg?17104538#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,11 +15,10 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?90157532#fontello') format('svg');
+    src: url('../font/fontello.svg?17104538#fontello') format('svg');
   }
 }
 */
-
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -45,15 +44,18 @@
   margin-left: .2em;
 
   /* you can be more comfortable with increased icons size */
-  font-size: 40%;
+  /* font-size: 120%; */
 
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscales;
+  -moz-osx-font-smoothing: grayscale;
 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-cc:before { color: white; content: '\e800'; font-size: 120%;} /* '' */
-.icon-cc-by:before { color: white; content: '\e801'; font-size: 120%;} /* '' */
+.icon-alert:before { content: '\e800'; } /* '' */
+.icon-cc:before { content: '\e801'; } /* '' */
+.icon-cc-by:before { content: '\e802'; } /* '' */
+.icon-logout:before { content: '\e803'; } /* '' */
+.icon-key:before { content: '\e804'; } /* '' */
