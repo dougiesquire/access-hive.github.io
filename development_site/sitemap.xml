@@ -41,32 +41,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/community_resources/community_data_processing/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/community_med_recipes/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/community_model_catalogs/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/community_resources/community_observational_catalogs/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/community_resources/community_working_groups/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://access-hive.org.au/community_resources/computing_on_gadi/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_med/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_med/community_data_processing/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_med/community_med_recipes/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_med/community_model_catalogs/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://access-hive.org.au/community_resources/community_med/community_observational_catalogs/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
