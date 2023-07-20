@@ -44,13 +44,19 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/fontello.css">
-    
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-      <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/fontawesome.css">
+      <link rel="stylesheet" href="../../../fontawesome-free-6.4.0-web/css/fontawesome.css">
     
-      <link rel="stylesheet" href="../../../css/fontawesome-free-6.4.0-web/css/solid.css">
+      <link rel="stylesheet" href="../../../fontawesome-free-6.4.0-web/css/solid.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-codes.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-ie7-codes.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello-ie7.css">
+    
+      <link rel="stylesheet" href="../../../fontello/css/fontello.css">
     
       <link rel="stylesheet" href="../../../css/access-nri.css">
     
@@ -2542,22 +2548,15 @@
 <!-- # <span class="highlight-bg"> Run ACCESS-CM </span> -->
 <h1 id="run-access-cm"><span class="highlight-bg"> Run ACCESS-CM </span></h1>
 <h2 id="requirements"><span>Requirements</span></h2>
-<div class="justified">
-Before running ACCESS-CM, you need to make sure to possess the right tools and to have an account with specific institutions.
-</div>
-
+<p>Before running ACCESS-CM, you need to make sure to possess the right tools and to have an account with specific institutions.</p>
 <h3 id="general-requirements"><span>General requirements</span></h3>
-<div class="justified">
-For the general requirements needed to run all ACCESS models, please refer to the <a href="TO DO">Getting Started (TO DO check link)</a> page.
-</div>
-
+<p>For the general requirements needed to run all ACCESS models, please refer to the <a href="TO DO">Getting Started (TO DO check link)</a> page.</p>
 <h3 id="model-specific-requirements"><span>Model-specific requirements</span></h3>
-<div class="justified">
 <ul>
     <li>
         <b>Join the <i>access</i> project at NCI</i></b>
         <br>
-        To join the <i>access</i> project at NCI, request membership for it on the <a href="https://my.nci.org.au/mancini/project/access/join" target="_blank">NCI access project</a> page.
+        To join the <i>access</i> project at NCI, request membership for it on the <a href="https://my.nci.org.au/mancini/project/access/join" target="_blank">access</a> NCI project page.
         <br>
         For more information on how to join specific NCI projects, please refer to <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">How to connect to a project</a>.
     </li>
@@ -2566,7 +2565,7 @@ For the general requirements needed to run all ACCESS models, please refer to th
         <br>
         To run ACCESS-CM you need the connection to <a href="https://accessdev.nci.org.au/trac/wiki" target="_blank"><i>accessdev</i></a>, an NCI server providing configuration and run control for ACCESS-CM.
         <br>
-        Also, you need to make sure there is correct communication between <i>accessdev</i> and <i>gadi</i>.
+        Also, you need to make sure there is correct communication between <i>accessdev</i> and <i>Gadi</i>.
         <br>
         To complete these steps, you can follow the guides on <a href="">SSH connections on <i>accessdev</i></a>.
     </li>
@@ -2578,24 +2577,18 @@ For the general requirements needed to run all ACCESS models, please refer to th
         To apply for a <i>MOSRS</i> account, please contact your <a href="https://opus.nci.org.au/display/DAE/UK+Met+Office+environment+prerequisites" target="_blank">local institutional sponsor</a>.
     </li>
 </ul>
-</div>
 
 <hr />
 <h2 id="get-access-cm-suite">Get ACCESS-CM suite</h2>
-<div class="justified">
-ACCESS-CM is a set of submodels (e.g. UM, MOM, CICE, CABLE, OASIS) with a range of model parameters, input data, and computer related information, that need to be packaged together as a <i>suite</i> in order to run.
+<p>ACCESS-CM is a set of submodels (e.g. UM, MOM, CICE, CABLE, OASIS) with a range of model parameters, input data, and computer related information, that need to be packaged together as a <i>suite</i> in order to run.
 <br>
 Each ACCESS-CM suite has an ID, in the format <code>u-&lt;suite-name&gt;</code>, with <code>&lt;suite-name&gt;</code> being a unique identifier (e.g. <code>u-br565</code> is the CMIP6 release preindustrial experiment suite).
 <br>
-Typically, an existing suite is copied and then edited as needed for a particular run.
-</div>
-
+Typically, an existing suite is copied and then edited as needed for a particular run.</p>
 <h3 id="copy-access-cm-suite-with-rosie">Copy ACCESS-CM suite with Rosie</h3>
-<div class="justified">
-<a href = "http://metomi.github.io/rose/doc/html/tutorial/rose/rosie.html" target="_blank">Rosie</a> is an <a href = "https://subversion.apache.org/" target="_blank">SVN</a> repository wrapper with a set of options to work with ACCESS-CM suites.
+<p><a href = "http://metomi.github.io/rose/doc/html/tutorial/rose/rosie.html" target="_blank">Rosie</a> is an <a href = "https://subversion.apache.org/" target="_blank">SVN</a> repository wrapper with a set of options to work with ACCESS-CM suites.
 <br>
-To copy an existing suite, on <i>accessdev</i>:
-<!-- Change this to gadi/ARE when it will be completely possible to run CM2 fully on gadi-->
+To copy an existing suite, on <i>accessdev</i>:</p>
 <ol>
     <li>
         Run
@@ -2628,12 +2621,12 @@ To copy an existing suite, on <i>accessdev</i>:
         </terminal-animation>
     </li>
 </ol>
-For additional <code>rosie</code> options, run 
+<p>For additional <code>rosie</code> options, run </p>
 <pre><code>rosie help</code></pre>
-<br>
+<p><br>
 The suites are created in the user's <i>accessdev</i> home directory, under <code>~/roses/&lt;suite-ID&gt;</code>.
 <br>
-The suite directory usually contains 2 subdirectories and 3 files:
+The suite directory usually contains 2 subdirectories and 3 files:</p>
 <ul>
     <li><code>app</code> &rarr; directory containing the configuration files for the various tasks within the suite.</li>
     <li><code>meta</code> &rarr; directory containing the GUI metadata.</li>
@@ -2645,77 +2638,64 @@ The suite directory usually contains 2 subdirectories and 3 files:
         <terminal-line class="ls-output-format">app meta rose-suite.conf rose-suite.info suite.rc</terminal-line>
     </terminal-animation>
 </ul>
-</div>
 <hr />
 <h2 id="edit-access-cm-suite-configuration">Edit ACCESS-CM suite configuration</h2>
 <h3 id="rose">Rose</h3>
-<div class="justified">
-<a href = "http://metomi.github.io/rose/doc/html/index.html" target="_blank">Rose</a> is a configuration editor which can be used to view, edit, or run an ACCESS-CM suite.
+<p><a href = "http://metomi.github.io/rose/doc/html/index.html" target="_blank">Rose</a> is a configuration editor which can be used to view, edit, or run an ACCESS-CM suite.
 <br>
 To edit a suite configuration, on <i>accessdev</i>:
-<!-- Change this to gadi/ARE when it will be completely possible to run CM2 fully on gadi-->
-From inside the relevant suite directory (e.g. <code>~/roses/&lt;suite-ID&gt;</code>), run 
-<pre><code>rose edit &</code></pre> 
-to open the <i>Rose</i> GUI and inspect the suite information.
-<br>
-<b>Note:</b> the <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process. 
-<terminal-animation>
+From inside the relevant suite directory (e.g. <code>~/roses/&lt;suite-ID&gt;</code>), run </p>
+<pre><code>rose edit &</code></pre>
+<p>to open the <i>Rose</i> GUI and inspect the suite information.
+<br></p>
+<div class="note">
+    The <code>&</code> is optional and keeps the terminal prompt active while runs the GUI as a separate process.
+</div>
+<p><terminal-animation>
     <terminal-line data="input">cd ~/roses/&lt;suite-ID&gt;</terminal-line>
-    <terminal-line data="input" directory="~/roses/&lt;suite-ID&gt;">rose edit &</terminal-line>
+    <terminal-line data="input" directory="~/roses/&lt;suite-ID&gt;">rose edit &amp;</terminal-line>
     <terminal-line class="ls-output-format">[&lt;N&gt;] &lt;PID&gt;</terminal-line>
     <terminal-line data="input" directory="~/roses/&lt;suite-ID&gt;"></terminal-line>
     <img src="../../../assets/run_access_cm/Rose GUI.png" alt="Rose GUI">
-</terminal-animation>
-</div>
-
+</terminal-animation></p>
 <h3 id="change-nci-project">Change NCI project</h3>
-<div class="justified">
-To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf &rarr; Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../../../assets/run_access_cm/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
+<p>To make sure we run the suite under the NCI project we belong to, we can navigate to <i>suite conf &rarr; Machine and Runtime Options</i>, edit the <i>Compute project</i> field, and click the <i>Save</i> button <img src="../../../assets/run_access_cm/save_button.png" alt="Save button" style="height:1em"/>. (Check <a href="https://opus.nci.org.au/display/Help/How+to+connect+to+a+project" target="_blank">how to connect to a project</a> if you have not joined one yet).
 <br>
 For example, to run ACCESS-CM under the <code>tm70</code> project (ACCESS-NRI), we will insert <code>tm70</code> in the <i>Compute project</i> field:
 <br>
-<img src="../../../assets/run_access_cm/rose_change_project.gif" alt="Rose change project" class="example-img"/>
-<span class="note">Note:</span> You should be part of a project with allocated <i>Service Units</i> (SU) to be able to run ACCESS-CM. For more information please check <a href="">(TO DO reference projects)</a>.
+<img src="../../../assets/run_access_cm/rose_change_project.gif" alt="Rose change project" class="example-img"/></p>
+<div class="note">
+    You should be part of a project with allocated <i>Service Units</i> (SU) to be able to run ACCESS-CM. For more information please check <a href="">(TO DO reference projects)</a>.
 </div>
 
 <h3 id="change-run-length-and-cycling-frequency">Change run length and cycling frequency</h3>
-<div class="justified">
-ACCESS-CM suites are often run in multiple steps, each of them constituting a cycle, with the job scheduler resubmitting the suite every chosen <i>Cycling frequency</i>, until the <i>Total Run length</i> is met.
+<p>ACCESS-CM suites are often run in multiple steps, each of them constituting a cycle, with the job scheduler resubmitting the suite every chosen <i>Cycling frequency</i>, until the <i>Total Run length</i> is met.
 <br>
 To modify these parameters, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective fields, and click the <i>Save</i> button <img src="../../../assets/run_access_cm/save_button.png" alt="Save button" style="height:1em"/>. The values are in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
 <br>
 If, for example, we want to run the suite for a total of 50 Years, and resubmit every year, we will change <i>Total Run length</i> to <code>P50Y</code> and <i>Cycling frequency</i> to <code>P1Y</code>. Note that the current maximum <i>Cycling frequency</i> is 2 years:
 <br>
-<img src="../../../assets/run_access_cm/rose_change_run_length.gif" alt="Rose change run length" class="example-img"/>
-</div>
-
+<img src="../../../assets/run_access_cm/rose_change_run_length.gif" alt="Rose change run length" class="example-img"/></p>
 <h3 id="change-wallclock-time">Change wallclock time</h3>
-<div class="justified">
-The <i>Wallclock time</i> is the time requested by the PBS job<!-- TO DO <a href="../getting-started/#pbs-jobs" target="_blank">PBS job</a> --> to run a single cycle. If this time is not enough for the suite to end its cycle, our job will be terminated before the suite can complete the run. 
+<p>The <i>Wallclock time</i> is the time requested by the PBS job<!-- TO DO <a href="../getting-started/#pbs-jobs" target="_blank">PBS job</a> --> to run a single cycle. If this time is not enough for the suite to end its cycle, our job will be terminated before the suite can complete the run. 
 <br>
 If we change the <i>Cycling frequency</i>, we might need to change the <i>Wallclock time</i> accordingly. 
 <br>
 The time needed for the suite to run a full cycle depends on several factors, but a good estimation can be 4 hours per simulated year.
 <br>
-To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../../../assets/run_access_cm/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.
-
+To modify the <i>Wallclock time</i>, we can navigate to <i>suite conf &rarr; Run Initialisation and Cycling</i>, edit the respective field, and click the <i>Save</i> button <img src="../../../assets/run_access_cm/save_button.png" alt="Save button" style="height:1em"/>. The value is in the <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations" target="_blank">ISO 8601 Duration</a> format.</p>
 <!-- TO DO For more details on how to edit other suite parameters using Rose GUI, such as component configurations, output variables (STASH), or science settings, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide</a>. -->
-</div>
 <hr />
 <h2 id="run-access-cm-suite">Run ACCESS-CM suite</h2>
-<div class="justified">
-ACCESS-CM suites run on <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-Overview" target="_blank">gadi</a> through a PBS job submission.
+<p>ACCESS-CM suites run on <a href="https://opus.nci.org.au/display/Help/0.+Welcome+to+Gadi#id-0.WelcometoGadi-Overview" target="_blank">Gadi</a> through a PBS job submission.
 <br>
-When the suite gets run, its configuration files are copied on gadi under <code>/scratch/$PROJECT/$USER/cylc-run/&lt;suite-ID&gt;</code>, and a symbolic link to this folder is also created in the <code>$USER</code>'s home directory under <code>~/cylc-run/&lt;suite-ID&gt;</code>.
+When the suite gets run, its configuration files are copied on <i>Gadi</i> under <code>/scratch/$PROJECT/$USER/cylc-run/&lt;suite-ID&gt;</code>, and a symbolic link to this folder is also created in the <code>$USER</code>'s home directory under <code>~/cylc-run/&lt;suite-ID&gt;</code>.
 <br>
-An ACCESS-CM suite is constituted by several tasks (such as checking out code repositories, compiling and building the different model components, running the model, etc.). The workflow of these tasks is controlled by <i>Cylc</i>.
-</div>
-
+An ACCESS-CM suite is constituted by several tasks (such as checking out code repositories, compiling and building the different model components, running the model, etc.). The workflow of these tasks is controlled by <i>Cylc</i>.</p>
 <h3 id="cylc">Cylc</h3>
-<div class="justified">
-<a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" target="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. <i>Cylc</i> deals with how the job will be run and manages the time steps of each submodel, as well as monitoring all the tasks and reporting any error that might occur.
+<p><a href="https://cylc.github.io/cylc-doc/7.8.8/html/index.html" target="_blank">Cylc</a> (pronounced ‘silk’), is a workflow manager that automatically executes tasks according to the model main cycle script <code>suite.rc</code>. <i>Cylc</i> deals with how the job will be run and manages the time steps of each submodel, as well as monitoring all the tasks and reporting any error that might occur.
 <br>
-To run an ACCESS-CM suite, on <i>accessdev</i>:
+To run an ACCESS-CM suite, on <i>accessdev</i>:</p>
 <ol>
     <li>
         From inside the suite directory, run
@@ -2772,37 +2752,35 @@ To run an ACCESS-CM suite, on <i>accessdev</i>:
         <terminal-line>[INFO]  $ ps -opid,args &lt;PID&gt;  # on accessdev.nci.org.au</terminal-line>
         <img src="../../../assets/run_access_cm/Cylc GUI.png" alt="Cylc GUI">
     </terminal-animation>
-    <br>
-    <b>Note:</b> If after you run the command <code>rose suite-run</code> you get an error similar to the following:
-    <pre><code><span style="color: orangered">[FAIL]</span> Suite "&lt;suite-ID&gt;" appears to be running:
-        <span style="color: orangered">[FAIL]</span> Contact info from: "/home/565/&lt;$USER&gt;/cylc-run/&lt;suite-ID&gt;/.service/contact"
-        <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_HOST=accessdev.nci.org.au
-        <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_OWNER=&lt;$USER&gt;
-        <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_PORT=&lt;port&gt;
-        <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_PROCESS=&lt;PID&gt; python2 /usr/local/cylc/cylc-7.8.3/bin/cylc-run &lt;suite-ID&gt;
-        <span style="color: orangered">[FAIL]</span> Try "cylc stop '&lt;suite-ID&gt;'" first?
-    </code></pre>
-    you should run
-    <pre><code>rm /home/565/&lt;$USER&gt;/cylc-run/&lt;suite-ID&gt;/.service/contact</code></pre>
-    before running the <code>rose suite-run</code> command again.
+    <div class="note">
+        If after you run the command <code>rose suite-run</code> you get an error similar to the following:
+        <pre><code><span style="color: orangered">[FAIL]</span> Suite "&lt;suite-ID&gt;" appears to be running:
+            <span style="color: orangered">[FAIL]</span> Contact info from: "/home/565/&lt;$USER&gt;/cylc-run/&lt;suite-ID&gt;/.service/contact"
+            <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_HOST=accessdev.nci.org.au
+            <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_OWNER=&lt;$USER&gt;
+            <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_PORT=&lt;port&gt;
+            <span style="color: orangered">[FAIL]</span> &emsp;&emsp;CYLC_SUITE_PROCESS=&lt;PID&gt; python2 /usr/local/cylc/cylc-7.8.3/bin/cylc-run &lt;suite-ID&gt;
+            <span style="color: orangered">[FAIL]</span> Try "cylc stop '&lt;suite-ID&gt;'" first?
+        </code></pre>
+        you should run
+        <pre><code>rm /home/565/&lt;$USER&gt;/cylc-run/&lt;suite-ID&gt;/.service/contact</code></pre>
+        before running the <code>rose suite-run</code> command again.
+    </div>
 </ol>
-You are done!!
+<p>You are done!!
 <br>
 If you don't get any errors, you will be able to check the suite output files after the run is complete.
 <br>
 Note that, at this stage, it is possible to close the <i>Cylc</i> GUI.
 <br>
-If you want to open it again, from inside the suite directory run
+If you want to open it again, from inside the suite directory run</p>
 <pre><code>rose suite-gcontrol</code></pre>
-
-</div>
 <hr />
 <h2 id="monitor-access-cm-runs">Monitor ACCESS-CM runs</h2>
 <h3 id="check-for-errors">Check for errors</h3>
-<div class="justified">
-It is quite common, especially during the first few runs, to experience errors and job failures. An ACCESS-CM suite is constituted by several tasks, and each of these tasks could fail. When a task fails, the suite is halted and you will see a red icon next to the respective task name in the <i>Cylc</i> GUI. 
+<p>It is quite common, especially during the first few runs, to experience errors and job failures. An ACCESS-CM suite is constituted by several tasks, and each of these tasks could fail. When a task fails, the suite is halted and you will see a red icon next to the respective task name in the <i>Cylc</i> GUI. 
 <br>
-To investigate the cause of a failure, we need to look at the logs (<code>job.err</code> and <code>job.out</code>) from the suite run. There are two main ways to do so:
+To investigate the cause of a failure, we need to look at the logs (<code>job.err</code> and <code>job.out</code>) from the suite run. There are two main ways to do so:</p>
 <ul>
     <li>
         <b>Using the <i>Cylc</i> GUI</b>
@@ -2847,33 +2825,27 @@ To investigate the cause of a failure, we need to look at the logs (<code>job.er
         </terminal-animation>
     </li>
 </ul>
-</div>
-
 <hr />
 <h2 id="stop-restart-and-reload-suites">Stop, restart and reload suites</h2>
-<div class="justified">
-Sometimes, you may want to control the running state of a suite.
+<p>Sometimes, you may want to control the running state of a suite.
 <br>
 If your <i>Cylc</i> GUI has been closed and you are unsure whether your suite is still running, you can scan for active suites and reopen the GUI if desired.
 <br>
-To scan for active suites run
+To scan for active suites run</p>
 <pre><code>cylc scan</code></pre>
-To reopen the <i>Cylc</i> GUI, from inside the suite directory run
+<p>To reopen the <i>Cylc</i> GUI, from inside the suite directory run</p>
 <pre><code>rose suite-gcontrol</code></pre>
-<terminal-animation>
+<p><terminal-animation>
     <terminal-line data="input">cylc scan</terminal-line>
     <terminal-line>&lt;suite-ID&gt; &lt;$USER&gt;@accessdev.nci.org.au:&lt;port&gt;</terminal-line>
     <terminal-line data="input">cd ~/roses/&lt;suite-ID&gt;</terminal-line>
     <terminal-line data="input" directory="~/roses/&lt;suite-ID&gt;">rose suite-gcontrol</terminal-line>
     <img src="../../../assets/run_access_cm/Cylc GUI.png" alt="Cylc GUI">
-</terminal-animation>
-</div>
-
+</terminal-animation></p>
 <h3 id="stop-a-suite">STOP a suite</h3>
-<div class="justified">
-To shutdown a suite in a safe manner, from inside the suite directory run
+<p>To shutdown a suite in a safe manner, from inside the suite directory run</p>
 <pre><code>rose suite-stop -y</code></pre>
-Alternatively, you can directly kill the PBS job(s) connected to your run. To do so:
+<p>Alternatively, you can directly kill the PBS job(s) connected to your run. To do so:</p>
 <ol>
     <li>
         Check the status of all your PBS jobs by running
@@ -2884,11 +2856,9 @@ Alternatively, you can directly kill the PBS job(s) connected to your run. To do
         <pre><code>qdel &lt;job-ID&gt;</code></pre>
     </li>
 </ol>
-</div>
 
 <h3 id="restart-a-suite">RESTART a suite</h3>
-<div class="justified">
-There are two main ways to restart a suite:
+<p>There are two main ways to restart a suite:</p>
 <ul>
     <li>
         <b>'SOFT' restart</b>
@@ -2939,35 +2909,28 @@ There are two main ways to restart a suite:
         if you want to overwrite any previous runs of the suite and begin completely afresh (WARNING!! This will overwrite all existing model output and logs for the same suite).
     </li>
 </ul>
-</div>
 
 <h3 id="reload-a-suite">RELOAD a suite</h3>
-<div class="justified">
-In some cases the suite needs to be updated without necessarily having to stop it (e.g. after fixing a typo in a file). Updating an active suite is called a 'reload', where the suite is 're-installed' and <i>Cylc</i> is updated with the changes (this is similar to a 'soft' restart, but with the new changes installed, so you may need to manually trigger failed tasks from the <i>Cylc</i> GUI).
+<p>In some cases the suite needs to be updated without necessarily having to stop it (e.g. after fixing a typo in a file). Updating an active suite is called a 'reload', where the suite is 're-installed' and <i>Cylc</i> is updated with the changes (this is similar to a 'soft' restart, but with the new changes installed, so you may need to manually trigger failed tasks from the <i>Cylc</i> GUI).
 <br>
-To reload a suite, from inside the suite directory run
+To reload a suite, from inside the suite directory run</p>
 <pre><code>rose suite-run --reload</code></pre>
-</div>
-
 <hr />
 <h2 id="access-cm-output-files">ACCESS-CM output files</h2>
-<div class="justified">
-All ACCESS-CM output files (as well as work files) are available on gadi under <code>/scratch/$PROJECT/$USER/cylc-run/&lt;suite-ID&gt;</code> (also symlinked in <code>~/cylc-run/&lt;suite-ID&gt;</code>).
+<p>All ACCESS-CM output files (as well as work files) are available on <i>Gadi</i> under <code>/scratch/$PROJECT/$USER/cylc-run/&lt;suite-ID&gt;</code> (also symlinked in <code>~/cylc-run/&lt;suite-ID&gt;</code>).
 <br>
 While the suite is running, files move between the <code>share</code> and the <code>work</code> directories.
 <br>
 At the end of each cycle, model output data and restart files are moved to <code>/scratch/$PROJECT/$USER/archive/&lt;suite-name&gt;</code>. 
 <br>
-This directory contains 2 subdirectories:
+This directory contains 2 subdirectories:</p>
 <ul>
     <li><code>history</code></li>
     <li><code>restart</code></li>
 </ul>
-</div>
 
 <h3 id="output-data">Output data</h3>
-<div class="justified">
-<code>/scratch/$PROJECT/$USER/archive/&lt;suite-name&gt;/history</code> is the directory where the model output data is found, separated for each model component:
+<p><code>/scratch/$PROJECT/$USER/archive/&lt;suite-name&gt;/history</code> is the directory where the model output data is found, separated for each model component:</p>
 <ul>
     <li>
     <code>atm</code> &rarr; atmosphere (UM)
@@ -2982,7 +2945,7 @@ This directory contains 2 subdirectories:
     <code>ice</code> &rarr; ice (CICE)
     </li>
 </ul>
-For the atmospheric output data, each file it is usually a <a href = "https://code.metoffice.gov.uk/doc/um/latest/papers/umdp_F03.pdf" target="_blank">UM fieldsfile</a> or netCDF file, formatted as <code>&lt;suite-name&gt;a.p&lt;output-stream-identifier&gt;&lt;year&gt;&lt;month-string&gt;</code>.
+<p>For the atmospheric output data, each file it is usually a <a href = "https://code.metoffice.gov.uk/doc/um/latest/papers/umdp_F03.pdf" target="_blank">UM fieldsfile</a> or netCDF file, formatted as <code>&lt;suite-name&gt;a.p&lt;output-stream-identifier&gt;&lt;year&gt;&lt;month-string&gt;</code>.
 <br>
 In the case of the <code>u-br565</code> suite we will have:
 <terminal-animation>
@@ -2994,30 +2957,24 @@ In the case of the <code>u-br565</code> suite we will have:
     <terminal-line class="ls-output-format">history restart</terminal-line>
     <terminal-line data="input" directory="/scratch/&lt;$PROJECT&gt;/&lt;$USER&gt;/archive/br565">ls history/atm</terminal-line>
     <terminal-line class="ls-output-format">br565a.pd0950apr.nc br565a.pd0950aug.nc br565a.pd0950dec.nc br565a.pd0950feb.nc br565a.pd0950jan.nc br565a.pd0950jul.nc br565a.pd0950jun.nc br565a.pd0950mar.nc br565a.pd0950may.nc br565a.pd0950nov.nc br565a.pd0950oct.nc br565a.pd0950sep.nc br565a.pd0951apr.nc br565a.pd0951aug.nc br565a.pd0951dec.nc br565a.pm0950apr.nc br565a.pm0950aug.nc br565a.pm0950dec.nc br565a.pm0950feb.nc br565a.pm0950jan.nc br565a.pm0950jul.nc br565a.pm0950jun.nc br565a.pm0950mar.nc br565a.pm0950may.nc br565a.pm0950nov.nc br565a.pm0950oct.nc br565a.pm0950sep.nc br565a.pm0951apr.nc br565a.pm0951aug.nc br565a.pm0951dec.nc netCDF</terminal-line>
-</terminal-animation>
+</terminal-animation></p>
 <!-- <br>
 For more details on how to control different output variables (STASH), and output streams, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>. -->
-</div>
 
 <h3 id="restart-files">Restart files</h3>
-<div class="justified">
-<code>/scratch/$PROJECT/$USER/archive/&lt;suite-name&gt;/restart</code> is the directory where the restart dumps are found, subdivided for each model component (see <code>history</code> folder above).
+<p><code>/scratch/$PROJECT/$USER/archive/&lt;suite-name&gt;/restart</code> is the directory where the restart dumps are found, subdivided for each model component (see <code>history</code> folder above).
 <br>
 For the atmospheric restart files, each of them is a <a href = "https://code.metoffice.gov.uk/doc/um/latest/papers/umdp_F03.pdf" target="_blank">UM fieldsfile</a>, formatted as <code>&lt;suite-name&gt;a.da&lt;year&gt;&lt;month&gt;&lt;day&gt;_00</code>.
 <br>
-In the directory there are also some files formatted as <code>&lt;suite-name&gt;a.xhist-&lt;year&gt;&lt;month&gt;&lt;day&gt;</code> containing metadata information.
+In the directory there are also some files formatted as <code>&lt;suite-name&gt;a.xhist-&lt;year&gt;&lt;month&gt;&lt;day&gt;</code> containing metadata information.</p>
 <!-- <br>
 For more details on how to control the frequency and formatting of restart dumps, check <a href="../rose_gui_user_guide" target="_blank">Rose GUI user guide (TO CHECK)</a>. -->
-<br>
+<p><br>
 In the case of the <code>u-br565</code> suite we will have:
 <terminal-animation>
     <terminal-line data="input">ls /scratch/&lt;$PROJECT&gt;/&lt;$USER&gt;/archive/br565/restart/atm</terminal-line>
     <terminal-line class="ls-output-format">br565a.da09500201_00 br565a.da09510101_00 br565.xhist-09500131 br565.xhist-09501231 </terminal-line>
-</terminal-animation>
-
-</div>
-
-<!-- References -->
+</terminal-animation></p>
 <p><br></p>
 <h6>References</h6>
 <ul class="references">
@@ -3040,11 +2997,11 @@ In the case of the <code>u-br565</code> suite we will have:
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 20, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 19, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 20, 2023</span>
       
     
   </small>
