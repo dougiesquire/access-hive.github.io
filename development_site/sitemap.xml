@@ -66,6 +66,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://access-hive.org.au/community_resources/computing_on_gadi/</loc>
+         <lastmod>2023-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://access-hive.org.au/community_resources/events/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
@@ -281,11 +286,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/access_to_gadi_at_nci/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://access-hive.org.au/model_evaluation/model_evaluation_getting_started/model_evaluation_getting_started/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
@@ -427,16 +427,6 @@
     </url>
     <url>
          <loc>https://access-hive.org.au/models/run-a-model/run-access-om/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/run-a-model/getting_started/</loc>
-         <lastmod>2023-07-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://access-hive.org.au/models/run-a-model/getting_started/access_to_gadi_at_nci/</loc>
          <lastmod>2023-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
