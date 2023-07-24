@@ -11,7 +11,7 @@
   --nri-dark-blue: #115D97;
   --nri-blue: #06AEEF;
   --nri-light-blue: #8ED7F8;
-  --default-fg-color: 230, 230, 230;  /* Color for main text in body, navigation, table of content*/
+  --default-fg-color: 230, 230, 230;  /* Color for main text in body, navigation, table of content */
   --md-default-fg-color: rgb(var(--default-fg-color)); /* Main text in body, navigation, table of content*/ 
   --md-default-fg-color--light: rgba(var(--default-fg-color),.7); /* Inactive tabs */
   --md-default-fg-color--lighter: rgba(var(--default-fg-color),.3); /* pencil for editing page, passed toc items text */
@@ -350,7 +350,9 @@ h3 {
 }
 
 .nri-orange-border {
-  border-color: var(--nri-orange);
+  border-color: var(--nri-dark-blue);
+  background-color: var(--nri-orange);
+  color: black;
 }
 
 .nri-blue-border {
@@ -428,7 +430,7 @@ h3 {
 /* =============================================================== 
   Cards for ACCESS-Hive navigation, model components and model tabs
 */
-/* Flexbox container for cards*/
+/* Flexbox container for cards */
 .card-container {
   margin: 1em 0;
   display: flex;
