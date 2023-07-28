@@ -17,7 +17,7 @@
         <link rel="next" href="../model_variables/">
       
       <link rel="icon" href="../../../assets/ACCESS_icon_HIVE.png">
-      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.8">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.8">
     
     
       
@@ -1437,6 +1437,8 @@
         
           
         
+          
+        
       
       
         
@@ -1495,6 +1497,20 @@
     <li class="md-nav__item">
       <a href="../../model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima/" class="md-nav__link">
         COSIMA cookbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model_evaluation_on_gadi/model_evaluation_on_gadi_metplus/" class="md-nav__link">
+        METplus
       </a>
     </li>
   
@@ -1947,17 +1963,17 @@
 
 
 <h1 id="model-evaluation-environment-at-ncis-gadi">Model Evaluation Environment at NCI's Gadi</h1>
-<p>At this stage of <em>Getting Started</em>, we assume that you already have access to Gadi@NCI. If this is not the case, please go to our instructions on how to get <a href="../../get_started">access to NCI's Gadi</a>.</p>
+<p>At this stage of <em>Getting Started</em>, we assume that you already have access to NCI's Gadi. If this is not the case, please go to our instructions on how to get <a href="../../../get_started/">access to NCI's Gadi</a>.</p>
 <p>Here we describe where you can find, load, and evalulate observational and model data on Gadi.</p>
 <details class="warning" open="open">
-<summary>ACCESS-NRI provides code and data, but not computing resources</summary>
+<summary>ACCESS-NRI provides code and support, but not computing resources</summary>
 <p>You do not automatically have access to all of Gadi's storage at <code>/g/data/</code>, but need to be part of a <code>$PROJECT</code> to see files at <code>/g/data/$PROJECT</code>. Furthermore, if you use Gadi's job submission system PBS (Portable Batch System), you need to add the relevant storage to the <code>#PBS -l storage=gdata/xp65+gdata/kj13</code> (if you want the job to have access to <code>xp65</code> and <code>kj13</code> in this example).</p>
 </details>
 <h2 id="1-access-med-our-currated-conda-environment-on-gadi">1 <code>access-med</code>: Our currated <code>conda</code> environment on Gadi</h2>
 <p>To avoid running multiple (different) versions of code on Gadi, we provide you with a <code>conda</code> environment called <code>access-med</code> that we actually curate for you (version 0.1 is from June 2023).</p>
 <p>In order to change to this environment, please execute the following commands after loggin onto Gadi (and as part of your PBS scripts):
-<div class="highlight"><pre><span></span><code>$ module use /g/data/xp65/public/modules
-$ module load conda/access-med
+<div class="highlight"><pre><span></span><code>module use /g/data/xp65/public/modules
+module load conda/access-med
 </code></pre></div></p>
 <p>If you are planning to run your code through JupyterLab on <a href="https://are.nci.org.au">NCI's ARE</a>, you need to use <code>/g/data/xp65/public/modules</code> as <strong>Module directories</strong> and <code>conda/are</code> as <strong>Modules</strong> when launching a JupyterLab session.</p>
 <h2 id="2-what-is-part-of-the-access-med-enrivonment">2 What is part of the <code>access-med</code> enrivonment?</h2>
@@ -1974,11 +1990,11 @@ Simply raise an issue to *add a package* in our [ACCESS-NRI/MED-condaenv GitHub 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
     
   </small>
