@@ -17,7 +17,7 @@
         <link rel="next" href="model_evaluation_getting_started/">
       
       <link rel="icon" href="../assets/ACCESS_icon_HIVE.png">
-      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.8">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.8">
     
     
       
@@ -1318,7 +1318,7 @@
   
     <li class="md-nav__item">
       <a href="model_evaluation_getting_started/model_variables/" class="md-nav__link">
-        Model Variables
+        Data Format and Variables
       </a>
     </li>
   
@@ -1385,6 +1385,8 @@
         
           
         
+          
+        
       
       
         
@@ -1443,6 +1445,20 @@
     <li class="md-nav__item">
       <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima/" class="md-nav__link">
         COSIMA cookbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_metplus/" class="md-nav__link">
+        METplus
       </a>
     </li>
   
@@ -1858,13 +1874,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#data-catalogs" class="md-nav__link">
     Data Catalogs
   </a>
@@ -1932,9 +1941,7 @@
 <!-- Model evaluation is about measuring how fit for purpose a particular model is.  -->
 
 <p>ACCESS-NRI's "Model Evaluation and Diagnostics" work is a critical facet of climate modeling, encompassing various tasks designed to ensure the model's reliability and accuracy.</p>
-<h2 id="access-med-data-and-tools-hosted-on-gadi">ACCESS-MED data and tools hosted on Gadi</h2>
-<p>If you are new to model evaluation and diagnostics, we recommend you read our <a href="model_evaluation_getting_started/">Getting Started with MED page</a>. Here, we provide catalogs and pointers to <a href="model_evaluation_observational_catalogs/">observational data</a> as well as <a href="model_evaluation_model_catalogs/">model data</a> that can be used for evaluation. We also provide a number of <a href="model_evaluation_on_gadi/">frameworks for model evaluation</a>. We are also working on implementing more frameworks and recipes as well as formatting tools for a better model evaluation and diagnostics.</p>
-<h3 id="getting-started">Getting Started</h3>
+<p>If you are new to model evaluation and diagnostics, we recommend you read our <a href="model_evaluation_getting_started/">Getting Started with MED page</a>:</p>
 <div class="card-container">
     <a href="../get_started" class="squared-card default-text-color">
         <div class="squared-card-image-container">
@@ -1956,6 +1963,8 @@
     </a>
 </div>
 
+<p>Here, we provide catalogs and pointers to <a href="model_evaluation_observational_catalogs/">observational data</a> as well as <a href="model_evaluation_model_catalogs/">model data</a> that can be used for evaluation. We also provide a number of <a href="model_evaluation_on_gadi/">frameworks for model evaluation</a>. We are also working on implementing more frameworks and recipes as well as formatting tools for a better model evaluation and diagnostics.</p>
+<h2 id="access-med-data-and-tools-hosted-on-gadi">ACCESS-MED data and tools hosted on Gadi</h2>
 <h3 id="data-catalogs">Data Catalogs</h3>
 <div class="card-container">
     <a href="model_evaluation_observational_catalogs" class="squared-card default-text-color">
@@ -1974,31 +1983,39 @@
 
 <h3 id="supported-community-frameworks-on-gadi">Supported Community Frameworks on Gadi</h3>
 <div class="card-container">
-    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_ilamb" class="squared-card default-text-color">
+    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_ilamb" class="aspect1to2-card default-text-color">
         <div class="squared-card-image-container">
             <img src="../assets/model_evaluation/logo_ilamb.png" alt="ILAMB"></img>
         </div>
         <div class="squared-card-text-container bold">ILAMB</div>
     </a>
-    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool" class="squared-card default-text-color">
+    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool" class="aspect1to2-card default-text-color">
         <div class="squared-card-image-container">
             <img src="../assets/model_evaluation/logo_esmvaltool.png" alt="ESMValTool"></img>
         </div>
         <div class="squared-card-text-container bold">ESMValTool</div>
     </a>
-    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima" class="squared-card default-text-color">
+    <a href="model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima" class="aspect1to2-card default-text-color">
         <div class="squared-card-image-container">
             <img src="../assets/model_evaluation/logo_cosima.png" alt="Pangeo/COSIMA"></img>
         </div>
         <div class="squared-card-text-container bold">COSIMA cookbook</div>
     </a>
+    <a href="../model_evaluation_on_gadi/model_evaluation_on_gadi_metplus" class="squared-card default-text-color">
+        <div class="squared-card-image-container">
+            <img src="../assets/model_evaluation/METplus_logo.png" alt="METplus"></img>
+        </div>
+        <div class="squared-card-text-container bold">METplus</div>
+    </a>
 </div>
 
 <h3 id="tools-in-development">Tools in development</h3>
-<p>We are currently setting up a range of tools that will help you to better evaluate and diagnose climate models:<br />
-<em> Model Diagnostics for on-the-fly analysis of your models at different snapshots<br />
-</em> Data format processing tools like APP4<br />
-* An Evaluation Recipe Gallery with searching functionality  </p>
+<p>We are currently setting up a range of tools that will help you to better evaluate and diagnose climate models:  </p>
+<ul>
+<li>Model Diagnostics for on-the-fly analysis of your models at different snapshots  </li>
+<li>Data format processing tools like APP4  </li>
+<li>An Evaluation Recipe Gallery with searching functionality  </li>
+</ul>
 <p>While we are working on these, we have collected a number of links to existing tools in our <a href="../community_resources/">community tab</a> (note that we are not currating them).  </p>
 <details class="warning" open="open">
 <summary>The documentation on Hive is work in progress!</summary>
@@ -2047,11 +2064,11 @@ TBD: Discuss with Dougie: How can we identify what is CMORized and what is not?
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
     
   </small>

@@ -17,7 +17,7 @@
         <link rel="next" href="../model_evaluation_on_gadi/">
       
       <link rel="icon" href="../../assets/ACCESS_icon_HIVE.png">
-      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.8">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.8">
     
     
       
@@ -1318,7 +1318,7 @@
   
     <li class="md-nav__item">
       <a href="../model_evaluation_getting_started/model_variables/" class="md-nav__link">
-        Model Variables
+        Data Format and Variables
       </a>
     </li>
   
@@ -1395,8 +1395,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#showcase-search-with-intake-to-easily-load-and-plot-data" class="md-nav__link">
-    Showcase: Search with intake to easily load and plot data
+  <a href="#showcase-use-intake-to-easily-find-load-and-plot-data" class="md-nav__link">
+    Showcase: use intake to easily find, load and plot data
   </a>
   
 </li>
@@ -1427,6 +1427,8 @@
         
           
             
+          
+        
           
         
           
@@ -1493,6 +1495,20 @@
     <li class="md-nav__item">
       <a href="../model_evaluation_on_gadi/model_evaluation_on_gadi_pangeo_cosima/" class="md-nav__link">
         COSIMA cookbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_evaluation_on_gadi/model_evaluation_on_gadi_metplus/" class="md-nav__link">
+        METplus
       </a>
     </li>
   
@@ -1907,8 +1923,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#showcase-search-with-intake-to-easily-load-and-plot-data" class="md-nav__link">
-    Showcase: Search with intake to easily load and plot data
+  <a href="#showcase-use-intake-to-easily-find-load-and-plot-data" class="md-nav__link">
+    Showcase: use intake to easily find, load and plot data
   </a>
   
 </li>
@@ -1957,49 +1973,26 @@
 
 <h2 id="what-is-the-access-nri-intake-model-catalog">What is the ACCESS-NRI intake Model Catalog?</h2>
 <p>The ACCESS-NRI catalog is essentially a table of climate data products that exist on Gadi. Each entry in the table corresponds to a different product, and the columns contain attributes associated with each product–things like the models, frequencies and variables available. Users can search on the attributes to find the products that might be useful to them. For example, a user might want to know which data products contain variables X, Y and Z at monthly frequency. The ACCESS-NRI catalog enables users to find products that satisfy their query and to subsequently load their data without having to know the location and structure of the underlying files.</p>
-<h2 id="showcase-search-with-intake-to-easily-load-and-plot-data">Showcase: Search with intake to easily load and plot data</h2>
-<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">intake</span>
-<span class="n">catalog</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span>
-</code></pre></div>
-You can then search for a model, variable, frequency and more across all the project that we provide support for on Gadi:
-<div class="highlight"><pre><span></span><code><span class="n">catalog_filtered</span> <span class="o">=</span> <span class="n">catalog</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;cmip6_oi10&quot;</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="s2">&quot;burntFractionAll&quot;</span><span class="p">)</span>
-</code></pre></div>
-You can then easily load this particular datastore and look at its metadata or keywords
-<div class="highlight"><pre><span></span><code><span class="n">esm_datastore</span> <span class="o">=</span> <span class="n">catalog_filtered</span><span class="o">.</span><span class="n">to_source</span><span class="p">()</span>
-<span class="n">esm_datastore</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s1">&#39;iceh_XXXX_XX.1mon&#39;</span><span class="p">,</span>
- <span class="s1">&#39;iceh_XXXX_XX_daily.1day&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_budget.1yr&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_daily.1day&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_grid.fx&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_month.1mon&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_scalar.1mon&#39;</span><span class="p">,</span>
- <span class="s1">&#39;ocean_scalar_snapshot.1day&#39;</span><span class="p">]</span>
-</code></pre></div>
-<p>The potential of the intake catalog can also be shown in this quick example (where we pretend that we have already searched for a specific datastore as part of NCI project <code>ik11</code>):
+<h2 id="showcase-use-intake-to-easily-find-load-and-plot-data">Showcase: use intake to easily find, load and plot data</h2>
+<p>In this showcase, we'll demonstrate one of the simplest use-cases of the ACCESS-NRI intake catalog: a user wants to plot a timeseries of a variable from a specific data product. Here, the variable is a scalar ocean variable called "temp_global_ave" and the product is an ACCESS-OM2 run called "025deg_jra55_iaf_omip2_cycle1".</p>
+<p>First we load the catalog using</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">intake</span>
-<span class="kn">from</span> <span class="nn">distributed</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">threads_per_worker</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">client</span><span class="o">.</span><span class="n">dashboard_link</span>
-
-<span class="c1"># Load intake catalog and filter for specific datastore</span>
 <span class="n">catalog</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span>
-<span class="c1"># Here you could include your search for a specific datastore. We assume that we were looking for this specific one:</span>
-<span class="n">esm_datastore</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">&quot;025deg_jra55_iaf_omip2_cycle1&quot;</span><span class="p">]</span>
-<span class="n">esm_datastore_filtered</span> <span class="o">=</span> <span class="n">esm_datastore</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">variable</span><span class="o">=</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Now we can load and plot available datasets of the variable "temp_global_ave" from the product "025deg_jra55_iaf_omip2_cycle1" using</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="c1"># Load datastore</span>
-<span class="n">dataset_dict</span> <span class="o">=</span> <span class="n">esm_datastore_filtered</span><span class="o">.</span><span class="n">to_dataset_dict</span><span class="p">(</span><span class="n">progressbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">dataset_dict</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">&quot;025deg_jra55_iaf_omip2_cycle1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">search</span><span class="p">(</span>
+    <span class="n">variable</span><span class="o">=</span><span class="s2">&quot;temp_global_ave&quot;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">to_dataset_dict</span><span class="p">()</span>
 
-<span class="c1"># Plot a timeseries of global average temperatures</span>
+<span class="c1"># `dataset_dict` contains two xarray Datasets, one at daily frequency and one at monthly</span>
 <span class="n">dataset_dict</span><span class="p">[</span><span class="s2">&quot;ocean_scalar_snapshot.1day&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;daily&quot;</span><span class="p">)</span>
 <span class="n">dataset_dict</span><span class="p">[</span><span class="s2">&quot;ocean_scalar.1mon&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;monthly&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</code></pre></div></p>
+</code></pre></div>
 <div style="text-align: center;">
     <img src="../../assets/model_evaluation/intake_example.png" alt="Plot af timeseries of global average temperatures" width="50%"/>
 </div>
@@ -2009,11 +2002,11 @@ You can then easily load this particular datastore and look at its metadata or k
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 28, 2023</span>
       
     
   </small>
