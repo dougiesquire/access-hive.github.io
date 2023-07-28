@@ -1388,15 +1388,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-access-nri-intake-catalog" class="md-nav__link">
-    The ACCESS-NRI intake catalog
+  <a href="#what-is-the-access-nri-intake-model-catalog" class="md-nav__link">
+    What is the ACCESS-NRI intake Model Catalog?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-search-with-our-intake-catalog" class="md-nav__link">
-    Example Search with our intake catalog
+  <a href="#showcase-use-intake-to-easily-find-load-and-plot-data" class="md-nav__link">
+    Showcase: use intake to easily find, load and plot data
   </a>
   
 </li>
@@ -1916,15 +1916,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-access-nri-intake-catalog" class="md-nav__link">
-    The ACCESS-NRI intake catalog
+  <a href="#what-is-the-access-nri-intake-model-catalog" class="md-nav__link">
+    What is the ACCESS-NRI intake Model Catalog?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-search-with-our-intake-catalog" class="md-nav__link">
-    Example Search with our intake catalog
+  <a href="#showcase-use-intake-to-easily-find-load-and-plot-data" class="md-nav__link">
+    Showcase: use intake to easily find, load and plot data
   </a>
   
 </li>
@@ -1961,52 +1961,41 @@
 
 
 <h1 id="access-nri-intake-model-catalog">ACCESS-NRI intake Model Catalog</h1>
-<p>ACCESS-NRI is hosting a number of calculated models for you through National Computational Infrastructure (NCI) storage.</p>
-<p>We have set up an <a href="https://github.com/ACCESS-NRI/access-nri-intake-catalog">ACCESS-NRI intake Catalog</a> package that allows you to easily search and load the model data on this storage.
-The premise of this ACCESS-NRI intake Catalog is to provide a ("meta") catalog of intake-esm ("sub") catalogs, which each correspond to different "experiments".</p>
-<h2 id="the-access-nri-intake-catalog">The ACCESS-NRI intake catalog</h2>
-<p>To have the huge amount of data from different experiments on the NCI storage at the palm of your hand, we provide a ("meta") catalog for you to query via python as part of the <code class="highlight"><span class="n">intake</span></code> package with our curated catalog plugin <code class="highlight"><span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span></code> .</p>
+<p>The ACCESS-NRI intake catalog aims to provide a way for Python users to discover and load data across a broad range of climate data products available on the Australian NCI supercomputer Gadi. For detailed information, tutorials and more, please go to the</p>
+<div class="card-container">
+    <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" class="aspect1to2-card default-text-color">
+        <div class="squared-card-image-container">
+            <img src="../../assets/model_evaluation/accessnri_intake.png" alt="ACCESS-NRI intake catalog documentation"></img>
+        </div>
+        <div class="squared-card-text-container bold">Documentation</div>
+    </a>
+</div>
+
+<h2 id="what-is-the-access-nri-intake-model-catalog">What is the ACCESS-NRI intake Model Catalog?</h2>
+<p>The ACCESS-NRI catalog is essentially a table of climate data products that exist on Gadi. Each entry in the table corresponds to a different product, and the columns contain attributes associated with each product–things like the models, frequencies and variables available. Users can search on the attributes to find the products that might be useful to them. For example, a user might want to know which data products contain variables X, Y and Z at monthly frequency. The ACCESS-NRI catalog enables users to find products that satisfy their query and to subsequently load their data without having to know the location and structure of the underlying files.</p>
+<h2 id="showcase-use-intake-to-easily-find-load-and-plot-data">Showcase: use intake to easily find, load and plot data</h2>
+<p>In this showcase, we'll demonstrate one of the simplest use-cases of the ACCESS-NRI intake catalog: a user wants to plot a timeseries of a variable from a specific data product. Here, the variable is a scalar ocean variable called "temp_global_ave" and the product is an ACCESS-OM2 run called "025deg_jra55_iaf_omip2_cycle1".</p>
+<p>First we load the catalog using</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">intake</span>
-<span class="n">access_nri_catalog_sections</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span>
+<span class="n">catalog</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span>
 </code></pre></div>
-<p>To use this catalog, you need access to NCI's Gadi. Check out our <a href="../model_evaluation_getting_started/">Get Started with ACCESS at NCI</a>   guide on how to get access.</p>
-<p>Once logged in to Gadi, you will need to add the <code class="highlight"><span class="n">access</span><span class="o">-</span><span class="n">nri</span><span class="o">-</span><span class="n">catalog</span></code> to your <code class="highlight"><span class="n">conda</span></code> environments and start an <a href="https://are.nci.org.au/pun/sys/dashboard">ARE JupyterLab Session</a>. Check out our <a href="https://github.com/ACCESS-NRI/access-nri-intake-catalog/blob/main/docs/getting_started/index.rst">ACCESS-NRI Intake Catalog</a> guide  for the specific setup (note that you can only read in data from specific experiments if they are loaded through the <em>Storage</em> keyword).</p>
-<p>Once your JupyterLab session started, you can access the <code class="highlight"><span class="n">intake</span></code> catalog to load the data. Take a look at this <a href="https://github.com/ACCESS-NRI/access-nri-intake-catalog/blob/main/docs/how_tos/example_usage.ipynb">Tutorial</a> .</p>
-<h2 id="example-search-with-our-intake-catalog">Example Search with our intake catalog</h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Impport packages for searching/loading/plotting</span>
-<span class="kn">import</span> <span class="nn">intake</span>
-<span class="kn">from</span> <span class="nn">distributed</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<p>Now we can load and plot available datasets of the variable "temp_global_ave" from the product "025deg_jra55_iaf_omip2_cycle1" using</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="c1"># The search process is a 2-step one</span>
-<span class="c1"># Comparable with searching for a book in a library:</span>
-<span class="c1"># 1) You look for the right book/catalog sections</span>
-<span class="c1"># 2) You look for the right book/catalog in the these sections</span>
+<span class="n">dataset_dict</span> <span class="o">=</span> <span class="n">catalog</span><span class="p">[</span><span class="s2">&quot;025deg_jra55_iaf_omip2_cycle1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">search</span><span class="p">(</span>
+    <span class="n">variable</span><span class="o">=</span><span class="s2">&quot;temp_global_ave&quot;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">to_dataset_dict</span><span class="p">()</span>
 
-<span class="c1"># Load the ACCES-NRI list of catalogs for available experiment data</span>
-<span class="c1"># Similar to an overview of library section</span>
-<span class="n">access_nri_catalog_sections</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">access_nri</span>
-
-<span class="c1"># Perform a search for names, models, variables etc.</span>
-<span class="n">example_section_search</span> <span class="o">=</span> <span class="n">access_nri_catalog_sections</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;cmip6_oi10&quot;</span><span class="p">)</span>
-
-<span class="c1"># Once you are sufficiently happy with your search, you can load the &quot;section&quot;</span>
-<span class="n">catalog_sections</span> <span class="o">=</span> <span class="n">access_nri_catalog_sections</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;025deg_jra55_iaf_omip2_cycle1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">to_source</span><span class="p">()</span>
-<span class="c1"># and start looking for the right catalogs of interest</span>
-<span class="n">catalogs_of_interest</span> <span class="o">=</span> <span class="n">catalog_sections</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;ocean_scalar.*&quot;</span><span class="p">)</span>
-
-<span class="c1"># Call the client that allows use load the data efficiently</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">threads_per_worker</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">client</span><span class="o">.</span><span class="n">dashboard_link</span>
-
-<span class="c1"># Actually load the data</span>
-<span class="n">experiment_data</span> <span class="o">=</span> <span class="n">catalogs_of_interest</span><span class="o">.</span><span class="n">to_dataset_dict</span><span class="p">(</span><span class="n">progressbar</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="c1"># Et voilà, you have loaded the data and can start plotting</span>
-<span class="n">experiment_data</span><span class="p">[</span><span class="s2">&quot;ocean_scalar_snapshot.1day&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;daily&quot;</span><span class="p">)</span>
-<span class="n">experiment_data</span><span class="p">[</span><span class="s2">&quot;ocean_scalar.1mon&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;monthly&quot;</span><span class="p">)</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="c1"># `dataset_dict` contains two xarray Datasets, one at daily frequency and one at monthly</span>
+<span class="n">dataset_dict</span><span class="p">[</span><span class="s2">&quot;ocean_scalar_snapshot.1day&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;daily&quot;</span><span class="p">)</span>
+<span class="n">dataset_dict</span><span class="p">[</span><span class="s2">&quot;ocean_scalar.1mon&quot;</span><span class="p">][</span><span class="s2">&quot;temp_global_ave&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;monthly&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
 </code></pre></div>
+<div style="text-align: center;">
+    <img src="../../assets/model_evaluation/intake_example.png" alt="Plot af timeseries of global average temperatures" width="50%"/>
+</div>
 
   <hr>
 <div class="md-source-file">
