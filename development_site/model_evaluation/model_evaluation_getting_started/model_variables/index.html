@@ -21,7 +21,7 @@
     
     
       
-        <title>Model Variables - ACCESS-Hive</title>
+        <title>Data Format and Variables - ACCESS-Hive</title>
       
     
     
@@ -99,7 +99,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-output-and-variables" class="md-skip">
+        <a href="#model-output-formats-and-variables" class="md-skip">
           Skip to content
         </a>
       
@@ -150,7 +150,7 @@
           <div class="md-header__topic" data-md-component="header-topic">
             <span class="md-ellipsis">
               
-                Model Variables
+                Data Format and Variables
               
             </span>
           </div>
@@ -1329,12 +1329,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Model Variables
+          Data Format and Variables
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Model Variables
+        Data Format and Variables
       </a>
       
         
@@ -1355,15 +1355,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#variables-for-cmip-version-6coupled-model-intercomparison-project" class="md-nav__link">
-    Variables for CMIP version 6(Coupled Model Intercomparison Project)
+  <a href="#1-network-common-data-format-netcdf" class="md-nav__link">
+    1 Network Common Data Format (NetCDF)
   </a>
+  
+    <nav class="md-nav" aria-label="1 Network Common Data Format (NetCDF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-netcdf-metadata" class="md-nav__link">
+    1.1 NetCDF metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-netcdf-data-and-variables" class="md-nav__link">
+    1.2 NetCDF data and variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables-for-era5-atmospheric-reanalysis" class="md-nav__link">
-    Variables for ERA5 atmospheric reanalysis
+  <a href="#2-common-variables" class="md-nav__link">
+    2 Common Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Common Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-variables-of-cmip6-coupled-model-intercomparison-project-version-6" class="md-nav__link">
+    2.1 Variables of CMIP6 (Coupled Model Intercomparison Project Version 6)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-variables-of-the-era5-atmospheric-reanalysis" class="md-nav__link">
+    2.2 Variables of the ERA5 atmospheric reanalysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-loading-netcdf-files" class="md-nav__link">
+    3 Loading NetCDF files
   </a>
   
 </li>
@@ -1918,15 +1965,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#variables-for-cmip-version-6coupled-model-intercomparison-project" class="md-nav__link">
-    Variables for CMIP version 6(Coupled Model Intercomparison Project)
+  <a href="#1-network-common-data-format-netcdf" class="md-nav__link">
+    1 Network Common Data Format (NetCDF)
   </a>
+  
+    <nav class="md-nav" aria-label="1 Network Common Data Format (NetCDF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-netcdf-metadata" class="md-nav__link">
+    1.1 NetCDF metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-netcdf-data-and-variables" class="md-nav__link">
+    1.2 NetCDF data and variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variables-for-era5-atmospheric-reanalysis" class="md-nav__link">
-    Variables for ERA5 atmospheric reanalysis
+  <a href="#2-common-variables" class="md-nav__link">
+    2 Common Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Common Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-variables-of-cmip6-coupled-model-intercomparison-project-version-6" class="md-nav__link">
+    2.1 Variables of CMIP6 (Coupled Model Intercomparison Project Version 6)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-variables-of-the-era5-atmospheric-reanalysis" class="md-nav__link">
+    2.2 Variables of the ERA5 atmospheric reanalysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-loading-netcdf-files" class="md-nav__link">
+    3 Loading NetCDF files
   </a>
   
 </li>
@@ -1962,17 +2056,54 @@
   
 
 
-<h1 id="model-output-and-variables">Model Output and Variables</h1>
-<p>Speaking a common language and using the same variables is key for a united climate modelling community. While we are trying to bring together modellers from different communities, we understand that the variables used for climate modelling may differ for historical reasons. Here, we are collating lists of different widely used variable formats.</p>
+<h1 id="model-output-formats-and-variables">Model Output: Formats and Variables</h1>
+<!-- For this content, I have used a lot of text from this website: https://pro.arcgis.com/en/pro-app/latest/help/data/multidimensional/fundamentals-of-netcdf-data-storage.htm -->
+
+<p>For climate modelling, we need to store multidimensional scientific data (variables) such as temperature, humidity, pressure, wind speed, and direction.</p>
+<div style="text-align: center;">
+     <img src="../../../assets/model_evaluation/netcdf_example.png" alt="Example of a three-dimensional data array" width="25%"/>
+ </div>
+
+<p>ACCESS-NRI strives for comparable model outputs for easily model evaluation.</p>
+<p>We therefore support projects like the Coupled Model Intercomparison Projects (CMIP) and the use of common data formats and variables.</p>
+<h2 id="1-network-common-data-format-netcdf">1 Network Common Data Format (NetCDF)</h2>
+<p>Many organizations and scientific groups in different countries have adopted a data format called <a href="https://www.unidata.ucar.edu/software/NetCDF/">NetCDF</a> by the Unidata Community as a standard way to represent some forms of scientific data.</p>
+<p>NetCDF (with file extensions <code>*.nc</code>) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.</p>
+<ul>
+<li><strong>Self-describing</strong> means that the <code>*.nc</code> files include not only the data itself, but also a <em>header</em> with <code>metadata</code> that describes the layout of the data.</li>
+<li><strong>Machine-independent</strong> means that the  <code>*.nc</code> files can be accessed by computers with different ways of storing integers, characters, and floating-point numbers.</li>
+<li><strong>Array-oriented</strong> means that the <code>*.nc</code> data is typically spanning multiple dimensions with the same lengths (like latitude and longitude or time) and variables (like temperature or humidity) which are stored in arrays.</li>
+</ul>
+<div style="text-align: center;">
+     <img src="../../../assets/model_evaluation/NetCDF_1.png" alt="Schematic of a NetCDF file with data (temperature and pressure as variables stored over the dimensions latitude, longitude, and time) and metadata" width="75%"/>
+ </div>
+
+<h3 id="11-netcdf-metadata">1.1 NetCDF metadata</h3>
+<p>Metadata enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.</p>
+<p>To facilitate this process, there are conventions for CF (Climate and Forecast) metadata. These are designed to promote the processing and sharing of files created with NetCDF. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. Learn more about the CF metadata conventions <a href="http://cfconventions.org">here</a>.</p>
+<h3 id="12-netcdf-data-and-variables">1.2 NetCDF data and variables</h3>
+<p>The data in a netCDF file is stored in the form of arrays. For example, temperature varying over time at a location is stored as a one-dimensional array. Temperature over an area for a given time is stored as a two-dimensional array. Three-dimensional (3D) data, like temperature over an area varying with time, or four-dimensional (4D) data, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.</p>
+<h2 id="2-common-variables">2 Common Variables</h2>
+<p>Using common variables is key for a united climate modelling community. While we are trying to bring together modellers from different communities, we understand that the variables used for climate modelling may differ for historical reasons. Here, we are collating lists of different widely used variable formats.</p>
 <!-- We have created a prototype of markdown files with variable tables that can be queried via jquery -->
 <!-- Because they were not ready for quick searches (jquery with extended html tables is slow), we did not include them in the Legacy Relase (July/August 2023). -->
 <!-- The code and markdown files are hosted on a github repository, however: https://github.com/svenbuder/access_model_variables -->
 
-<h2 id="variables-for-cmip-version-6coupled-model-intercomparison-project">Variables for CMIP version 6<br>(Coupled Model Intercomparison Project)</h2>
+<h3 id="21-variables-of-cmip6-coupled-model-intercomparison-project-version-6">2.1 Variables of CMIP6 (Coupled Model Intercomparison Project Version 6)</h3>
 <p>You can search the extensive list of Coupled Model Intercomparison Project version 6 on <a href="Chttps://clipc-services.ceda.ac.uk/dreq/index/var.html">this website</a>.</p>
-<h2 id="variables-for-era5-atmospheric-reanalysis">Variables for ERA5 atmospheric reanalysis</h2>
+<h3 id="22-variables-of-the-era5-atmospheric-reanalysis">2.2 Variables of the ERA5 atmospheric reanalysis</h3>
 <p>ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1940 to present. ERA5 is produced by the Copernicus Climate Change Service (C3S) at ECMWF. ERA5 provides hourly estimates of a large number of atmospheric, land and oceanic climate variables.</p>
 <p>A full list of ERA5 parameters is available on the <a href="https://codes.ecmwf.int/grib/param-db/">ECMWF database</a>. It covers both the <a href="https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation#ERA5:datadocumentation-Parameterlistings">ERA5 parameter listings</a> as well as the <a href="https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation#ERA5Land:datadocumentation-parameterlistingParameterlistings">ERA5-LAND parameter listings</a>.</p>
+<h2 id="3-loading-netcdf-files">3 Loading NetCDF files</h2>
+<p>Our Model Evaluation and Diagnostics tools are based around the reading and storing of files via the Python package <code>xarray</code>. You can find a quick overview <a href="https://docs.xarray.dev/en/stable/getting-started-guide/quick-overview.html">here</a> and tutorials <a href="https://tutorial.xarray.dev/intro.html#">here</a>.</p>
+<p>We provide <code>xarray</code> through out <code>conda</code> environment, so you can use it either directly as shown below, or through the dataset capabilities of our catalog <a href="../../model_evaluation_model_catalogs/">ACCESS-NRI Model Intake Catalog Tool</a>.</p>
+<div class="highlight"><pre><span></span><code>import xarray as xr
+dataset = xr.open_dataset(&quot;example.nc&quot;)
+dataset
+</code></pre></div>
+<div style="text-align: center;">
+     <img src="../../../assets/model_evaluation/netcdf_example.jpg" alt="Example of an actual NetCDF file with data (precipitation/rainfall over the dimensions latitude, longitude, and time) and metadata. Picture from https://pro.arcgis.com/en/pro-app/latest/help/data/multidimensional/fundamentals-of-netcdf-data-storage.html" width="60%"/>
+ </div>
 
   <hr>
 <div class="md-source-file">
