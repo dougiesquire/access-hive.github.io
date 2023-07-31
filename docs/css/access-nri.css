@@ -340,7 +340,7 @@ h3 {
 }
 
 .header-btn:hover {
-  background-color: ;
+  background-color: var(--md-default-fg-color--lightest);
   transition-duration: 0.4s;
   transition-property: all;
 }
@@ -359,10 +359,6 @@ h3 {
 
 .nri-blue-border {
   border-color: var(--nri-blue);
-}
-
-.nri-white-bg {
-  background-color: white;
 }
 
 .icon-image {
