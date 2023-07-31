@@ -335,12 +335,12 @@ h3 {
   border: 0.1em solid;
   padding: 0.5em 1em;
   font-weight: 500;
-  margin: 0 0.5em 0 0.5em;
+  margin: 0 0 0 1em;
   height: 1.7rem;
 }
 
 .header-btn:hover {
-  background-color: var(--md-default-fg-color--lightest);
+  background-color: ;
   transition-duration: 0.4s;
   transition-property: all;
 }
@@ -349,19 +349,29 @@ h3 {
   font-size: 1.4em;
 }
 
-.nri-orange-border {
-  border-color: var(--nri-dark-blue);
+.nri-orange-bg {
   background-color: var(--nri-orange);
-  color: black;
+}
+
+.nri-orange-border {
+  border-color: var(--nri-orange);
 }
 
 .nri-blue-border {
   border-color: var(--nri-blue);
 }
 
+.nri-white-bg {
+  background-color: white;
+}
+
 .icon-image {
   height: 1.3em;
   width: auto;
+}
+
+.black-text {
+  color: black;
 }
 
 /* =============================================================== 
